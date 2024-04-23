@@ -1,0 +1,1262 @@
+ <!DOCTYPE html><html lang="en"><head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BMVLE5WY82"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BMVLE5WY82');
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Learn Android Tutorial | Android Studio Tutorial - Javatpoint</title><link rel="SHORTCUT ICON" href="https://static.javatpoint.com/images/favicon2.png" />
+<link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async /><link rel="dns-prefetch" href="https://clients1.google.com"><link rel="dns-prefetch" href="https://static.javatpoint.com"><link rel="dns-prefetch" href="https://googleads.g.doubleclick.net"><link rel="dns-prefetch" href="https://www.google.com"><link rel="dns-prefetch" href="https://feedify.net"><meta name="theme-color" content="#4CAF50" /><meta property="og:title" content="Learn Android Tutorial | Android Studio Tutorial - Javatpoint" /><meta property="og:description" content="Learn Android tutorial for beginners and professionals | Android Studio Tutorial | Android development tutorial with Activity and Intent, Fragments, Menu, Service, alarm manager, storage, sqlite, xml, json, multimedia, speech, web service" />
+<meta name="keywords" content="android, tutorial, basics, topics, examples, sqlite, beginners, professionals" /><meta name="description" content="Learn Android tutorial for beginners and professionals | Android Studio Tutorial | Android development tutorial with Activity and Intent, Fragments, Menu, Service, alarm manager, storage, sqlite, xml, json, multimedia, speech, web service" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="canonical" href="https://www.javatpoint.com/android-tutorial" />
+<meta property="og:locale" content="en_US" /><meta property="og:type" content="article" /><meta name="twitter:title" property="og:title" content="Learn Android Tutorial | Android Studio Tutorial - Javatpoint" /><meta name="twitter:description" property="og:description" content="Learn Android tutorial for beginners and professionals | Android Studio Tutorial | Android development tutorial with Activity and Intent, Fragments, Menu, Service, alarm manager, storage, sqlite, xml, json, multimedia, speech, web service" /><meta property="og:url" content="https://www.javatpoint.com/android-tutorial" /><meta property="og:site_name" content="www.javatpoint.com" /><meta name="twitter:card" content="summary" /><meta name="twitter:site" content="@pagejavatpoint" /><meta name="twitter:domain" content="www.javatpoint.com" /><meta name="twitter:creator" content="@pagejavatpoint" />
+<link href="https://www.javatpoint.com/manifest.json" rel="manifest">
+<script data-cfasync="false" type="text/javascript">
+(function(w, d) {
+	var s = d.createElement('script');
+	s.src = '//cdn.adpushup.com/37780/adpushup.js';
+	s.crossOrigin='anonymous'; 
+	s.type = 'text/javascript'; s.async = true;
+	(d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s);
+	w.adpushup = w.adpushup || {que:[]};
+})(window, document);
+
+</script>
+<script data-cfasync="false" type="text/javascript">
+!function(e,t){var siteId = "37784";
+var r,a;let o=function(){var e=t.createElement("script");e.id="lzORaekbHNiuS",e["data-cfasync"]="false",e.src="//html-load.com/loader.min.js",e.charset="UTF-8",e.data="svmmawaaasa0njevas3ascattafa3aga6katacaseva05atkevarkka0asaga05qkacasa0kema0ayfevevasagara6ketacasngauefa03gatnafa3asa7cayattafa3a7as9e2",e.onload=function(){let e=!1,t=Math.random().toString(),r="html-load.com";window.addEventListener("message",r=>{r.data===t+"_as_res"&&(e=!0)}),window.setTimeout(()=>{if(!e){let t="Failed to load website properly since "+r+" is blocked. Please allow "+r;throw alert(t),fetch("https://error-report.com/report?type=loader_light&url="+btoa(location.href)+"&error="+btoa(t),{method:"POST"}).then(e=>e.text()).then(e=>{let r=document.createElement("iframe");r.src="https://info.error-report.com/modal?eventId="+e+"&error="+btoa(t),r.setAttribute("style","width: 100vw; height: 100vh; z-index: 2147483647; position: fixed; left: 0; top: 0;"),document.body.appendChild(r);let a=e=>{"close-error-report"===e.data&&(r.remove(),window.removeEventListener("message",a))};window.addEventListener("message",a)}).catch(e=>{confirm(navigator.language.toLowerCase().startsWith("ko")?"잘못된 애드블록 필터로 웹페이지 로딩에 실패하였습니다. 애드블록을 비활성화한 후 웹사이트를 이용해주세요. (자세한 내용은 '확인' 버튼을 눌러 확인해주세요)":"This page could not be loaded properly due to incorrect / bad filtering rule(s) of adblockers in use. Please disable all adblockers to continue using the website. (click OK if you'd like to learn more)")?location.href="https://info.error-report.com/modal?eventId=&error="+btoa(e.toString()):location.reload()}),Error(t)}},1e3),window.postMessage(t+"_as_req","*")},e.onerror=function(){let e=document.getElementById("lzORaekbHNiuS"),t=document.createElement("script");for(let r=0;r<e.attributes.length;r++)t.setAttribute(e.attributes[r].name,e.attributes[r].value);let a=new window.URL(e.src),o=["html-load.com","fb.html-load.com","content-loader.com","fb.content-loader.com"];if(void 0===window.as_retry&&(window.as_retry=0),window.as_retry>=o.length){let n="Failed to load website properly since "+o[0]+" is blocked. Please allow "+o[0];throw alert(n),fetch("https://error-report.com/report?type=loader_light&url="+btoa(location.href)+"&error="+btoa(n),{method:"POST"}).then(e=>e.text()).then(e=>{let t=document.createElement("iframe");t.src="https://info.error-report.com/modal?eventId="+e+"&error="+btoa(n),t.setAttribute("style","width: 100vw; height: 100vh; z-index: 2147483647; position: fixed; left: 0; top: 0;"),document.body.appendChild(t);let r=e=>{"close-error-report"===e.data&&(t.remove(),window.removeEventListener("message",r))};window.addEventListener("message",r)}).catch(e=>{confirm(navigator.language.toLowerCase().startsWith("ko")?"잘못된 애드블록 필터로 웹페이지 로딩에 실패하였습니다. 애드블록을 비활성화한 후 웹사이트를 이용해주세요. (자세한 내용은 '확인' 버튼을 눌러 확인해주세요)":"This page could not be loaded properly due to incorrect / bad filtering rule(s) of adblockers in use. Please disable all adblockers to continue using the website. (click OK if you'd like to learn more)")?location.href="https://info.error-report.com/modal?eventId=&error="+btoa(e.toString()):location.reload()}),Error(n)}a.host=o[window.as_retry++],t.setAttribute("src",a.href),t.setAttribute("as-async","true"),e.setAttribute("id",e.getAttribute("id")+"_"),e.parentNode.insertBefore(t,e),e.remove()},(t.getElementsByTagName("head")[0]||t.getElementsByTagName("body")[0]).appendChild(e)},n=function(r,a,o){var n=e.Image?new Image:t.createElement("img");n.onload=function(e){a&&"function"==typeof a&&a()},n.onerror=function(e){o&&"function"==typeof o&&o()},n.src=r};(r=t.createElement("script")).src="//delivery.adrecover.com/"+siteId+"/adRecover.js",r.type="text/javascript",r.async=!0,(t.getElementsByTagName("head")[0]||t.getElementsByTagName("body")[0]).appendChild(r),a=function(e){e||o()},n("//delivery.adrecover.com/block.jpg",function(){a(!1)},function(){n("//delivery.adrecover.com/allow.jpg",function(){a(!0)},function(){a(!1)})})}(window,document);
+</script>
+</head>
+<body onload="highlightlink()">
+
+<div id="page" style="margin:-8px;background-color:#f5f5f4;"><div id="container"> <div class="header"><table style="width:100%;margin-bottom:5px"> <tr> <td> <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:10px;margin-right:10px"> <a href="https://www.javatpoint.com"><img src="https://static.javatpoint.com/images/logo/jtp-logo3.png" alt="Javatpoint Logo" /></a> </div> <div style="float:left;width:60%;"><script> (function() { var cx = '005383125436438536544:y1edweedxwi'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script><gcse:search></gcse:search> </div> </td> </tr></table> </div>
+<div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<span style="float:left"><input type="image" src="https://www.javatpoint.com/images/menuhome64.png" alt="Go To Top" onclick="showmenu()" /></span>
+<span style="float:left"><a href="https://www.javatpoint.com"><img src="https://www.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo"></a></span>
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<script>
+  (function() {
+    var cx = '005383125436438536544:y1edweedxwi';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+</div>
+<div id="link" style="clear:both;z-index:999"> <div id="smoothmenu1" class="ddsmoothmenu">
+<ul>
+<li><a href="https://www.javatpoint.com">Home</a></li>
+<li><a href="android-tutorial" class="selected">Android</a></li>
+<li><a href="java-tutorial">Java</a></li>
+<li><a href="servlet-tutorial">Servlet</a></li>
+<li><a href="jsp-tutorial">JSP</a></li>
+<li><a href="struts-2-tutorial">Struts2</a></li>
+<li><a href="java-mail-api-tutorial">Mail API</a></li>
+<li><a href="hibernate-tutorial">Hibernate</a></li>
+<li><a href="spring-tutorial">Spring</a></li>
+<li><a href="design-patterns-in-java">Design Pattern</a></li>
+<li><a href="examaccess">Quiz</a></li>
+<li><a href="free-java-projects">Projects</a></li>
+<li><a href="corejava-interview-questions">Interview Q</a>
+<li><a href="comment.jsp">Comment</a>
+</li>
+</ul>
+<br style="clear: left" />
+</div>
+</div>
+<div class="mobilemenu" style="clear:both">
+
+</div>
+<div id="menu">
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Tutorial</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-tutorial"><span>Android Introduction</span></a>
+<a href="android-what-where-and-why">What is Android</a>
+<a href="android-history-and-versions">History and Version</a>
+<a href="android-software-stack">Android Architecture</a>
+<a href="android-core-building-blocks">Core Building Blocks</a>
+<a href="android-emulator">Android Emulator</a>
+<a href="installing-softwares-for-android">Install Android</a>
+<a href="how-to-setup-android-for-eclipse-ide">Setup Eclipse</a>
+<a href="hello-android-example">Hello Android example</a>
+<a href="internal-details-of-hello-android-example">Internal Details</a>
+<a href="dalvik-virtual-machine">Dalvik VM</a>
+<a href="AndroidManifest-xml-file-in-android">AndroidManifest.xml</a>
+<a href="R-java-file-in-android">R.java</a>
+<a href="android-hide-title-bar-example">Hide Title Bar</a>
+<a href="android-screen-orientation-example">Screen Orientation</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Widgets</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-ui-widgets-tutorial">UI Widgets</a>
+<a href="android-working-with-button">Working with Button</a>
+<a href="android-toast-example">Toast</a>
+<a href="android-custom-toast-example">Custom Toast</a>
+<a href="android-togglebutton-example">ToggleButton</a>
+<a href="android-checkbox-example">CheckBox</a>
+<a href="android-custom-checkbox">Custom CheckBox</a>
+<a href="android-radiobutton">RadioButton</a>
+<a href="android-dynamic-radiobutton">Dynamic RadioButton</a>
+<a href="android-custom-radiobutton">Custom RadioButton</a>
+<a href="android-alert-dialog-example">AlertDialog</a>
+<a href="android-spinner-example">Spinner</a>
+<a href="android-autocompletetextview-example">AutoCompleteTextView</a>
+<a href="android-listview-example">ListView</a>
+<a href="android-custom-listview">Custom ListView</a>
+<a href="android-rating-bar-example">RatingBar</a>
+<a href="android-webview-example">WebView</a>
+<a href="android-seekbar-example">SeekBar</a>
+<a href="android-datepicker-example">DatePicker</a>
+<a href="android-timepicker-example">TimePicker</a>
+<a href="android-analog-clock-and-digital-clock-example">Analog and Digital</a>
+<a href="android-progressbar-example">ProgressBar</a>
+<a href="android-scrollview-vertical">Vertical ScrollView</a>
+<a href="android-scrollview-horizontal">Horizontal ScrollView</a>
+<a href="android-image-switcher">ImageSwitcher</a>
+<a href="android-image-slider">ImageSlider</a>
+<a href="android-viewstub">ViewStub</a>
+<a href="android-tablayout">TabLayout</a>
+<a href="android-tablayout-with-framelayout">TabLayout with FrameLayout</a>
+<a href="android-searchview">SearchView</a>
+<a href="android-searchview-on-toolbar">SearchView on Toolbar</a>
+<a href="android-edittext-with-textwatcher">EditText with TextWatcher</a>
+
+</div>
+
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Activity and Intents</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-life-cycle-of-activity">Activity LifeCycle</a>
+<a href="android-intent-tutorial">Implicit Intent</a>
+<a href="android-explicit-intent-example">Explicit Intent</a>
+<a href="android-startactivityforresult-example">StartActivityForResult</a>
+<a href="android-share-app-data">Share App Data</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Fragments</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-fragments"><span>Android Fragments</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Menu</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-option-menu-example">Option Menu</a>
+<a href="android-context-menu-example">Context Menu</a>
+<a href="android-popup-menu-example">Popup Menu</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Service</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-service-tutorial"><span>Android Service</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android AlarmManager</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-alarmmanager"><span>Android AlarmManager</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Storage</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-preferences-example">Android Preferences</a>
+<a href="android-internal-storage-example">Internal Storage</a>
+<a href="android-external-storage-example">External Storage</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android SQLite</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-sqlite-tutorial">SQLite Tutorial</a>
+<a href="android-sqlite-example-with-spinner">SQLite Spinner</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">XML and JSON</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-xml-parsing-using-sax-parser">XML Parsing SAX</a>
+<a href="android-xml-parsing-using-dom-parser">XML Parsing DOM</a>
+<a href="android-XMLPullParser-tutorial">XMLPullParser</a>
+<a href="android-json-parsing-tutorial">JSON Parsing</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Multimedia</span></h2>
+</div>
+<div class="leftmenu">
+<a href="playing-audio-in-android-example">MediaPlayer: Audio</a>
+<a href="playing-video-in-android-example">VideoView: Video</a>
+<a href="android-mediarecorder-example">Recording Media</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Speech</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-texttospeech-tutorial">TextToSpeech1</a>
+<a href="android-texttospeech-example">TextToSpeech2</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Telephony</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-telephony-manager-tutorial">TelephonyManager</a>
+<a href="android-call-state-example">Get Call State</a>
+<a href="android-call-state-broadcastreceiver-example">Get Call State 2</a>
+<a href="android-simple-caller-talker-example">Simple Caller Talker</a>
+<a href="how-to-make-a-phone-call-in-android">Phone Call</a>
+<a href="how-to-send-sms-in-android">Send SMS</a>
+<a href="how-to-send-email-in-android-using-intent">Send Email</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Device</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-bluetooth-tutorial">Bluetooth Tutorial</a>
+<a href="android-bluetooth-list-paired-devices-example">List Paired Devices</a>
+<a href="android-wifi-example">WIFI</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Camera Tutorial</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-camera-tutorial">Camera Tutorial</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Sensor Tutorial</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-sensor-tutorial">Sensor Tutorial</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Graphics</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-simple-graphics-example">Android Graphics</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Animation</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-animation-example">Android Animation</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Web Service</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-web-service">Android Web Service</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Google Map</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-google-map">Android Google Map</a>
+<a href="android-google-map-displaying-current-location">Current Location</a>
+<a href="android-google-map-search-location-using-geocodr">Search Location</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Adding Ads</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-google-admob">Android Google Admob</a>
+<a href="android-banner-ads">1) Banner Ads</a>
+<a href="android-interstitial-ads">2) Interstitial Ads</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Examples</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-qr-code-or-bar-code-scanner">QR/Bar Code Scanner</a>
+<a href="android-rss-feed-reader">RSS Feed Reader</a>
+<a href="volley-library-fetching-json-data-from-url">Volley Fetch JSON</a>
+<a href="android-linkify-example">Android Linkify</a>
+<a href="android-introduction-slider-example">Intro Slider</a>
+<a href="android-recyclerview-list-example">RecyclerView List</a>
+<a href="android-swipe-to-delete-recyclerview-items-with-undu">Swipe Del RecyclerView</a>
+<a href="swipe-to-refresh-android-activity">Swipe Refresh Activity</a>
+<a href="android-volley-library-registration-login-logout">Volley Library Registration Log-in Log-out</a>
+<a href="android-network-connectivity-services">Network Connectivity Services</a>
+<a href="android-firebase-authentication-google-login">Firebase Authentication - Google Login</a>
+<a href="android-notification">Android Notification</a>
+<a href="using-google-recaptcha-in-android-application">Using Google reCAPTCHA</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Social</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-googlesignin-integrating">Integrating Google Sign-In</a>
+<a href="android-linkedin-integrating">Integrating LinkedIn</a>
+<a href="android-twitter-integrating">Integrating Twitter</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Versions</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-versions">Android Versions</a>
+<a href="android-kitkat">Android KitKat</a>
+<a href="android-lollipop">Android Lollipop</a>
+<a href="android-marshmallow">Android Marshmallow</a>
+<a href="android-nougat">Android Nougat</a>
+<a href="android-oreo">Android Oreo</a>
+<a href="android-pie">Android Pie</a>
+<a href="android-10">Android 10</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Misc</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-device-manager">Android Device Manager</a>
+<a href="android-studio">Android Studio</a>
+<a href="android-auto">Android Auto</a>
+<a href="android-file-transfer">Android File Transfer</a>
+<a href="android-messages">Android Messages</a>
+<a href="android-tv">Android TV</a>
+<a href="android-screenshot">Android Screenshot</a>
+<a href="android-pay">Android Pay</a>
+<a href="android-watch">Android Watch</a>
+<a href="android-phones">Android Phones</a>
+<a href="android-tablet">Android Tablets</a>
+<a href="android-find-my-phone">Android Find My Phone</a>
+<a href="android-one">Android One</a>
+<a href="android-wear-os">Android Wear OS</a>
+<a href="android-data-recovery">Android Data Recovery</a>
+<a href="android-antivirus">Android Antivirus</a>
+<a href="android-x86">Android x86</a>
+<a href="android-vs-iphone">Android vs iPhone</a>
+<a href="android-emulator-for-pc">Emulator for PC</a>
+<a href="android-file-manager">Android File Manager</a>
+<a href="android-ad-blocker">Android ad blocker</a>
+<a href="android-podcast-app">Android Podcast App</a>
+<a href="fortnite-android">Fortnite Epic Game</a>
+<a href="facetime-for-android">FaceTime for Android</a>
+<a href="showbox-for-android">ShowBox for Android</a>
+<a href="android-app-store">Android App Store</a>
+<a href="virus-removal-for-android">Virus Removal for Android</a>
+<a href="clear-cache-android">Clear cache Android</a>
+<a href="how-to-root-android-device">Root Android Device</a>
+<a href="android-screen-recorder">Android Screen Recorder</a>
+<a href="how-to-block-number-on-android">Block Number on Android</a>
+<a href="canon-printer-app-for-android">Canon printer app for Android</a>
+<a href="wireless-hp-printer-app-for-android">Wireless HP printer app for Android</a>
+<a href="how-to-update-android">How to Update Android</a>
+<a href="imessage-for-android">iMessage for Android</a>
+<a href="how-to-use-icloud-for-android">iCloud for Android</a>
+<a href="best-call-recorder-for-android">Call Recorder for Android</a>
+<a href="videoder-android-apk">Videoder Android Apk</a>
+<a href="youtube-video-downloader-for-android">YouTube Video Downloader for Android</a>
+<a href="airdrop-for-android">Airdrop for Android</a>
+<a href="robokiller-for-android">RoboKiller for Android</a>
+<a href="clean-my-android-phone">Clean my Android Phone</a>
+<a href="how-to-hide-apps-files-and-photos-on-android">How to hide apps, files, and photos on Android</a>
+<a href="best-weather-apps-with-widgets-for-android">Best weather apps with widgets for Android</a>
+<a href="android-file-transfer-for-mac">File Transfer for Mac</a>
+<a href="mobdro-for-android">Mobdro for Android</a>
+<a href="screen-mirroring-in-android">Android Screen Mirroring</a>
+<a href="stock-market-apps-for-android">Stock market apps</a>
+<a href="turn-on-or-off-safe-mode-on-android">turn On or Off safe mode</a>
+<a href="best-browsers-for-android">Best browsers for Android</a>
+<a href="best-clocks-for-android">Best clocks for Android</a>
+<a href="best-email-apps-for-android">Best email apps for Android</a>
+<a href="music-player-for-android">Music player for Android</a>
+<a href="android-smartwatch-for-women">Android smartwatch for women</a>
+<a href="best-keyboard-for-android">Best keyboard for Android</a>
+<a href="best-messaging-app-for-android">Best messaging app for Android</a>
+<a href="device-cleaner-and-booster-for-android">Device cleaner and booster for Android</a>
+<a href="wi-fi-calling-on-android">Wi-Fi calling on Android</a>
+<a href="google-assistant-app-for-android">Google Assistant app for Android</a>
+<a href="how-to-delete-apps-on-android">How to delete apps on Android</a>
+<a href="norton-security-and-antivirus-for-android">Norton Security and Antivirus for Android</a>
+<a href="radio-apps-for-android">Radio apps for Android</a>
+<a href="stock-android">Stock Android</a>
+<a href="skype-for-android">Skype for Android</a>
+<a href="how-to-transfer-contacts-from-android-to-iphone">How to transfer contacts from Android to iPhone</a>
+<a href="alexa-app-for-android">Alexa app for Android</a>
+<a href="best-casino-games-for-android">Best Casino Games for Android</a>
+<a href="volume-booster-for-android">Volume booster for Android</a>
+<a href="how-to-update-apps-on-android">How to update apps on Android</a>
+<a href="epson-print-enabler-for-android">Epson Print Enabler for Android</a>
+<a href="printer-apps-for-android">Printer apps for Android</a>
+<a href="android-beam">Android Beam</a>
+<a href="paranoid-android">Paranoid Android</a>
+<a href="do-not-disturb-in-android">Do Not Disturb in Android</a>
+<a href="how-to-get-android-messages-on-pc">How to get Android Messages on PC</a>
+<a href="android-dark-mode">Android Dark Mode</a>
+<a href="qvc-app-for-android">QVC app for Android</a>
+<a href="weather-underground-app">Weather Underground app</a>
+<a href="what-is-nfc-on-android">What is NFC on Android</a>
+<a href="screen-time-android">Screen time Android</a>
+<a href="search-by-image-google-reverse-image-search">Search by Image: Google Reverse Image Search</a>
+<a href="how-to-record-screen-on-android">How to record screen on Android</a>
+<a href="how-to-split-screen-on-android">How to split screen on Android</a>
+<a href="reddit-app-for-android">Reddit app for Android</a>
+<a href="tweakbox-for-android">TweakBox for Android</a>
+<a href="best-ps2-emulators-for-android">Best PS2 Emulators for Android</a>
+<a href="pop-up-blocker-in-android">Pop-up Blocker in Android</a>
+<a href="android-easter-egg">Android Easter Egg</a>
+<a href="drudge-report-android-apps">Drudge report Android apps</a>
+<a href="3ds-emulator-android">3DS Emulator Android</a>
+<a href="terrarium-tv-app-for-android">Terrarium TV App for Android</a>
+<a href="best-android-cleaner-apps">Best Android Cleaner Apps</a>
+<a href="spectrum-tv-app-for-android">Spectrum TV App for Android</a>
+<a href="android-11">Android 11</a>
+<a href="radar-detector-apps-for-android">Radar Detector Apps</a>
+<a href="hotspot-apps-for-android">Hotspot apps for Android</a>
+<a href="how-to-transfer-contacts-from-iphone-to-android">How to Transfer Contacts from iPhone to Android</a>
+<a href="amazon-app-store-for-android">Amazon app store for Android</a>
+<a href="hangouts-app-for-android">Hangouts App for Android</a>
+<a href="omegle-video-chat-on-android">Omegle Video Chat on Android</a>
+<a href="outlook-app-for-android-mobile">Outlook App for Android Mobile</a>
+<a href="animoji-for-android">Animoji for Android</a>
+<a href="content-com-android-browser-home">What is content://com.android.browser.home/</a>
+<a href="firefox-for-android">Firefox for Android</a>
+<a href="movie-apps-for-android">Movie Apps for Android</a>
+<a href="pof-free-dating-app-for-android">POF Free Dating App for Android</a>
+<a href="ps4-remote-play-for-android">PS4 Remote Play for Android</a>
+<a href="best-android-games">Best Android Games</a>
+<a href="best-android-tv-boxes">Best Android TV Boxes</a>
+<a href="how-to-clear-cookies-on-android">How to Clear Cookies on Android</a>
+<a href="how-to-reset-android-phone">How to Reset Android Phone</a>
+<a href="malwarebytes-for-android">Malwarebytes for Android</a>
+<a href="how-to-find-wi-fi-password-on-android">How to Find Wi-Fi Password on Android</a>
+<a href="how-to-install-apk-on-android">How to Install APK on Android</a>
+<a href="how-to-unlock-android-phone">How to Unlock Android Phone</a>
+<a href="how-to-block-text-messages-on-android">How to Block Text Messages on Android</a>
+<a href="how-to-recover-deleted-text-messages-and-photos-on-android">How to Recover Deleted Text Messages and Photos on Android</a>
+<a href="how-to-remove-previously-synced-google-account-from-android">How to Remove Previously Synced Google Account from Android</a>
+<a href="how-to-transfer-contacts-from-android-to-android">How to Transfer Contacts from Android to Android</a>
+<a href="how-to-set-up-voicemail-on-android">How to Set up Voicemail on Android</a>
+<a href="how-to-share-wi-fi-password-from-iphone-to-android">How to Share Wi-Fi Password from iPhone to Android</a>
+<a href="how-to-backup-android-phone">How to Backup Android Phone</a>
+<a href="what-version-of-android-do-i-have">What Version of Android Do I Have</a>
+<a href="how-to-block-website-on-android-phone-and-computer">How to Block Website on Android Phone and Computer</a>
+<a href="turn-on-flash-in-chrome">Turn on Flash in Chrome</a>
+<a href="free-music-downloader-mp3-for-android">Free Music Downloader mp3 for Android</a>
+<a href="who-owns-android">Who Owns Android</a>
+<a href="best-notes-app-for-android">Best Notes App for Android</a>
+<a href="barcode-scanner-apps-for-android">Barcode scanner apps for Android</a>
+<a href="how-to-connect-android-phone-to-tv">How to Connect Android Phone to TV</a>
+<a href="best-free-vpn-for-android">Best free VPN for Android</a>
+<a href="download-google-play-store-app-for-android">Download Google Play Store App for Android</a>
+<a href="do-airpods-work-with-android">Do AirPods work with Android</a>
+<a href="how-to-download-music-from-youtube-on-android">How to Download Music from Youtube on Android</a>
+<a href="how-to-empty-trash-on-android">How to Empty Trash on Android</a>
+<a href="how-to-print-text-messages-from-android">How to Print Text Messages from Android</a>
+<a href="how-to-share-location-on-android">How to Share Location on Android</a>
+<a href="how-to-change-keyboard-on-android-phone">How to change keyboard on Android phone</a>
+<a href="how-to-hack-wi-fi-password-in-android">How to Hack Wi-Fi password in Android</a>
+<a href="how-to-allow-or-block-pop-ups-in-chrome-browser">How to allow or block pop-ups in Chrome browser</a>
+<a href="how-to-enable-cookies-on-android">How to Enable Cookies on Android</a>
+<a href="how-to-see-a-blocked-number-and-unblock-them-on-android">How to see a blocked number and unblock them on Android</a>
+<a href="how-to-track-iphone-from-an-android-phone">How to Track iPhone from an Android Phone</a>
+<a href="what-is-my-phone-number-on-android">What is my Phone Number on Android</a>
+<a href="best-police-radar-detector">Best Police Radar Detector</a>
+<a href="how-to-open-tif-or-tiff-files-on-android">How to open TIF or TIFF files on Android</a>
+<a href="android-final-year-project-ideas-for-computer-science">Android Final Year Project Ideas for Computer Science</a>
+<a href="android-messages-for-web">Android Messages for web</a>
+<a href="how-to-change-font-style-in-android-phone">How to Change Font Style in Android Phone</a>
+<a href="ip-address-format-and-table">IP Address Format and Table</a>
+<a href="best-offline-android-games">Best Offline Android Games</a>
+<a href="best-camera-apps">Best Camera Apps</a>
+<a href="does-apple-watch-work-with-android">Does Apple Watch Work with Android</a>
+<a href="fastest-android-emulators">Fastest Android Emulators</a>
+<a href="how-to-take-screenshot-in-android-phone">How to Take a screenshot in Android phone</a>
+<a href="best-wireless-earbuds-for-android">Best Wireless Earbuds for Android</a>
+<a href="how-to-lock-apps-on-android">How to Lock Apps on Android</a>
+<a href="how-to-turn-off-google-assistant-on-android">How to turn off Google Assistant on Android</a>
+<a href="parental-control-android-apps">Parental control Android apps</a>
+<a href="video-player-for-android">Video player for Android</a>
+<a href="how-to-screen-mirror-or-cast-android-phone-on-tv">How to Screen Mirror or Cast Android phone on the TV</a>
+<a href="best-learning-apps-for-kids">Best Learning Apps for Kids</a>
+<a href="how-to-scan-qr-code-on-an-android">How to Scan QR Code on an Android</a>
+<a href="how-to-find-hidden-apps-on-android">How to Find Hidden Apps on Android</a>
+<a href="how-to-delete-downloads-on-android">How to Delete Downloads on Android</a>
+<a href="how-to-recover-deleted-videos-from-android">How to Recover Deleted Videos from Android</a>
+<a href="best-guitar-learning-apps">Best Guitar Learning Apps</a>
+<a href="extramarks-learning-app">Extramarks Learning App</a>
+<a href="vedantu-learning-app">Vedantu Learning App</a>
+<a href="how-to-copy-and-paste-on-your-android">How to Copy and Paste on your Android</a>
+<a href="how-to-leave-a-group-text-on-android-and-iphone">How to Leave a Group Text on Android and iPhone</a>
+<a href="how-to-turn-off-amber-alerts-on-your-android-device">How to turn off AMBER Alerts on your Android device</a>
+<a href="how-to-move-apps-to-sd-card-on-android">How to Move Apps to SD Card on Android</a>
+<a href="how-to-delete-preinstalled-apps-on-android">How to delete Preinstalled Apps on Android</a>
+<a href="how-do-i-delete-google-history-on-my-android-phone">How do I Delete Google History on my Android Phone</a>
+<a href="how-to-close-apps-on-android">How to close apps on Android</a>
+<a href="how-to-forward-calls-on-android">How to Forward Calls on Android</a>
+<a href="how-to-video-call-on-android">How to Video Call on Android</a>
+<a href="how-to-delete-gmail-account-on-android-phone">How to Delete Gmail Account on Android Phone</a>
+<a href="how-to-get-iphone-emojis-on-android">How to Get iPhone Emojis on Android</a>
+<a href="how-to-check-airpod-battery-on-android">How to Check Airpod Battery on Android</a>
+<a href="how-to-download-apps-on-android">How to download apps on Android</a>
+<a href="how-do-i-disable-screen-lock-on-android">How do I Disable Screen Lock on Android</a>
+<a href="how-to-transfer-messages-from-android-to-iphone">How to transfer messages from Android to iPhone</a>
+<a href="how-to-unzip-or-extract-files-on-android-device">How to Unzip or Extract Files on Android Device</a>
+<a href="how-to-block-unknown-numbers-on-android">How to Block Unknown Numbers on Android</a>
+<a href="how-to-connect-xbox-one-controller-to-android">How to Connect Xbox One Controller to Android</a>
+<a href="how-to-make-a-conference-call-on-android">How to Make a Conference Call on Android</a>
+<a href="how-to-delete-all-emails-at-once-on-android">How to Delete all Emails at once on Android</a>
+<a href="how-to-make-your-number-private-on-android">How to Make Your Number Private on Android</a>
+<a href="how-to-make-a-song-as-a-ringtone-on-android">How to make a song as a ringtone on Android</a>
+<a href="how-to-cancel-app-subscription-on-android">How to Cancel App Subscription on Android</a>
+<a href="how-do-you-know-if-someone-blocked-your-number-on-android">How Do You Know If Someone Blocked Your Number on Android</a>
+<a href="how-to-play-android-games-on-pc">How to Play Android Games on PC</a>
+<a href="how-to-save-text-messages-on-android">How to Save Text Messages on Android</a>
+<a href="where-is-clipboard-on-android-phone">Where is Clipboard on Android Phone</a>
+<a href="how-can-you-get-apple-music-on-android">How Can You Get Apple Music on Android</a>
+<a href="how-to-automatically-record-phone-calls-on-android">How to Automatically Record Phone Calls on Android</a>
+<a href="how-to-find-downloads-on-android">How to Find Downloads on Android</a>
+<a href="how-to-sign-out-of-google-on-android">How to Sign Out of Google on Android</a>
+<a href="why-wont-my-text-messages-send-on-my-android">Why Won't My Text Messages Send On My Android</a>
+<a href="how-do-i-activate-voice-to-text-on-android">How do I Activate Voice to Text on Android</a>
+<a href="how-to-connect-beats-wireless-to-android-iphone-windows-mac">How to Connect Beats Wireless to Android, iPhone, Windows, Mac</a>
+<a href="how-to-access-icloud-photos-on-android">How to Access iCloud Photos on Android</a>
+<a href="how-to-download-facebook-videos-on-android">How to Download Facebook Videos on Android</a>
+<a href="how-to-access-icloud-photos-on-android">How to Access iCloud Photos on Android</a>
+<a href="how-to-download-facebook-videos-on-android">How to Download Facebook Videos on Android</a>
+<a href="how-to-delete-instagram-account-on-android">How to Delete Instagram Account on Android</a>
+<a href="how-to-set-alarm-on-android">How to Set Alarm on Android</a>
+<a href="how-to-free-up-space-on-an-android-phone">How to free up space on an Android phone</a>
+<a href="why-does-my-android-phone-say-no-service">Why Does My Android Phone Say No Service</a>
+<a href="how-to-listen-to-podcasts-on-android">How to listen to Podcasts on Android</a>
+<a href="how-to-setup-a-vpn-on-android-and-iphone">How to Setup a VPN on Android and iPhone</a>
+<a href="how-to-transfer-apps-from-android-to-android">How to Transfer apps from Android to Android</a>
+<a href="how-to-use-facetime-on-android-or-windows">How to Use FaceTime on Android or Windows</a>
+<a href="how-to-get-dark-mode-on-instagram-on-android-and-iphone">How to Get Dark Mode on Instagram on Android and iPhone</a>
+<a href="how-to-activate-do-not-disturb-while-driving-on-android">How to Activate Do Not Disturb While Driving on Android</a>
+<a href="how-to-transfer-apps-from-android-to-iphone">How to transfer apps from Android to iPhone</a>
+<a href="how-to-transfer-files-from-android-to-pc">How to transfer files from Android to PC</a>
+<a href="how-to-change-language-on-android">How to Change Language on Android</a>
+<a href="how-to-change-ip-address-on-android">How to Change IP Address on Android</a>
+<a href="how-to-play-imessage-games-on-an-android-phone">How to Play iMessage Games on an Android phone</a>
+<a href="how-to-rotate-videos-on-android">How to Rotate Videos on Android</a>
+<a href="how-to-find-imei-number-on-android">How to find the IMEI number on Android</a>
+<a href="how-to-transfer-photos-from-android-to-mac">How to transfer photos from Android to Mac</a>
+<a href="how-to-crop-a-video-on-android">How to Crop a Video on Android</a>
+<a href="how-to-update-android-tablet">How to Update Android Tablet</a>
+<a href="how-to-cancel-spotify-premium-on-android">How to Cancel Spotify Premium on Android</a>
+<a href="how-to-cancel-tinder-gold-on-android">How to Cancel Tinder Gold on Android</a>
+<a href="best-compass-app-for-android">Best Compass App for Android</a>
+<a href="how-to-restore-android-phone-from-google-backup">How to Restore Android Phone from Google Backup</a>
+<a href="how-to-transfer-whatsapp-from-android-to-iphone">How to transfer WhatsApp from Android to iPhone</a>
+<a href="how-to-set-a-reminder-on-android">How to Set a Reminder on Android</a>
+<a href="how-to-transfer-photos-from-android-to-android">How to Transfer Photos from Android to Android</a>
+<a href="is-samsung-an-android">Is Samsung an Android</a>
+<a href="how-to-enable-or-disable-developer-options-on-android">How to Enable or Disable Developer Options on Android</a>
+<a href="proxy-browser-apps-for-android">Proxy Browser Apps for Android</a>
+<a href="chrome-dark-mode-on-android">Chrome Dark Mode on Android</a>
+<a href="how-to-fix-android-process-acore-has-stopped-errors-on-android">How to fix "android process acore" has stopped errors on Android</a>
+<a href="can-we-run-siri-for-android">Can we run Siri for Android</a>
+<a href="free-pdf-editor-apps-for-android">Free PDF Editor apps for Android</a>
+<a href="how-to-connect-android-auto-and-apple-carplay-in-toyota">How to Connect Android Auto and Apple CarPlay in Toyota</a>
+<a href="how-to-view-saved-passwords-in-chrome-on-android">How to view saved passwords in Chrome on Android</a>
+<a href="how-to-download-youtube-videos-on-android">How to Download YouTube videos on Android</a>
+<a href="how-to-set-up-android-auto">How to Set up Android Auto</a>
+<a href="how-to-text-from-computer-to-android-messages">How to text from Computer to Android Messages</a>
+<a href="chromecast-apps-for-android">Chromecast apps for Android</a>
+<a href="how-to-backup-contacts-on-android">How to backup Contacts on Android</a>
+<a href="best-ds-emulator-for-android">Best DS Emulator for Android</a>
+<a href="fitbit-app-for-android">Fitbit app for Android</a>
+<a href="what-is-android-accessibility-suite">What is Android Accessibility Suite</a>
+<a href="how-to-tether-android-phone">How to Tether Android Phone</a>
+<a href="how-to-close-apps-on-android">How to close apps on Android</a>
+<a href="android-api-levels">Android API Levels</a>
+<a href="how-to-enable-facebook-dark-mode-on-android">How to enable Facebook Dark Mode on Android</a>
+<a href="best-screen-sharing-apps-for-android-and-iphone">Best Screen Sharing Apps for Android and iPhone</a>
+<a href="google-weather-app-for-android">Google Weather App for Android</a>
+<a href="endoscope-app-for-android">Endoscope App for Android</a>
+<a href="audible-app-for-android">Audible app for Android</a>
+<a href="how-to-format-an-sd-card-on-android">How to Format an SD Card on Android</a>
+<a href="how-to-rotate-screen-on-android">How to Rotate Screen on Android</a>
+<a href="best-radio-apps-for-android">Best Radio Apps for Android</a>
+<a href="best-spam-call-blocker-for-android">Best Spam Call Blocker for Android</a>
+<a href="kohls-app-for-android">Kohl's App for Android</a>
+<a href="waze-app-for-android">Waze App for Android</a>
+<a href="cars-with-android-auto">Cars with Android Auto</a>
+<a href="gamepigeon-for-android">GamePigeon for Android</a>
+<a href="frostwire-plus-for-android">FrostWire Plus for Android</a>
+<a href="best-kodak-printer-apps-for-android">Best Kodak Printer Apps for Android</a>
+<a href="nook-for-android">NOOK for Android</a>
+<a href="how-to-block-youtube-ads-on-android">How to Block YouTube Ads on Android</a>
+<a href="kindle-for-android">Kindle for Android</a>
+<a href="google-or-gmail-account-recovery-for-android-phone">Google or Gmail Account Recovery for Android phone</a>
+<a href="how-to-run-android-apps-on-chromebook">How to Run Android Apps on Chromebook</a>
+<a href="best-equalizer-apps-for-android">Best Equalizer Apps for Android</a>
+<a href="best-swipe-keyboards-for-android">Best Swipe Keyboards for Android</a>
+<a href="garageband-and-its-alternative-apps-for-android">GarageBand and its alternative apps for Android</a>
+<a href="tor-browser-for-android">Tor Browser for Android</a>
+<a href="how-to-cast-to-roku-from-android">How to Cast to Roku from Android</a>
+<a href="best-write-on-pictures-app-for-android">Best Write on Pictures App for Android</a>
+<a href="how-to-get-windows-10-for-android">How to get Windows 10 for Android</a>
+<a href="best-keylogger-for-android">Best Keylogger for Android</a>
+<a href="ps1-emulators-for-android">PS1 Emulators for Android</a>
+<a href="adblock-plus-for-android">AdBlock Plus for Android</a>
+<a href="online-android-emulator">Online Android Emulator</a>
+<a href="best-drawing-apps-for-android">Best Drawing Apps for Android</a>
+<a href="emus4u-for-android-and-iphone">Emus4u for Android and iPhone</a>
+<a href="best-hearing-aid-apps-for-android-and-iphone">Best Hearing Aid Apps for Android and iPhone</a>
+<a href="android-call-screening">Android Call Screening</a>
+<a href="how-to-enable-guest-mode-on-android">How to Enable Guest Mode on Android</a>
+<a href="best-credit-card-reader-for-android">Best Credit Card Reader for Android</a>
+<a href="fax-apps-for-android">Fax Apps for Android</a>
+<a href="how-to-add-imageview-in-android-studio">How to Add ImageView in Android Studio</a>
+<a href="how-to-record-a-phone-call-on-android-phone">How to Record a Phone Call on Android Phone</a>
+<a href="voicemail-apps-for-android">Voicemail Apps for Android</a>
+<a href="what-is-wi-fi-direct-and-how-to-use-it-on-android">What is Wi-Fi Direct and How to Use it on Android</a>
+<a href="best-android-games-with-controller-support">Best Android Games with Controller Support</a>
+<a href="how-to-turn-off-or-on-autocorrect-on-android">How to Turn Off or On Autocorrect on Android</a>
+<a href="how-to-view-google-location-history-on-android">How to View Google Location History on Android</a>
+<a href="ringtone-apps-for-android-and-iphone">Ringtone Apps for Android and iPhone</a>
+<a href="android-12-version-features">Android 12 Version: Features</a>
+<a href="how-to-enable-or-setup-kids-mode-on-an-android-phone">How to Enable or Setup Kids Mode on an Android Phone</a>
+<a href="how-to-like-a-text-message-on-android">How to Like a Text Message on Android</a>
+<a href="how-to-post-a-3d-photo-on-facebook-on-android">How to Post a 3D Photo on Facebook on Android</a>
+<a href="how-to-send-a-group-text-on-android-phone">How to Send a Group Text on Android Phone</a>
+<a href="what-is-android-system-webview">What is Android System WebView</a>
+<a href="best-gif-keyboards-for-android">Best GIF Keyboards for Android</a>
+<a href="how-to-transfer-music-from-itunes-to-android">How to Transfer Music from iTunes to Android</a>
+<a href="how-to-access-icloud-mail-e-mail-on-android">How to Access iCloud Mail (e-Mail) on Android</a>
+<a href="what-is-android-battery-saver-how-to-enable-it">What is Android Battery Saver? How to Enable it</a>
+<a href="android-is-not-receiving-texts-from-iphone">Android is not Receiving Texts from iPhone</a>
+<a href="how-to-create-folder-in-android">How to Create Folder in Android</a>
+<a href="how-to-forward-a-text-message-on-android">How to Forward a Text Message on Android</a>
+<a href="iphone-not-receiving-texts-from-android">iPhone not Receiving Texts from Android</a>
+<a href="what-is-android-go">What is Android Go</a>
+<a href="magnifying-glass-apps-for-android-and-iphone">Magnifying Glass Apps for Android and iPhone</a>
+<a href="nest-app-for-android">Nest App for Android</a>
+<a href="best-gba-emulator-for-android">Best GBA Emulator for Android</a>
+<a href="best-health-and-fitness-apps-for-android-and-iphone">Best Health and Fitness Apps for Android and iPhone</a>
+<a href="best-android-tablets-for-kids">Best Android Tablets for Kids</a>
+<a href="best-vr-apps-for-android-iphone">Best VR apps for Android/iPhone</a>
+<a href="how-to-use-incognito-mode-on-android">How to use Incognito Mode on Android</a>
+<a href="android-13">Android 13</a>
+<a href="wireless-charger-for-android">Wireless Charger for Android</a>
+<a href="best-calendar-app-for-android">Best Calendar App for Android</a>
+<a href="how-to-change-dns-server-on-android">How to Change DNS Server on Android</a>
+<a href="how-to-track-an-android-phone-or-tablet">How to Track an Android Phone or Tablet</a>
+<a href="battery-calibration-for-android">Battery Calibration for Android</a>
+<a href="find-my-friends-app-alternative-for-android">Find My Friends App Alternative for Android</a>
+<a href="how-to-check-screen-time-on-android">How to Check Screen Time on Android</a>
+<a href="best-free-download-manager-for-android">Best Free Download Manager for Android</a>
+<a href="free-wi-fi-calling-apps-for-android">Free Wi-Fi Calling Apps for Android</a>
+<a href="best-free-pedometer-app-for-android">Best Free Pedometer App for Android</a>
+<a href="best-wine-apps-for-android-and-iphone">Best Wine Apps for Android and iPhone</a>
+<a href="best-gps-and-navigation-apps-for-android">Best GPS and Navigation Apps for Android</a>
+<a href="how-to-bypass-the-android-lock-screen-using-a-camera">How to Bypass the Android Lock Screen Using a Camera</a>
+<a href="how-to-tell-if-your-android-phone-is-hacked">How to Tell if Your Android Phone is Hacked</a>
+<a href="best-android-password-manager">Best Android Password Manager</a>
+<a href="how-to-fix-android-app-not-installed-error">How To Fix Android App Not Installed Error</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android MCQ</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-mcq">Android MCQ</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-interview-questions">Interview Questions</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Android Quiz</span></h2>
+</div>
+<div class="leftmenu">
+<a href="android-quiz">Android Quiz</a>
+</div>
+<img src="https://www.javatpoint.com/wh.JPG" alt="JavaTpoint" />
+<br/>
+</div>
+</div>
+<div class="onlycontent">
+<div class="onlycontentad">
+</div>
+<div class="onlycontentinner">
+<div id="city">
+<table><tr><td>
+<div id="bottomnextup">
+<a class="next" href="android-what-where-and-why">next &rarr;</a>
+</div>
+<h1 class="h1">Android Studio Tutorial</h1>
+<a href="https://training.javatpoint.com/android-training.jsp" target="_blank"><img src="corebasic/images/android-training.png" style="width:350px" class="imageright" alt="Android Training" /></a>
+
+<p>Android tutorial or Android Studio tutorial covers basic and advanced concepts of android technology. Our Android development tutorial is developed for beginners and professionals.</p>
+<p>
+<b>Android</b> is a complete set of software for mobile devices such as tablet computers, notebooks, smartphones, electronic book readers, set-top boxes etc.</p>
+<p>It contains a <b>linux-based Operating System</b>, <b>middleware</b> and <b>key mobile applications</b>.</p>
+<p>It can be thought of as a mobile operating system. But it is not limited to mobile only. It is currently used in various devices such as mobiles, tablets, televisions etc.</p>
+<hr/>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle cm_jtp_wtc_responsive" style="display:inline-block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="6746133113"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<hr/>
+<h2 class="h2 center textshadow">Android Studio Index</h2>
+<hr/>
+<div class="responsivediv">
+<div class="col-3">
+<p><strong>Android Tutorial</strong></p>
+<ul class="points">
+<li><a href="android-tutorial">Android Introduction</a></li>
+<li><a href="android-what-where-and-why">What is Android</a></li>
+<li><a href="android-history-and-versions">History and Version</a></li>
+<li><a href="android-software-stack">Android Architecture</a></li>
+<li><a href="android-core-building-blocks">Core Building Blocks</a></li>
+<li><a href="android-emulator">Android Emulator</a></li>
+<li><a href="installing-softwares-for-android">Install Android</a></li>
+<li><a href="how-to-setup-android-for-eclipse-ide">Setup Eclipse</a></li>
+<li><a href="hello-android-example">Hello Android example</a></li>
+<li><a href="internal-details-of-hello-android-example">Internal Details</a></li>
+<li><a href="dalvik-virtual-machine">Dalvik VM</a></li>
+<li><a href="AndroidManifest-xml-file-in-android">AndroidManifest.xml</a></li>
+<li><a href="R-java-file-in-android">R.java</a></li>
+<li><a href="android-hide-title-bar-example">Hide Title Bar</a></li>
+<li><a href="android-screen-orientation-example">Screen Orientation</a></li>
+</ul>
+<p><strong>Android Widgets</strong></p>
+<ul class="points">
+<li><a href="android-ui-widgets-tutorial">UI Widgets</a></li>
+<li><a href="android-working-with-button">Working with Button</a></li>
+<li><a href="android-toast-example">Toast</a></li>
+<li><a href="android-custom-toast-example">Custom Toast</a></li>
+<li><a href="android-togglebutton-example">ToggleButton</a></li>
+<li><a href="android-checkbox-example">CheckBox</a></li>
+<li><a href="android-custom-checkbox">Custom CheckBox</a></li>
+<li><a href="android-radiobutton">RadioButton</a></li>
+<li><a href="android-dynamic-radiobutton">Dynamic RadioButton</a></li>
+<li><a href="android-custom-radiobutton">Custom RadioButton</a></li>
+<li><a href="android-alert-dialog-example">AlertDialog</a></li>
+<li><a href="android-spinner-example">Spinner</a></li>
+<li><a href="android-autocompletetextview-example">AutoCompleteTextView</a></li>
+<li><a href="android-listview-example">ListView</a></li>
+<li><a href="android-custom-listview">Custom ListView</a></li>
+<li><a href="android-rating-bar-example">RatingBar</a></li>
+<li><a href="android-webview-example">WebView</a></li>
+<li><a href="android-seekbar-example">SeekBar</a></li>
+<li><a href="android-datepicker-example">DatePicker</a></li>
+<li><a href="android-timepicker-example">TimePicker</a></li>
+<li><a href="android-analog-clock-and-digital-clock-example">Analog and Digital</a></li>
+<li><a href="android-progressbar-example">ProgressBar</a></li>
+<li><a href="android-scrollview-vertical">Vertical ScrollView</a></li>
+<li><a href="android-scrollview-horizontal">Horizontal ScrollView</a></li>
+<li><a href="android-image-switcher">ImageSwitcher</a></li>
+<li><a href="android-image-slider">ImageSlider</a></li>
+<li><a href="android-viewstub">ViewStub</a></li>
+<li><a href="android-tablayout">TabLayout</a></li>
+<li><a href="android-tablayout-with-framelayout">TabLayout with FrameLayout</a></li>
+<li><a href="android-searchview">SearchView</a></li>
+<li><a href="android-searchview-on-toolbar">SearchView on Toolbar</a></li>
+<li><a href="android-edittext-with-textwatcher">EditText with TextWatcher</a></li>
+</ul>
+</div>
+<div class="col-3">
+<p><strong>Activity and Intents</strong></p>
+<ul class="points">
+<li><a href="android-life-cycle-of-activity">Activity LifeCycle</a></li>
+<li><a href="android-intent-tutorial">Implicit Intent</a></li>
+<li><a href="android-explicit-intent-example">Explicit Intent</a></li>
+<li><a href="android-startactivityforresult-example">StartActivityForResult</a></li>
+<li><a href="android-share-app-data">Share App Data</a></li>
+</ul>
+<p><strong>Android Fragments</strong></p>
+<ul class="points">
+<li><a href="android-fragments">Android Fragments</a></li>
+</ul>
+<p><strong>Android Menu</strong></p>
+<ul class="points">
+<li><a href="android-option-menu-example">Option Menu</a></li>
+<li><a href="android-context-menu-example">Context Menu</a></li>
+<li><a href="android-popup-menu-example">Popup Menu</a></li>
+</ul>
+<p><strong>Android Service</strong></p>
+<ul class="points">
+<li><a href="android-service-tutorial">Android Service</a></li>
+</ul>
+<p><strong>Android AlarmManager</strong></p>
+<ul class="points">
+<li><a href="android-alarmmanager">Android AlarmManager</a></li>
+</ul>
+<p><strong>Android Storage</strong></p>
+<ul class="points">
+<li><a href="android-preferences-example">Android Preferences</a></li>
+<li><a href="android-internal-storage-example">Internal Storage</a></li>
+<li><a href="android-external-storage-example">External Storage</a></li>
+</ul>
+<p><strong>Android SQLite</strong></p>
+<ul class="points">
+<li><a href="android-sqlite-tutorial">SQLite Tutorial</a></li>
+<li><a href="android-sqlite-example-with-spinner">SQLite Spinner</a></li>
+</ul>
+<p><strong>XML and JSON</strong></p>
+<ul class="points">
+<li><a href="android-xml-parsing-using-sax-parser">XML Parsing SAX</a></li>
+<li><a href="android-xml-parsing-using-dom-parser">XML Parsing DOM</a></li>
+<li><a href="android-XMLPullParser-tutorial">XMLPullParser</a></li>
+<li><a href="android-json-parsing-tutorial">JSON Parsing</a></li>
+</ul>
+<p><strong>Android Multimedia</strong></p>
+<ul class="points">
+<li><a href="playing-audio-in-android-example">MediaPlayer: Audio</a></li>
+<li><a href="playing-video-in-android-example">VideoView: Video</a></li>
+<li><a href="android-mediarecorder-example">Recording Media</a></li>
+</ul>
+<p><strong>Android Speech</strong></p>
+<ul class="points">
+<li><a href="android-texttospeech-tutorial">TextToSpeech1</a></li>
+<li><a href="android-texttospeech-example">TextToSpeech2</a></li>
+</ul>
+<p><strong>Android Telephony</strong></p>
+<ul class="points">
+<li><a href="android-telephony-manager-tutorial">TelephonyManager</a></li>
+<li><a href="android-call-state-example">Get Call State</a></li>
+<li><a href="android-call-state-broadcastreceiver-example">Get Call State 2</a></li>
+<li><a href="android-simple-caller-talker-example">Simple Caller Talker</a></li>
+<li><a href="how-to-make-a-phone-call-in-android">Phone Call</a></li>
+<li><a href="how-to-send-sms-in-android">Send SMS</a></li>
+<li><a href="how-to-send-email-in-android-using-intent">Send Email</a></li>
+</ul>
+<p><strong>Android Device</strong></p>
+<ul class="points">
+<li><a href="android-bluetooth-tutorial">Bluetooth Tutorial</a></li>
+<li><a href="android-bluetooth-list-paired-devices-example">List Paired Devices</a></li>
+<li><a href="android-wifi-example">WIFI</a></li>
+</ul>
+<p><strong>Camera Tutorial</strong></p>
+<ul class="points">
+<li><a href="android-camera-tutorial">Camera Tutorial</a></li>
+</ul>
+</div>
+<div class="col-3">
+<p><strong>Sensor Tutorial</strong></p>
+<ul class="points">
+<li><a href="android-sensor-tutorial">Sensor Tutorial</a></li>
+</ul>
+<p><strong>Android Graphics</strong></p>
+<ul class="points">
+<li><a href="android-simple-graphics-example">Android Graphics</a></li>
+</ul>
+<p><strong>Android Animation</strong></p>
+<ul class="points">
+<li><a href="android-animation-example">Android Animation</a></li>
+</ul>
+<p><strong>Android Web Service</strong></p>
+<ul class="points">
+<li><a href="android-web-service">Android Web Service</a></li>
+</ul>
+<p><strong>Google Map</strong></p>
+<ul class="points">
+<li><a href="android-google-map">Android Google Map</a></li>
+<li><a href="android-google-map-displaying-current-location">Current Location</a></li>
+<li><a href="android-google-map-search-location-using-geocodr">Search Location</a></li>
+</ul>
+<p><strong>Adding Ads</strong></p>
+<ul class="points">
+<li><a href="android-google-admob">Android Google Admob</a></li>
+<li><a href="android-banner-ads">1) Banner Ads</a></li>
+<li><a href="android-interstitial-ads">2) Interstitial Ads</a></li>
+</ul>
+<p><strong>Android Examples</strong></p>
+<ul class="points">
+<li><a href="android-qr-code-or-bar-code-scanner">QR/Bar Code Scanner</a></li>
+<li><a href="android-rss-feed-reader">RSS Feed Reader</a></li>
+<li><a href="volley-library-fetching-json-data-from-url">Volley Fetch JSON</a></li>
+<li><a href="android-linkify-example">Android Linkify</a></li>
+<li><a href="android-introduction-slider-example">Intro Slider</a></li>
+<li><a href="android-recyclerview-list-example">RecyclerView List</a></li>
+<li><a href="android-swipe-to-delete-recyclerview-items-with-undu">Swipe Del RecyclerView</a></li>
+<li><a href="swipe-to-refresh-android-activity">Swipe Refresh Activity</a></li>
+<li><a href="android-volley-library-registration-login-logout">Volley Library Registration Log-in Log-out</a></li>
+<li><a href="android-network-connectivity-services">Network Connectivity Services</a></li>
+<li><a href="android-firebase-authentication-google-login">Firebase Authentication - Google Login</a></li>
+<li><a href="android-notification">Android Notification</a></li>
+<li><a href="using-google-recaptcha-in-android-application">Using Google reCAPTCHA</a></li>
+</ul>
+<p><strong>Android Social</strong></p>
+<ul class="points">
+<li><a href="android-googlesignin-integrating">Integrating Google Sign-In</a></li>
+<li><a href="android-linkedin-integrating">Integrating LinkedIn</a></li>
+<li><a href="android-twitter-integrating">Integrating Twitter</a></li>
+</ul>
+<p><strong>Android Interview</strong></p>
+<ul class="points">
+<li><a href="android-interview-questions">Interview Questions</a></li>
+</ul>
+<p><strong>Android Quiz</strong></p>
+<ul class="points">
+<li><a href="directload.jsp?val=48">Android Quiz(Part-1)</a></li>
+<li><a href="directload.jsp?val=49">Android Quiz(Part-2)</a></li>
+<li><a href="directload.jsp?val=50">Android Quiz(Part-3)</a></li>
+</ul>
+</div>
+</div>
+<hr/>
+<h2 class="h2">Prerequisite</h2>
+<p>To learn Android Studio, you must have the basic knowledge of Java programming language.</p>
+<h2 class="h2">Audience</h2>
+<p>Our Android tutorial is designed to help beginners and professionals.</p>
+<h2 class="h2">Problem</h2>
+<p>We assure that you will not find any problem in this Android Studio tutorial. However, if there is any mistake, please post the problem in the contact form.</p>
+<div class="nexttopicdiv">
+<span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="android-what-where-and-why">What is Android</a></span>
+</div>
+
+<br/><br/>
+<div id="bottomnext">
+<a style="float:right" class="next" href="android-what-where-and-why">next &rarr;</a>
+</div>
+<br/><br/>
+</td></tr></table>
+</div>
+<hr class="hrhomebox" />
+<div><img class="lazyload" data-src="https://static.javatpoint.com/images/youtube-32.png" style="vertical-align:middle;" alt="Youtube" />
+<span class="h3" style="vertical-align:middle;font-size:22px"> For Videos Join Our Youtube Channel: <a href="https://bit.ly/2FOeX6S" target="_blank"> Join Now</a></span>
+</div>
+<hr class="hrhomebox" />
+<h3 class="h3">Feedback</h3>
+<ul class="points">
+<li>Send your Feedback to <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a3c5c6c6c7c1c2c0c8e3c9c2d5c2d7d3cccacdd78dc0ccce">[email&#160;protected]</a></li>
+</ul>
+<hr class="hrhomebox" />
+<h2 class="h2">Help Others, Please Share</h2>
+<a rel="nofollow" title="Facebook" target="_blank" href="https://www.facebook.com/sharer.php?u=https://www.javatpoint.com/android-tutorial"><img src="https://www.javatpoint.com/images/facebook32.png" alt="facebook" /></a>
+<a rel="nofollow" title="Twitter" target="_blank" href="https://twitter.com/share?url=https://www.javatpoint.com/android-tutorial"><img src="https://www.javatpoint.com/images/twitter32.png" alt="twitter" /></a>
+<a rel="nofollow" title="Pinterest" target="_blank" href="https://www.pinterest.com/pin/create/button/?url=https://www.javatpoint.com/android-tutorial"><img src="https://www.javatpoint.com/images/pinterest32.png" alt="pinterest" /></a>
+
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Learn Latest Tutorials</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/splunk">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/splunk.png" alt="Splunk tutorial" />
+<p>Splunk</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/spss">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/spss.png" alt="SPSS tutorial" />
+<p>SPSS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/swagger">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/swagger.png" alt="Swagger tutorial" />
+<p>Swagger</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/t-sql">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/transact-sql.png" alt="T-SQL tutorial" />
+<p>Transact-SQL</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/tumblr">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/tumblr.png" alt="Tumblr tutorial" />
+<p>Tumblr</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reactjs-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="React tutorial" />
+<p>ReactJS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/regex">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/regex.png" alt="Regex tutorial" />
+<p>Regex</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reinforcement-learning">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="Reinforcement learning tutorial" />
+<p>Reinforcement Learning</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/r-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/r-programming.png" alt="R Programming tutorial" />
+<p>R Programming</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/rxjs">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/rxjs.png" alt="RxJS tutorial" />
+<p>RxJS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/react-native-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react-native.png" alt="React Native tutorial" />
+<p>React Native</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-design-pattern">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-design-patterns.png" alt="Python Design Patterns" />
+<p>Python Design Patterns</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-pillow">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-pillow.png" alt="Python Pillow tutorial" />
+<p>Python Pillow</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-turtle-programming">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-turtle.png" alt="Python Turtle tutorial" />
+<p>Python Turtle</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/keras">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/keras.png" alt="Keras tutorial" />
+<p>Keras</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Preparation</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/aptitude/quantitative">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/aptitude/images/quantitative-aptitude-home.png" alt="Aptitude" />
+<p>Aptitude</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reasoning">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/reasoning/images/reasoning-home.png" alt="Logical Reasoning" />
+<p>Reasoning</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/verbal-ability">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/verbal-ability/images/verbal-ability-home.png" alt="Verbal Ability" />
+<p>Verbal Ability</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/interview-questions-and-answers">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/interviewhome.png" alt="Interview Questions" />
+<p>Interview Questions</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/company-interview-questions-and-recruitment-process">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/interview/images/company-home.jpeg" alt="Company Interview Questions" />
+<p>Company Questions</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Trending Technologies</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/artificial-intelligence-ai">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/artificial-intelligence.png" alt="Artificial Intelligence" />
+<p>Artificial Intelligence</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/aws-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/amazon-web-services.png" alt="AWS Tutorial" />
+<p>AWS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/selenium-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/selenium.png" alt="Selenium tutorial" />
+<p>Selenium</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/cloud-computing">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cloud-computing.png" alt="Cloud Computing" />
+<p>Cloud Computing</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/hadoop-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/hadoop.png" alt="Hadoop tutorial" />
+<p>Hadoop</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reactjs-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/reactjs.png" alt="ReactJS Tutorial" />
+<p>ReactJS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-science">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-science.png" alt="Data Science Tutorial" />
+<p>Data Science</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/angular-7-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/angular7.png" alt="Angular 7 Tutorial" />
+<p>Angular 7</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/blockchain-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/blockchain.png" alt="Blockchain Tutorial" />
+<p>Blockchain</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/git">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/git.png" alt="Git Tutorial" />
+<p>Git</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/machine-learning">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/machine-learning.png" alt="Machine Learning Tutorial" />
+<p>Machine Learning</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/devops">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/devops.png" alt="DevOps Tutorial" />
+<p>DevOps</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">B.Tech / MCA</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/dbms-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dbms.png" alt="DBMS tutorial" />
+<p>DBMS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-structure-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-structures.png" alt="Data Structures tutorial" />
+<p>Data Structures</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/daa-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/daa.png" alt="DAA tutorial" />
+<p>DAA</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/operating-system">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/operating-system.png" alt="Operating System" />
+<p>Operating System</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/computer-network-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-network.png" alt="Computer Network tutorial" />
+<p>Computer Network</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/compiler-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/compiler-design.png" alt="Compiler Design tutorial" />
+<p>Compiler Design</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/computer-organization-and-architecture-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-organization.png" alt="Computer Organization and Architecture" />
+<p>Computer Organization</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/discrete-mathematics-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/discrete-mathematics.png" alt="Discrete Mathematics Tutorial" />
+<p>Discrete Mathematics</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/ethical-hacking">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/ethical-hacking.png" alt="Ethical Hacking" />
+<p>Ethical Hacking</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/computer-graphics-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-graphics.png" alt="Computer Graphics Tutorial" />
+<p>Computer Graphics</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/software-engineering">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/software-engineering.png" alt="Software Engineering " />
+<p>Software Engineering</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/html-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/web-technology.png" alt="html tutorial" />
+<p>Web Technology</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/cyber-security-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cyber-security.png" alt="Cyber Security tutorial" />
+<p>Cyber Security</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/automata-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/automata.png" alt="Automata Tutorial" />
+<p>Automata</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/c-programming-language-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/c-programming.png" alt="C Language tutorial" />
+<p>C Programming</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/cpp-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cpp.png" alt="C++ tutorial" />
+<p>C++</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/java-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/java.png" alt="Java tutorial" />
+<p>Java</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/net-framework">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dot-net.png" alt=".Net Framework tutorial" />
+<p>.Net</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python.png" alt="Python tutorial" />
+<p>Python</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/programs-list">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/programs.png" alt="List of Programs" />
+<p>Programs</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/control-system-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/control-system.png" alt="Control Systems tutorial" />
+<p>Control System</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-mining">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-mining.png" alt="Data Mining Tutorial" />
+<p>Data Mining</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-warehouse">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-warehouse.png" alt="Data Warehouse Tutorial" />
+<p>Data Warehouse</p>
+</div>
+</a>
+</div>
+</fieldset>
+</div>
+<br><br/><div class="mobilemenu" style="clear:both">
+</div></div>
+<div id="right">
+<br/><br/>
+</div>
+<div class="right1024" style="float:left;margin-left:10px;margin-top:120px;">
+
+</div>
+<br/>
+<div id="footer" style="clear:both;width:100%">
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="https://static.javatpoint.com/images/social/rss1.png" alt="RSS Feed" /></a> <a target="_blank" rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="https://static.javatpoint.com/images/social/mail1.png" alt="Subscribe to Get Email Alerts" /></a> <a rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="https://static.javatpoint.com/images/social/facebook1.jpg" alt="Facebook Page" /></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="https://static.javatpoint.com/images/social/twitter1.png" alt="Twitter Page" /></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="https://static.javatpoint.com/images/youtube32.png" alt="YouTube" /></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com"><img src="https://static.javatpoint.com/images/social/blog.png" alt="Blog Page" /></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="https://www.javatpoint.com/java-tutorial">Learn Java</a><a href="https://www.javatpoint.com/data-structure-tutorial">Learn Data Structures</a><a href="https://www.javatpoint.com/c-programming-language-tutorial">Learn C Programming</a><a href="https://www.javatpoint.com/cpp-tutorial">Learn C++ Tutorial</a><a href="https://www.javatpoint.com/c-sharp-tutorial">Learn C# Tutorial</a><a href="https://www.javatpoint.com/php-tutorial">Learn PHP Tutorial</a><a href="https://www.javatpoint.com/html-tutorial">Learn HTML Tutorial</a><a href="https://www.javatpoint.com/javascript-tutorial">Learn JavaScript Tutorial</a><a href="https://www.javatpoint.com/jquery-tutorial">Learn jQuery Tutorial</a><a href="https://www.javatpoint.com/spring-tutorial">Learn Spring Tutorial</a></div><div class="column4"><h3>Interview Questions</h3><a href="corejava-interview-questions">Java Interview Questions</a><a href="sql-interview-questions">SQL Interview Questions</a><a href="python-interview-questions">Python Interview Questions</a><a href="javascript-interview-questions">JavaScript Interview Questions</a><a href="top-angular-interview-questions">Angular Interview Questions</a><a href="selenium-interview-questions">Selenium Interview Questions</a><a href="spring-boot-interview-questions">Spring Boot Interview Questions</a><a href="job-interview-questions">HR Interview Questions</a><a href="cpp-interview-questions">C++ Interview Questions</a><a href="data-structure-interview-questions">Data Structure Interview Questions</a></div><div class="column4"><h3>About</h3><p>Javatpoint is developed to help students on various technologies such as Artificial Intelligence, Machine Learning, C, C++, Python, Java, PHP, HTML, CSS, JavaScript, jQuery, ReactJS, Node.js, AngularJS, Bootstrap, XML, SQL, PL/SQL, MySQL etc. </p><p>Javatpoint provides tutorials with examples, code snippets, and practical insights, making it suitable for both beginners and experienced developers.</p><p>There are also many interview questions which will help students to get placed in the companies.</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="https://www.javatpoint.com/contact-us">Contact Us</a> <a href="https://www.javatpoint.com/subscribe.jsp">Subscribe Us</a> <a href="https://www.javatpoint.com/privacy-policy">Privacy Policy</a><a href="https://www.javatpoint.com/sitemap.xml">Sitemap</a><br><a href="https://www.javatpoint.com/sonoo-jaiswal">About Me</a></div></footer><footer class="footer2"><p>&copy; Copyright 2011-2021 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer><div id="bot-root"></div><script> (function() { var e = document.createElement('script'); e.src = 'https://app.pushbrothers.com/js/notification-bot.js?cnfg=a3cc04a1-8471-450e-b01e-c9d752b16eb0'; document.getElementById('bot-root').appendChild(e);}());</script>
+</div>
+
+</div></div>
+<script src="https://static.javatpoint.com/js/shcoreandbrush.js"></script><script> dp.SyntaxHighlighter.HighlightAll('code'); </script>
+<script src="https://static.javatpoint.com/lazysizes.min.js?v=5.8" async></script>
+</body> </html> 

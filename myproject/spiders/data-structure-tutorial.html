@@ -1,0 +1,1349 @@
+ <!DOCTYPE html><html lang="en"><head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BMVLE5WY82"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BMVLE5WY82');
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Data Structures | DS Tutorial - javatpoint</title><link rel="SHORTCUT ICON" href="https://static.javatpoint.com/images/favicon2.png" />
+<link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async /><link rel="dns-prefetch" href="https://clients1.google.com"><link rel="dns-prefetch" href="https://static.javatpoint.com"><link rel="dns-prefetch" href="https://googleads.g.doubleclick.net"><link rel="dns-prefetch" href="https://www.google.com"><link rel="dns-prefetch" href="https://feedify.net"><meta name="theme-color" content="#4CAF50" /><meta property="og:title" content="Data Structures | DS Tutorial - javatpoint" /><meta property="og:description" content="Data Structures | DS Tutorial with Introduction, Asymptotic Analysis, Array, Pointer, Structure, Singly Linked List, Doubly Linked List, Circular Linked List, Binary Search, Linear Search, Sorting, Bucket Sort, Comb Sort, Shell Sort, Heap Sort, Merge Sort, Selection Sort, Counting Sort, Stack, Qene, Circular Quene, Graph, Tree, B Tree, B+ Tree, Avl Tree etc." />
+<meta name="keywords" content="data structure tutorial, introduction, asymptotic analysis, array, pointer, structure, singly linked list, doubly linked list, circular linked list, binary search, linear search, sorting, bucket sort, comb sort, shell sort, heap sort, merge sort, selection sort, counting sort, stack, quene, circular quene, graph, tree, b tree, b+ tree, avl tree" /><meta name="description" content="Data Structures | DS Tutorial with Introduction, Asymptotic Analysis, Array, Pointer, Structure, Singly Linked List, Doubly Linked List, Circular Linked List, Binary Search, Linear Search, Sorting, Bucket Sort, Comb Sort, Shell Sort, Heap Sort, Merge Sort, Selection Sort, Counting Sort, Stack, Qene, Circular Quene, Graph, Tree, B Tree, B+ Tree, Avl Tree etc." /><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="canonical" href="https://www.javatpoint.com/data-structure-tutorial" />
+<meta property="og:locale" content="en_US" /><meta property="og:type" content="article" /><meta name="twitter:title" property="og:title" content="Data Structures | DS Tutorial - javatpoint" /><meta name="twitter:description" property="og:description" content="Data Structures | DS Tutorial with Introduction, Asymptotic Analysis, Array, Pointer, Structure, Singly Linked List, Doubly Linked List, Circular Linked List, Binary Search, Linear Search, Sorting, Bucket Sort, Comb Sort, Shell Sort, Heap Sort, Merge Sort, Selection Sort, Counting Sort, Stack, Qene, Circular Quene, Graph, Tree, B Tree, B+ Tree, Avl Tree etc." /><meta property="og:url" content="https://www.javatpoint.com/data-structure-tutorial" /><meta property="og:site_name" content="www.javatpoint.com" /><meta name="twitter:card" content="summary" /><meta name="twitter:site" content="@pagejavatpoint" /><meta name="twitter:domain" content="www.javatpoint.com" /><meta name="twitter:creator" content="@pagejavatpoint" />
+<link href="https://www.javatpoint.com/manifest.json" rel="manifest">
+<script data-cfasync="false" type="text/javascript">
+(function(w, d) {
+	var s = d.createElement('script');
+	s.src = '//cdn.adpushup.com/37780/adpushup.js';
+	s.crossOrigin='anonymous'; 
+	s.type = 'text/javascript'; s.async = true;
+	(d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s);
+	w.adpushup = w.adpushup || {que:[]};
+})(window, document);
+
+</script>
+<script data-cfasync="false" type="text/javascript">
+!function(e,t){var siteId = "37784";
+var r,a;let o=function(){var e=t.createElement("script");e.id="lzORaekbHNiuS",e["data-cfasync"]="false",e.src="//html-load.com/loader.min.js",e.charset="UTF-8",e.data="svmmawaaasa0njevas3ascattafa3aga6katacaseva05atkevarkka0asaga05qkacasa0kema0ayfevevasagara6ketacasngauefa03gatnafa3asa7cayattafa3a7as9e2",e.onload=function(){let e=!1,t=Math.random().toString(),r="html-load.com";window.addEventListener("message",r=>{r.data===t+"_as_res"&&(e=!0)}),window.setTimeout(()=>{if(!e){let t="Failed to load website properly since "+r+" is blocked. Please allow "+r;throw alert(t),fetch("https://error-report.com/report?type=loader_light&url="+btoa(location.href)+"&error="+btoa(t),{method:"POST"}).then(e=>e.text()).then(e=>{let r=document.createElement("iframe");r.src="https://info.error-report.com/modal?eventId="+e+"&error="+btoa(t),r.setAttribute("style","width: 100vw; height: 100vh; z-index: 2147483647; position: fixed; left: 0; top: 0;"),document.body.appendChild(r);let a=e=>{"close-error-report"===e.data&&(r.remove(),window.removeEventListener("message",a))};window.addEventListener("message",a)}).catch(e=>{confirm(navigator.language.toLowerCase().startsWith("ko")?"잘못된 애드블록 필터로 웹페이지 로딩에 실패하였습니다. 애드블록을 비활성화한 후 웹사이트를 이용해주세요. (자세한 내용은 '확인' 버튼을 눌러 확인해주세요)":"This page could not be loaded properly due to incorrect / bad filtering rule(s) of adblockers in use. Please disable all adblockers to continue using the website. (click OK if you'd like to learn more)")?location.href="https://info.error-report.com/modal?eventId=&error="+btoa(e.toString()):location.reload()}),Error(t)}},1e3),window.postMessage(t+"_as_req","*")},e.onerror=function(){let e=document.getElementById("lzORaekbHNiuS"),t=document.createElement("script");for(let r=0;r<e.attributes.length;r++)t.setAttribute(e.attributes[r].name,e.attributes[r].value);let a=new window.URL(e.src),o=["html-load.com","fb.html-load.com","content-loader.com","fb.content-loader.com"];if(void 0===window.as_retry&&(window.as_retry=0),window.as_retry>=o.length){let n="Failed to load website properly since "+o[0]+" is blocked. Please allow "+o[0];throw alert(n),fetch("https://error-report.com/report?type=loader_light&url="+btoa(location.href)+"&error="+btoa(n),{method:"POST"}).then(e=>e.text()).then(e=>{let t=document.createElement("iframe");t.src="https://info.error-report.com/modal?eventId="+e+"&error="+btoa(n),t.setAttribute("style","width: 100vw; height: 100vh; z-index: 2147483647; position: fixed; left: 0; top: 0;"),document.body.appendChild(t);let r=e=>{"close-error-report"===e.data&&(t.remove(),window.removeEventListener("message",r))};window.addEventListener("message",r)}).catch(e=>{confirm(navigator.language.toLowerCase().startsWith("ko")?"잘못된 애드블록 필터로 웹페이지 로딩에 실패하였습니다. 애드블록을 비활성화한 후 웹사이트를 이용해주세요. (자세한 내용은 '확인' 버튼을 눌러 확인해주세요)":"This page could not be loaded properly due to incorrect / bad filtering rule(s) of adblockers in use. Please disable all adblockers to continue using the website. (click OK if you'd like to learn more)")?location.href="https://info.error-report.com/modal?eventId=&error="+btoa(e.toString()):location.reload()}),Error(n)}a.host=o[window.as_retry++],t.setAttribute("src",a.href),t.setAttribute("as-async","true"),e.setAttribute("id",e.getAttribute("id")+"_"),e.parentNode.insertBefore(t,e),e.remove()},(t.getElementsByTagName("head")[0]||t.getElementsByTagName("body")[0]).appendChild(e)},n=function(r,a,o){var n=e.Image?new Image:t.createElement("img");n.onload=function(e){a&&"function"==typeof a&&a()},n.onerror=function(e){o&&"function"==typeof o&&o()},n.src=r};(r=t.createElement("script")).src="//delivery.adrecover.com/"+siteId+"/adRecover.js",r.type="text/javascript",r.async=!0,(t.getElementsByTagName("head")[0]||t.getElementsByTagName("body")[0]).appendChild(r),a=function(e){e||o()},n("//delivery.adrecover.com/block.jpg",function(){a(!1)},function(){n("//delivery.adrecover.com/allow.jpg",function(){a(!0)},function(){a(!1)})})}(window,document);
+</script>
+</head>
+<body onload="highlightlink()">
+
+<div id="page" style="margin:-8px;background-color:#f5f5f4;"><div id="container"> <div class="header"><table style="width:100%;margin-bottom:5px"> <tr> <td> <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:10px;margin-right:10px"> <a href="https://www.javatpoint.com"><img src="https://static.javatpoint.com/images/logo/jtp-logo3.png" alt="Javatpoint Logo" /></a> </div> <div style="float:left;width:60%;"><script> (function() { var cx = '005383125436438536544:y1edweedxwi'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script><gcse:search></gcse:search> </div> </td> </tr></table> </div>
+<div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<span style="float:left"><input type="image" src="https://www.javatpoint.com/images/menuhome64.png" alt="Go To Top" onclick="showmenu()" /></span>
+<span style="float:left"><a href="https://www.javatpoint.com"><img src="https://www.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo"></a></span>
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<script>
+  (function() {
+    var cx = '005383125436438536544:y1edweedxwi';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+</div>
+<div id="link" style="clear:both;z-index:999"> <div class="ddsmoothmenu">
+<ul>
+<li><a href="https://www.javatpoint.com">Home</a></li>
+<li><a href="data-structure-tutorial" class="selected">Data Structure</a></li>
+<li><a href="c-programming-language-tutorial">C</a></li>
+<li><a href="cpp-tutorial">C++</a></li>
+<li><a href="c-sharp-tutorial">C#</a></li>
+<li><a href="java-tutorial">Java</a></li>
+<li><a href="sql-tutorial">SQL</a></li>
+<li><a href="html-tutorial">HTML</a></li>
+<li><a href="css-tutorial">CSS</a></li>
+<li><a href="javascript-tutorial">JavaScript</a></li>
+<li><a href="ajax-tutorial">Ajax</a></li>
+<li><a href="android-tutorial">Android</a></li>
+<li><a href="cloud-computing">Cloud</a></li>
+<li><a href="design-patterns-in-java">Design Pattern</a></li>
+<li><a href="free-java-projects">Projects</a></li>
+</ul>
+<br style="clear: left" />
+</div></div>
+<div class="mobilemenu" style="clear:both">
+
+</div>
+<div id="menu">
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">DS Tutorial</span></h2>
+</div>
+<div class="leftmenu">
+<a href="data-structure-tutorial">DS Tutorial</a>
+<a href="data-structure-introduction">DS Introduction</a>
+<a href="data-structure-algorithm">DS Algorithm</a>
+<a href="data-structure-asymptotic-analysis">Asymptotic Analysis</a>
+<a href="data-structure-pointer">DS Pointer</a>
+<a href="data-structure-structure">DS Structure</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">DS Array</span></h2>
+</div>
+<div class="leftmenu">
+<a href="data-structure-array">DS Array</a>
+<a href="data-structure-2d-array">2D Array</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">DS Linked List</span></h2>
+</div>
+<div class="leftmenu">
+<a href="ds-linked-list">Linked List</a>
+<a href="ds-types-of-linked-list">Types of Linked List</a>
+<a href="singly-linked-list">Singly Linked List</a>
+<a href="doubly-linked-list">Doubly Linked List</a>
+<a href="circular-singly-linked-list">Circular Linked List</a>
+<a href="circular-doubly-linked-list">Circular Doubly List</a>
+<a href="skip-list-in-data-structure">Skip list in DS</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">DS Stack</span></h2>
+</div>
+<div class="leftmenu">
+<a href="data-structure-stack">DS Stack</a>
+<a href="ds-array-implementation-of-stack">Array Implementation</a>
+<a href="ds-linked-list-implementation-of-stack">Linked List Implementation</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">DS Queue</span></h2>
+</div>
+<div class="leftmenu">
+<a href="data-structure-queue">DS Queue</a>
+<a href="ds-types-of-queues">Types of Queues</a>
+<a href="array-representation-of-queue">Array Representation</a>
+<a href="linked-list-implementation-of-queue">Linked List Representation</a>
+<a href="circular-queue">Circular Queue</a>
+<a href="ds-deque">Deque</a>
+<a href="ds-priority-queue">Priority Queue</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">DS Tree</span></h2>
+</div>
+<div class="leftmenu">
+<a href="tree">DS Tree</a>
+<a href="binary-tree">Binary Tree</a>
+<a href="binary-search-tree">Binary Search Tree</a>
+<a href="avl-tree">AVL Tree</a>
+<a href="b-tree">B Tree</a>
+<a href="b-plus-tree">B+ Tree</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">DS Graph</span></h2>
+</div>
+<div class="leftmenu">
+<a href="ds-graph">DS Graph</a>
+<a href="graph-representation">Graph Implementation</a>
+<a href="breadth-first-search-algorithm">BFS Algorithm</a>
+<a href="depth-first-search-algorithm">DFS Algorithm</a>
+<a href="spanning-tree">Spanning Tree</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">DS Searching</span></h2>
+</div>
+<div class="leftmenu">
+<a href="linear-search">Linear Search</a>
+<a href="binary-search">Binary Search</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">DS Sorting</span></h2>
+</div>
+<div class="leftmenu">
+<a href="bubble-sort">Bubble Sort</a>
+<a href="bucket-sort">Bucket Sort</a>
+<a href="comb-sort">Comb Sort</a>
+<a href="counting-sort">Counting Sort</a>
+<a href="heap-sort">Heap Sort</a>
+<a href="insertion-sort">Insertion Sort</a>
+<a href="merge-sort">Merge Sort</a>
+<a href="quick-sort">Quick Sort</a>
+<a href="radix-sort">Radix Sort</a>
+<a href="selection-sort">Selection Sort</a>
+<a href="shell-sort">Shell Sort</a>
+<a href="bitonic-sort">Bitonic Sort</a>
+<a href="cocktail-sort">Cocktail Sort</a>
+<a href="cycle-sort">Cycle Sort</a>
+<a href="tim-sort">Tim Sort</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Differences</span></h2>
+</div>
+<div class="leftmenu">
+<a href="linear-vs-non-linear-data-structure">Linear vs non-linear</a>
+<a href="ds-array-vs-linked-list">Array vs linked list</a>
+<a href="ds-stack-vs-queue">Stack vs queue</a>
+<a href="ds-linear-vs-circular-queue">Linear vs Circular Queue</a>
+<a href="ds-linear-search-vs-binary-search">Linear Search vs Binary Search</a>
+<a href="singly-linked-list-vs-doubly-linked-list">Singly Linked List vs Doubly Linked List</a>
+<a href="binary-tree-vs-binary-search-tree">Binary vs Binary Search Tree</a>
+<a href="tree-vs-graph-data-structure">Tree vs Graph</a>
+<a href="binary-search-tree-vs-avl-tree">Binary Search tree vs AVL tree</a>
+<a href="red-black-tree-vs-avl-tree">Red Black Tree vs AVL tree</a>
+<a href="b-tree-vs-bplus-tree">B tree vs B+ tree</a>
+<a href="quick-sort-vs-merge-sort">Quick Sort vs Merge Sort</a>
+<a href="bfs-vs-dfs">BFS vs DFS</a>
+<a href="stack-vs-heap">Stack vs Heap</a>
+<a href="bubble-sort-vs-selection-sort">Bubble sort vs. Selection sort</a>
+<a href="ds-stack-vs-array">Stack vs Array</a>
+<a href="full-binary-tree-vs-complete-binary-tree">Full Binary Tree vs Complete Binary Tree</a>
+<a href="binary-tree-vs-b-tree">Binary Tree vs B Tree</a>
+<a href="primitive-vs-non-primitive-data-structure">Primitive vs non-primitive data structure</a>
+<a href="data-types-vs-data-structure">Data types vs data structure</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Misc</span></h2>
+</div>
+<div class="leftmenu">
+<a href="trie-data-structure">Trie Data Structure</a>
+<a href="heap-data-structure">Heap Data Structure</a>
+<a href="splay-tree">Splay Tree</a>
+<a href="fundamental-of-the-data-structure">Fundamental of the DS</a>
+<a href="hash-table">Hash Table</a>
+<a href="preorder-traversal">Preorder Traversal</a>
+<a href="tree-traversal">Tree Traversal</a>
+<a href="implementation-of-queue-using-stacks">Implementation of Queue using Stacks</a>
+<a href="implementation-of-stack-using-queue">Implementation of Stack using Queue</a>
+<a href="binomial-heap">Binomial Heap</a>
+<a href="postorder-traversal">Postorder Traversal</a>
+<a href="sparse-matrix">Sparse Matrix</a>
+<a href="detect-loop-in-a-linked-list">Detect loop in a Linked list</a>
+<a href="inorder-traversal">Inorder Traversal</a>
+<a href="convert-infix-to-postfix-notation">Convert Infix to Postfix notation</a>
+<a href="convert-infix-to-prefix-notation">Convert infix to prefix notation</a>
+<a href="conversion-of-prefix-to-postfix-expression">Conversion of Prefix to Postfix expression</a>
+<a href="conversion-of-postfix-to-prefix-expression">Conversion of Postfix to Prefix expression</a>
+<a href="remove-loop-in-a-linked-list">Remove the loop in a Linked List</a>
+<a href="implement-two-stacks-in-an-array">Implement two stacks in an array</a>
+<a href="reverse-a-stack-using-recursion">Reverse a stack using recursion</a>
+<a href="detect-cycle-in-a-directed-graph">Detect cycle in a directed graph</a>
+<a href="optimal-binary-search-tree">Optimal Binary Search Tree</a>
+<a href="priority-queue-using-linked-list">Priority Queue using Linked list</a>
+<a href="balanced-binary-search-tree">Balanced Binary Search Tree</a>
+<a href="boundary-traversal-of-binary-tree">Boundary Traversal of Binary tree</a>
+<a href="diagonal-traversal-of-binary-tree">Diagonal Traversal of Binary Tree</a>
+<a href="vertical-traversal-of-a-binary-tree">Vertical Traversal of a Binary tree</a>
+<a href="graph-algorithms">Graph Algorithms</a>
+<a href="time-complexity-of-sorting-algorithms">Time Complexity of Sorting Algorithms</a>
+<a href="applications-of-stack-in-data-structure">Applications of Stack in Data Structure</a>
+<a href="dictionary-data-structure">Dictionary Data Structure</a>
+<a href="structured-data-and-unstructured-data">Structured Data and Unstructured Data</a>
+<a href="list-data-structure">List Data Structure</a>
+<a href="types-of-tree-in-data-structure">Types of Tree in Data Structure</a>
+<a href="abstract-data-type-in-data-structure">Abstract data type in data structure</a>
+<a href="disjoint-set-data-structure">Disjoint set data structure</a>
+<a href="dynamic-data-structure">Dynamic Data Structure</a>
+<a href="hash-function-in-data-structure">Hash Function in Data Structure</a>
+<a href="complete-binary-tree">Complete Binary Tree</a>
+<a href="threaded-binary-tree">Threaded Binary Tree</a>
+<a href="diameter-of-binary-tree">Diameter of Binary Tree</a>
+<a href="height-of-binary-tree">Height of Binary Tree</a>
+<a href="inorder-tree-traversal-without-stack">Inorder Tree Traversal without Stack</a>
+<a href="enumeration-of-binary-trees">Enumeration of Binary Trees</a>
+<a href="maximum-width-of-a-binary-tree">Maximum Width of a Binary Tree</a>
+<a href="types-of-graph-in-data-structure">Types of Graph in Data Structure</a>
+<a href="primitive-data-type">Primitive Data Type</a>
+<a href="semi-structured-data">Semi-Structured Data</a>
+<a href="advance-data-structures">Advance Data Structures</a>
+<a href="sort-an-array-of-0s-1s-and-2s">Sort an Array of 0's, 1's, and 2's</a>
+<a href="stock-span-problem">Stock Span Problem</a>
+<a href="implementation-of-deque-by-circular-array">Implementation of Deque by Circular Array</a>
+<a href="rotate-operation-in-linked-list">Rotate Operation in Linked List</a>
+<a href="subarray-with-given-sum">Subarray with given sum</a>
+<a href="self-organizing-list">Self-organizing List</a>
+<a href="unrolled-linked-list">Unrolled Linked List</a>
+<a href="types-of-sparse-matrices">Types of Sparse Matrices</a>
+<a href="application-of-linked-list">Application of Linked List</a>
+<a href="topological-sorting">Topological Sorting</a>
+<a href="ternary-search-tree">Ternary Search Tree</a>
+<a href="stock-span-problem">Stock Span Problem</a>
+<a href="treap-data-structure">Treap Data Structure</a>
+<a href="quicksort-on-doubly-linked-list">Quicksort on Doubly Linked List</a>
+<a href="inversion-count">Inversion count</a>
+<a href="expression-tree-in-data-structure">Expression tree in DS</a>
+<a href="garbage-collection-in-data-structure">Garbage Collection in DS</a>
+<a href="merge-sort-on-doubly-linked-list">Merge Sort on Doubly Linked List</a>
+<a href="sort-stack-using-recursion">Sort Stack using Recursion</a>
+<a href="lifo-approach-in-data-structure">LIFO Approach in data structure</a>
+<a href="big-O-notation-in-data-structure">Big O Notation in DS</a>
+<a href="binary-tree-traversal-in-data-structure">Binary Tree Traversal in DS</a>
+<a href="queue-operations-in-data-structure">Queue Operations in DS</a>
+<a href="what-is-a-non-linear-data-structure">What is a Non-Linear Data Structure</a>
+<a href="fifo-approach-in-data-structure">FIFO Approach in data structure</a>
+<a href="what-are-connected-graphs-in-data-structure">What are connected graphs in data structure</a>
+<a href="which-python-data-structure-is-immutable">Which Python data structure is immutable</a>
+<a href="which-data-structure-is-used-by-map">Which data structure is used by map</a>
+<a href="what-is-iteration-in-data-structure">What is iteration in data structure</a>
+<a href="what-are-linear-search-and-binary-search-in-data-structure">What are linear search and binary search in data structure</a>
+<a href="hash-table-vs-stl-map">Hash Table vs STL Map</a>
+<a href="recamans-sequence">Recaman's Sequence</a>
+<a href="maximum-area-rectangle-created-by-selecting-four-sides-from-an-array">Maximum area rectangle created by selecting four sides from an array</a>
+<a href="maximum-number-of-distinct-nodes-in-a-root-to-leaf-path">Maximum number of distinct nodes in a root-to-leaf path</a>
+<a href="hashing-open-addressing-for-collision-handling">Hashing - Open Addressing for Collision Handling</a>
+<a href="introduction-to-hashing">Introduction to Hashing</a>
+<a href="separate-chaining-for-collision-handling">Separate chaining for Collision Handling</a>
+<a href="check-if-a-given-array-contains-duplicate-elements-within-k-distance-from-each-other">Check if a given array contains duplicate elements within k distance from each other</a>
+<a href="given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x">Given an array A[] and a number x, check for pair in A[] with sum as x (aka Two Sum)</a>
+<a href="find-number-of-employees-under-every-manager">Find number of Employees Under every Manager</a>
+<a href="union-and-intersection-of-two-linked-lists">Union and Intersection of two Linked Lists</a>
+<a href="kth-largest-element-in-an-array">Kth Largest element in an array</a>
+<a href="sort-an-almost-sorted-k-sorted-or-nearly-sorted-array">Sort an almost-sorted, k-sorted or nearly-sorted array</a>
+<a href="fibonacci-heap">Fibonacci Heap</a>
+<a href="find-whether-an-array-is-subset-of-another-array">Find whether an array is subset of another array</a>
+<a href="print-a-binary-tree-in-vertical-order">Print a Binary Tree in Vertical Order</a>
+<a href="tournament-tree">Tournament Tree (Winner Tree)</a>
+<a href="lazy-propagation-in-segment-tree">Lazy Propagation in Segment Tree</a>
+<a href="segment-tree-range-minimum-query">Segment Tree - Range Minimum Query</a>
+<a href="segment-tree-sum-of-given-range">Segment Tree - Sum of given Range</a>
+<a href="2-3-trees-search-insertion-and-deletion">2-3 Trees (Search, Insertion, and Deletion)</a>
+<a href="print-kth-least-significant-bit-of-a-number">Print kth least significant bit of a number</a>
+<a href="add-two-numbers-represented-by-linked-lists">Add two numbers represented by linked lists</a>
+<a href="adding-one-to-the-number-represented-as-array-of-digits">Adding one to the number represented as array of digits</a>
+<a href="find-precedence-characters-form-a-given-sorted-dictionary">Find precedence characters form a given sorted dictionary</a>
+<a href="check-if-any-anagram-of-a-string-is-palindrome-or-not">Check if any anagram of a string is palindrome or not</a>
+<a href="minimum-insertions-to-form-a-palindrome">Minimum Insertions to form a Palindrome</a>
+<a href="allocate-minimum-number-of-pages">Allocate Minimum Number of Pages</a>
+<a href="assembly-line-scheduling">Assembly Line Scheduling</a>
+<a href="breadth-first-search-or-bfs-for-a-graph">Breadth First Search or BFS for a Graph</a>
+<a href="find-an-element-in-array-such-that-sum-of-the-left-array-is-equal-to-the-sum-of-the-right-array">Find an element in array such that sum of the left array is equal to the sum of the right array</a>
+<a href="bridges-in-a-graph">Bridges in a Graph</a>
+<a href="bubble-sort-in-javascript">Bubble Sort in JavaScript</a>
+<a href="burn-the-binary-tree-from-the-target-node">Burn the Binary tree from the Target node</a>
+<a href="lowest-common-ancestor-in-a-binary-search-tree">Lowest Common Ancestor in a Binary Search Tree</a>
+<a href="types-of-hash-functions-in-c">Types of Hash Functions in C</a>
+<a href="implement-dynamic-deque-using-templates-class-and-a-circular-array">Implement Dynamic Deque using Templates Class and a Circular Array</a>
+<a href="iterative-depth-first-traversal-of-graph">Iterative Depth First Traversal of Graph</a>
+<a href="linked-list-data-structure-in-cpp-with-illustration">Linked List Data Structure in C++ With Illustration</a>
+<a href="reverse-a-linked-list-in-groups-of-given-size">Reverse a Linked List in Groups of Given Size</a>
+<a href="reverse-alternate-k-nodes-in-a-singly-linked-list">Reverse Alternate K nodes in a Singly Linked List</a>
+<a href="when-should-i-use-a-list-vs-a-linkedlist">When should I use a List vs a LinkedList</a>
+<a href="why-is-deleting-in-a-singly-linked-list-O-1">Why is deleting in a Singly Linked List O(1)</a>
+<a href="construct-full-binary-tree-using-its-preorder-traversal-and-preorder-traversal-of-its-mirror-tree">Construct Full Binary Tree using its Preorder Traversal and Preorder Traversal of its Mirror Tree</a>
+<a href="find-relative-complement-of-two-sorted-arrays">Find Relative Complement of two Sorted Arrays</a>
+<a href="handshaking-lemma-and-interesting-tree-properties-dsa">Handshaking Lemma and Interesting Tree Properties -DSA</a>
+<a href="how-to-efficiently-implement-kstacks-in-a-single-array">How to Efficiently Implement kStacks in a Single Array</a>
+<a href="write-c-functions-that-modify-head-pointer-of-a-linked-list">Write C Functions that Modify Head Pointer of a Linked List</a>
+<a href="introduction-to-ant-colony-optimization">Introduction to Ant Colony Optimization</a>
+<a href="what-is-array">What is Array</a>
+<a href="practical-byzantine-fault-tolerance">The practical Byzantine Fault Tolerance (pBFT)</a>
+<a href="applications-of-queue-data-structure">Applications of Queue Data Structure</a>
+<a href="line-graph">Line Graph</a>
+<a href="symmetric-binary-tree">Symmetric Binary Tree</a>
+<a href="avl-tree-advantages">AVL Tree Advantages</a>
+<a href="avl-tree-time-complexity">AVL Tree Time Complexity</a>
+<a href="merge-two-binary-trees">Merge Two Binary Trees</a>
+<a href="stack-operations-in-data-structure">Stack Operations in Data Structure</a>
+<a href="self-balancing-binary-search-trees">Self-Balancing Binary Search Trees</a>
+<a href="sliding-window-maximum-maximum-of-all-subarrays-of-size-k">Sliding Window Maximum (Maximum of all Subarrays of size K)</a>
+<a href="avl-trees-operations">AVL Trees Operations</a>
+<a href="limitations-of-sack-in-data-structures">Limitations of Stack in Data Structures</a>
+<a href="representation-of-stack-in-data-structure">Representation of stack in data structure</a>
+<a href="advantages-of-threaded-binary-tree">Advantages of Threaded Binary Tree</a>
+<a href="serialize-and-deserialize-a-binary-tree">Serialize and Deserialize a Binary Tree</a>
+<a href="application-of-binary-tree">Application of Binary Tree</a>
+<a href="avl-tree-applications">AVL Tree Applications</a>
+<a href="b-tree-visualization">B Tree Visualization</a>
+<a href="properties-of-avl-trees">Properties of AVL Trees</a>
+<a href="push-and-pop-operation-in-stack-in-data-structure">Push and Pop Operation in Stack in Data Structure</a>
+<a href="binary-search-tree-implementation">Binary Search Tree Implementation</a>
+<a href="find-maximum-sum-by-replacing-the-subarray-in-given-range">Find Maximum Sum by Replacing the Subarray in Given Range</a>
+<a href="find-the-number-n-where-n-x-divisible-by-y-and-n-y-divisible-by-x">Find The Number N, Where (N+X) Divisible By Y And (N-Y) Divisible By X</a>
+<a href="find-values-of-p-and-q-satisfying-the-equation-n-p-2-q">Find Values of P and Q Satisfying the Equation N = P^2.Q</a>
+<a href="what-is-the-balance-factor-of-avl-tree">What is the Balance Factor of AVL Tree</a>
+<a href="avl-tree-implementation-in-golang">AVL Tree Implementation in Golang</a>
+<a href="concatenation-of-two-linked-lists-in-o-1-time">Concatenation of two Linked Lists in O(1) time</a>
+<a href="find-minimum-area-of-rectangle-formed-from-given-shuffled-coordinates">Find Minimum Area of Rectangle Formed from Given Shuffled Coordinates</a>
+<a href="find-the-length-of-maximum-path-in-given-matrix-for-each-index">Find the Length of Maximum Path in Given Matrix for Each Index</a>
+<a href="how-to-parse-an-array-of-objects-in-cpp-using-rapidjson">How to Parse an Array of Objects in C++ Using RapidJson</a>
+<a href="largest-bst-in-binary-tree">Largest BST in Binary Tree</a>
+<a href="how-to-print-string-literal-and-qstring-with-qdebug-in-cpp">How to Print String Literal and Qstring With Qdebug in C++</a>
+<a href="properties-of-binary-tree">Properties of Binary Tree</a>
+<a href="right-view-of-binary-tree">Right View of Binary Tree</a>
+<a href="strict-binary-tree">Strict Binary Tree</a>
+<a href="difference-between-comb-sort-and-shell-sort">Difference between Comb Sort and Shell Sort</a>
+<a href="full-binary-tree">Full Binary Tree</a>
+<a href="left-view-of-a-binary-tree">Left View of a Binary Tree</a>
+<a href="level-order-traversal-in-a-binary-tree">Level order Traversal in a Binary Tree</a>
+<a href="lowest-common-ancestor-of-a-binary-tree">Lowest Common Ancestor of a Binary Tree</a>
+<a href="top-view-of-a-binary-tree">Top View of a Binary Tree</a>
+<a href="types-of-binary-trees">Types of Binary Trees</a>
+<a href="b-tree-insertion">B Tree Insertion</a>
+<a href="evaluation-of-a-postfix-notation">Evaluation of a Postfix notation</a>
+<a href="b-plus-tree-insertion">B+ Tree Insertion</a>
+<a href="bottom-view-of-a-binary-tree">Bottom View of a Binary Tree</a>
+<a href="avl-tree-program-in-c">AVL Tree Program in C</a>
+<a href="b-tree-applications">B Tree Applications</a>
+<a href="b-tree-properties">B Tree Properties</a>
+<a href="how-to-search-insert-and-delete-in-an-unsorted-array">How to Search, Insert, and Delete in an Unsorted Array</a>
+<a href="count-non-leaf-nodes-in-a-binary-tree">Count Non-Leaf Nodes in a Binary Tree</a>
+<a href="get-the-level-of-a-given-key-in-a-binary-tree">Get the Level of a Given Key in a Binary Tree</a>
+<a href="double-ended-priority-queue">Double Ended Priority Queue</a>
+<a href="bplus-tree-deletion">B+ Tree Deletion</a>
+<a href="bplus-tree-insertion">B+ Tree Insertion</a>
+<a href="checking-for-the-mirror-images-in-the-binary-trees">Checking for the Mirror Images in the Binary Trees</a>
+<a href="count-non-leaf-nodes-in-a-binary-tree">Count Non-Leaf Nodes in a Binary Tree</a>
+<a href="get-a-parent-binary-tree">Get a Parent Binary Tree</a>
+<a href="get-all-descendants-of-the-binary-tree-element">Get All Descendants of the Binary Tree Element</a>
+<a href="get-the-level-of-a-given-key-in-a-binary-tree">Get the Level of a Given Key in a Binary Tree</a>
+<a href="flatten-binary-tree-to-linked-list">Flatten Binary Tree to Linked List</a>
+<a href="formula-to-find-a-level-of-the-node-in-a-binary-tree">Formula to Find a Level of the Node in a Binary Tree</a>
+<a href="substring-with-maximum-number-of-vowels-of-given-length-k">Substring with Maximum Number of Vowels of Given Length (k)</a>
+<a href="flatten-binary-tree-to-sorted-linked-list">Flatten Binary Tree to Sorted Linked List</a>
+<a href="floor-and-ceiling-in-binary-search-tree">Floor and Ceiling in Binary Search Tree</a>
+<a href="find-level-in-a-binary-tree-with-max-sum">Find Level in a Binary Tree with Max Sum</a>
+<a href="find-kth-smallest-element-in-a-binary-search-tree">Find kth Smallest Element in a Binary Search Tree</a>
+<a href="find-next-greater-element-in-binary-tree">Find Next Greater Element in Binary Tree</a>
+<a href="hashing-in-data-structure">Hashing in Data Structure</a>
+<a href="primitive-data-structure">Primitive Data Structure</a>
+<a href="find-if-binary-tree-satisfies-balanced-height-property">Find if Binary Tree Satisfies Balanced Height Property</a>
+<a href="find-the-largest-perfect-binary-tree-in-a-given-tree">Find the Largest Perfect Binary Tree in a Given Tree</a>
+<a href="find-immediate-parents-of-two-nodes-in-a-binary-tree">Find Immediate Parents of Two Nodes in a Binary Tree</a>
+<a href="applications-advantages-and-disadvantages-of-circular-doubly-linked-list">Applications, Advantages and Disadvantages of Circular Doubly linked List</a>
+<a href="sorting-techniques-in-data-structures">Sorting Techniques in Data Structures</a>
+<a href="find-clockwise-array-in-binary-search-tree">Find Clockwise Array in Binary Search Tree</a>
+<a href="find-duplicate-subtrees-in-binary-tree">Find Duplicate Subtrees in Binary Tree</a>
+<a href="find-the-index-of-the-number-using-a-binary-tree">Find the Index of the Number Using a Binary Tree</a>
+<a href="find-the-in-order-successor-of-a-node-in-a-binary-tree">Find the In-Order Successor of a Node in a Binary Tree</a>
+<a href="reversing-a-queue">Reversing a Queue</a>
+<a href="different-types-of-stack-operations">Different Types of Stack Operations</a>
+<a href="time-complexity-in-data-structure">Time Complexity in Data Structure</a>
+<a href="arrays-are-best-data-structure">Arrays are best Data Structure</a>
+<a href="dynamic-memory-allocation-in-data-structure">Dynamic memory allocation in Data Structure</a>
+<a href="application-of-data-structure">Application of Data Structure</a>
+<a href="applications-of-tree-in-data-structure">Applications of Tree in Data Structure</a>
+<a href="how-to-check-if-a-binary-number-is-divisible-by-3">How to Check if a Binary Number is Divisible by 3</a>
+<a href="stock-buy-and-sell-problem">Stock Buy and Sell Problem</a>
+<a href="find-minimum-in-rotated-sorted-array">Find Minimum in Rotated Sorted Array</a>
+<a href="interpolation-search-vs-binary-search">Interpolation Search vs. Binary Search</a>
+<a href="boggle-find-all-possible-words-in-a-board-of-characters">Boggle (find all possible words in a board of characters)</a>
+<a href="difference-between-prims-and-kruskals-algorithm">Difference Between Prim's and Kruskal's algorithm</a>
+<a href="interpolation-search">Interpolation Search</a>
+<a href="quick-sort-using-hoares-partition">Quick Sort Using Hoare's Partition</a>
+<a href="longest-common-substring">Longest common substring</a>
+<a href="longest-repeated-substring">Longest Repeated Substring</a>
+<a href="substring-check">Substring Check</a>
+<a href="clone-a-binary-tree-with-random-pointers">Clone a Binary Tree with Random Pointers</a>
+<a href="how-to-efficiently-implement-k-stacks-in-a-single-array">How to efficiently implement k stacks in a single array</a>
+<a href="kasais-algorithm-for-construction-of-lcp-array-from-suffix-array">Kasai's algorithm for construction of LCP array from Suffix array</a>
+<a href="strassens-matrix-multiplication">Strassen's Matrix Multiplication</a>
+<a href="suffix-array-introduction">suffix array introduction</a>
+<a href="suffix-array-nlogn-algorithm">Suffix Array nLogn Algorithm</a>
+<a href="suffix-tree-introduction">Suffix tree introduction</a>
+<a href="binary-indexed-tree">Binary indexed tree</a>
+<a href="given-a-n-x-n-square-matrix-find-the-sum-of-all-sub-squares-of-size-k-x-k">Given a n x n square matrix, find the sum of all sub-squares of size k x k</a>
+<a href="inplace-mxn-size-matrix-transpose">Inplace MxN size matrix transpose</a>
+<a href="longest-palindrome-substring">longest palindrome substring</a>
+<a href="maximum-size-square-sub-matrix-with-all-1s">Maximum Size Square Sub-matrix with all 1s</a>
+<a href="maximum-sum-rectangle-in-a-2d-matrix">Maximum Sum Rectangle in a 2D Matrix</a>
+<a href="printing-all-elements-in-sorted-order-from-row-and-column-wise-sorted-matrix">Printing All Elements in Sorted Order from Row and Column Wise Sorted Matrix</a>
+<a href="arraylist-vs-linked-list">Arraylist vs linked list</a>
+<a href="diameter-of-an-n-ary-tree">Diameter of an N-ary Tree</a>
+<a href="generic-trees-n-ary-trees">Generic Trees (N-ary Trees)</a>
+<a href="level-order-traversal-of-n-ary-tree">Level Order Traversal of N-ary Tree</a>
+<a href="mirror-of-n-ary-tree">Mirror of n-ary Tree</a>
+<a href="serialize-and-deserialize-an-n-ary-tree">Serialize and Deserialize an N-ary Tree</a>
+<a href="sum-of-all-elements-of-n-ary-tree">Sum of all elements of N-ary Tree</a>
+<a href="great-tree-list-recursion-problem">The Great Tree-List Recursion Problem</a>
+<a href="two-dimensional-binary-indexed-tree-or-fenwick-tree">Two dimensional Binary Indexed Tree or Fenwick Tree</a>
+<a href="binary-indexed-tree-range-updates-and-point-queries">Binary Indexed Tree Range Updates and Point Queries</a>
+<a href="binary-indexed-tree-range-updates-and-range-queries">Binary Indexed Tree Range Updates and Range Queries</a>
+<a href="closest-greater-or-same-value-on-left-side-for-every-element-in-array">Closest greater or same value on left side for every element in array</a>
+<a href="construct-an-array-from-its-pair-sum-array">Construct an array from its pair-sum array</a>
+<a href="equilibrium-index-of-an-array">Equilibrium index of an array</a>
+<a href="fermats-factorization-method-in-java">Fermat's Factorization Method in Java</a>
+<a href="find-a-triplet-that-sum-to-a-given-value-in-an-array">Find a triplet that sum to a given value in an array</a>
+<a href="find-k-numbers-with-most-occurrences-in-the-given-array">Find k numbers with most occurrences in the given array</a>
+<a href="find-maximum-value-of-sum-i-arr-with-only-rotations-on-given-array-allowed">Find maximum value of Sum(i*arr[i]) with only rotations on given array allowed</a>
+<a href="handshaking-lemma-and-interesting-tree-properties">Handshaking Lemma and Interesting Tree Properties</a>
+<a href="implementation-of-dynamic-segment-trees-with-poly-hash-tables">Implementation of Dynamic Segment Trees with Poly Hash Tables</a>
+<a href="majority-element">Majority Element</a>
+<a href="maximum-equilibrium-sum-in-an-array">Maximum equilibrium sum in an array</a>
+<a href="maximum-profit-by-buying-and-selling-a-share-at-most-twice">Maximum profit by buying and selling a share at most twice</a>
+<a href="median-in-a-stream-of-integers">Median in a stream of integers (running integers)</a>
+<a href="merge-sort-tree-for-range-order-statistics">Merge Sort Tree for Range Order Statistics</a>
+<a href="merge-two-sorted-arrays-with-O-1-extra-space">Merge two sorted arrays with O(1) extra space</a>
+<a href="minimum-increment-by-k-operations-to-make-all-elements-equal">Minimum increment by k operations to make all elements equal</a>
+<a href="minimum-number-of-jumps-to-reach-end">Minimum number of jumps to reach end</a>
+<a href="mos-algorithm">MO's Algorithm</a>
+<a href="search-in-a-row-wise-and-column-wise-sorted-matrix">Search in a row-wise and column-wise sorted matrix</a>
+<a href="smallest-subarray-with-sum-greater-than-a-given-value">Smallest subarray with sum greater than a given value</a>
+<a href="sparse-table">Sparse Table</a>
+<a href="square-root-decomposition-algorithm">Square Root (Sqrt) Decomposition Algorithm</a>
+<a href="two-pointers-technique">Two Pointers Technique</a>
+<a href="compressed-segment-trees-and-merging-sets-in-o-n-logn">Compressed segment trees and merging sets in O(N*logN)</a>
+<a href="intersection-of-linked-list">Intersection of Linked List</a>
+<a href="intersection-point-in-y-shaped-linked-list">Intersection Point in Y shaped linked list</a>
+<a href="make-array-zero-by-subtracting-equal-amounts-in-java">Make Array Zero By Subtracting Equal Amounts In Java</a>
+<a href="maximum-sum-pair-with-equal-highest-digits">Maximum Sum Pair with Equal Highest Digits</a>
+<a href="minimum-possible-value-of-ai-aj-k-for-given-array-and-k">Minimum Possible value of |ai + aj - k| for given array and k</a>
+<a href="tango-tree-data-structure">Tango Tree Data Structure</a>
+<a href="check-if-two-arrays-are-equal-or-not">Check if two arrays are equal or not</a>
+<a href="construct-bst-from-its-given-level-order-traversal">Construct BST from its given level order traversal</a>
+<a href="elements-to-be-added-so-that-all-elements-of-a-range-are-present-in-the-array">Elements to be added so that all elements of a range are present in the array</a>
+<a href="find-missing-elements-in-range">Find Missing Elements in Range</a>
+<a href="k-th-largest-sum-contiguous-subarray">K-th Largest Sum Contiguous Subarray</a>
+<a href="minimum-number-of-subsets-with-distinct-elements">Minimum number of subsets with distinct elements</a>
+<a href="minimum-product-of-k-integers-in-an-array-of-positive-integers">Minimum product of k integers in an array of positive integers</a>
+<a href="non-overlapping-sum-of-two-sets">The non-overlapping sum of two sets</a>
+<a href="palindrome-substring-queries">Palindrome substring queries</a>
+<a href="recamans-sequence">Recaman's Sequence</a>
+<a href="sum-of-elements-between-k1th-and-k2th-smallest-elements">The sum of Elements Between k1th and k2th smallest elements</a>
+<a href="print-matrix-in-a-snake-pattern">Print Matrix in a Snake Pattern</a>
+<a href="an-interesting-method-to-generate-binary-numbers-from-1-to-n">An Interesting Method to Generate Binary Numbers from 1 to n</a>
+<a href="bottom-view-of-a-binary-tree">Bottom View of a Binary Tree</a>
+<a href="circular-list-application">Circular List Application</a>
+<a href="deleting-a-node-in-a-linked-list">Deleting a Node in a Linked List</a>
+<a href="diameter-of-a-binary-tree">Diameter of a Binary Tree</a>
+<a href="find-distance-between-two-nodes-of-a-binary-tree">Find distance between two nodes of a Binary Search Tree</a>
+<a href="inorder-tree-traversal-without-recursion">Inorder Tree Traversal without Recursion</a>
+<a href="inorder-tree-traversal-without-recursion-and-stack">Inorder Tree Traversal without recursion and stack!</a>
+<a href="maximum-product-of-indexes-of-next-greater-on-left-and-right">Maximum product of indexes of next greater on left and right</a>
+<a href="print-left-view-of-a-binary-tree">Print Left View of a Binary Tree</a>
+<a href="remove-all-leaf-nodes-from-the-binary-search-tree">Remove all leaf nodes from the binary search tree</a>
+<a href="sort-a-stack-using-a-temporary-stack">Sort a stack using a temporary stack</a>
+<a href="split-a-circular-list-into-2-halves">Split a Circular List into 2 Halves</a>
+<a href="check-given-array-of-size-n-can-represent-bst-of-n-levels-or-not">Check given array of size n can represent BST of n levels or not</a>
+<a href="construct-a-linked-list-from-2d-matrix">Construct a linked list from 2D matrix</a>
+<a href="in-place-convert-bst-into-a-min-heap">In place, convert BST into a Min-Heap</a>
+<a href="polish-and-reverse-polish-notation">Polish and Reverse Polish Notation</a>
+<a href="suffix-trees-in-data-structure">Suffix Trees in data structure</a>
+<a href="weight-balanced-binary-tree">Weight Balanced Binary Tree</a>
+<a href="transform-a-bst-to-greater-sum-tree">Transform a BST to greater sum tree</a>
+<a href="vertical-order-traversal-of-binary-tree-using-map">Vertical order traversal of Binary Tree using Map</a>
+<a href="application-of-heap-tree">Application of heap tree</a>
+<a href="construct-a-linked-list-from-2d-matrix">Construct a linked list from 2D matrix</a>
+<a href="define-abstract-data-type-in-data-structure">Define Abstract Data Type in Data Structure</a>
+<a href="detect-and-remove-loop-in-a-linked-list">Detect and Remove Loop in a Linked List</a>
+<a href="difference-between-a-tree-and-a-forest-in-data-structures">Difference Between a Tree and a Forest in Data Structures</a>
+<a href="difference-between-bubble-sort-and-merge-sort">Difference between bubble sort and merge sort</a>
+<a href="difference-between-merge-sort-and-quick-sort">Difference between merge sort and quick sort</a>
+<a href="explain-double-ended-queue-in-detail">Explain double ended queue in detail</a>
+<a href="find-the-median-from-running-data-stream">Find the median from running data stream</a>
+<a href="flattening-a-linked-list">Flattening a Linked List</a>
+<a href="generate-all-subarrays">Generate All Subarrays</a>
+<a href="heap-memory-vs-stack-memory">Heap memory vs. stack memory</a>
+<a href="huffman-encoding">Huffman encoding</a>
+<a href="huffman-tree-in-data-structure">Huffman Tree in Data Structure</a>
+<a href="implementation-of-graph-in-javascript">Implementation of Graph in JavaScript</a>
+<a href="k-d-tree-in-data-structures">K-D Tree in Data Structures</a>
+<a href="knapsack-problem-in-data-structure">Knapsack Problem in Data Structure</a>
+<a href="largest-sum-contiguous-subarray-kadanes-algorithm">Largest Sum Contiguous Subarray (Kadane's Algorithm)</a>
+<a href="multiway-trees-in-data-structures">Multiway Trees in Data Structures</a>
+<a href="optimal-binary-search-tree-in-data-structure">Optimal binary search tree in data structure</a>
+<a href="polynomial-addition-in-data-structure">polynomial addition in data structure</a>
+<a href="postfix-deferred-queue">Postfix deferred queue</a>
+<a href="properties-of-tree-in-data-structure">Properties of tree in data structure</a>
+<a href="recurrence-relation-of-merge-sort">Recurrence Relation of Merge Sort</a>
+<a href="recursive-bubble-sort">Recursive Bubble Sort</a>
+<a href="rss-linked-list">RSS linked list</a>
+<a href="search-in-a-rotated-sorted-array">Search in a Rotated Sorted Array</a>
+<a href="sort-an-array-of-0s-1s-and-2s-dutch-national-flag-problem">Sort an array of 0s, 1s and 2s | Dutch National Flag problem</a>
+<a href="assign-directions-to-edges-so-that-the-directed-graph-remains-acyclic">Assign directions to edges so that the directed graph remains acyclic</a>
+<a href="dependency-graph">Dependency Graph</a>
+<a href="diameter-of-an-n-ary-tree">Diameter of an N-ary tree</a>
+<a href="height-of-n-ary-tree-if-parent-array-is-given">Height of n-ary tree if parent array is given</a>
+<a href="introduction-to-heavy-light-decomposition">Introduction to Heavy Light Decomposition</a>
+<a href="lca-in-a-binary-tree-using-rmq">LCA in a binary tree using RMQ</a>
+<a href="number-of-siblings-of-a-given-node-in-n-arr-tree">Number of Siblings of a given node in n-arr tree</a>
+<a href="number-of-ways-to-traverse-an-n-arr">Number of ways to traverse an N-arr</a>
+<a href="xor-linked-list-a-memory-efficient-doubly-linked-list">XOR Linked List - A Memory Efficient Doubly Linked List</a>
+<a href="callback-queue">Callback Queue</a>
+<a href="inorder-predecessor-and-successor-in-a-binary-search-tree">Inorder Predecessor and Successor in a Binary Search Tree</a>
+<a href="what-is-internal-sorting">What is Internal Sorting</a>
+<a href="block-swap-algorithm-for-array-rotation-in-python">Block Swap Algorithm for Array Rotation in Python</a>
+<a href="check-for-balanced-brackets-in-an-expression">CHECK FOR BALANCED BRACKETS IN AN EXPRESSION (WELL FORMEDNESS)</a>
+<a href="count-pairs-from-two-bsts-whose-sum-is-equal-to-given-value-x">Count pairs from two BSTs whose sum is equal to given value x</a>
+<a href="counting-inversions-problem-in-data-structure">Counting Inversions Problem in Data Structure</a>
+<a href="differences-between-insertion-sort-and-selection-sort">Differences between Insertion Sort and Selection Sort</a>
+<a href="leftist-tree-leftist-heap">LEFTIST TREE / LEFTIST HEAP</a>
+<a href="find-if-there-is-a-triplet-in-a-balanced-bst-that-adds-to-zero">Find if there is a triplet in a balanced bst that adds to zero</a>
+<a href="find-the-maximum-english-letter-present-in-both-lowercase-and-uppercase">Find the Maximum English Letter Present in Both Lowercase and Uppercase</a>
+<a href="k-way-merge-sort">K-way Merge Sort</a>
+<a href="perfect-binary-trees">Perfect Binary Trees</a>
+<a href="reverse-sort">Reverse Sort</a>
+<a href="scapegoat-trees">Scapegoat Trees</a>
+<a href="stack-organisation">Stack Organisation</a>
+<a href="time-complexity-of-using-heap">Time Complexity of using heap</a>
+<a href="two-way-merge-sort">Two-way merge sort</a>
+<a href="validity-of-a-given-tic-tac-toe-board-configuration">Validity of a given Tic-Tac-Toe board configuration</a>
+<a href="weighted-prefix-search">Weighted Prefix Search</a>
+<a href="binary-tree-to-cdll">Binary Tree to CDLL</a>
+<a href="check-if-a-binary-tree-is-a-subtree-of-another-binary-tree">Check if a Binary Tree is a Subtree of Another Binary Tree</a>
+<a href="check-if-given-string-of-words-can-be-formed-from-words-present-in-dictionary">Check if the Given String of Words can be Formed from Words Present in the Dictionary</a>
+<a href="count-sort-vs-bucket-sort">Count sort vs bucket sort</a>
+<a href="fifo-vslifo-approach-in-programming">FIFO vs LIFO approach in Programming</a>
+<a href="if-you-are-given-two-traversal-sequences-can-you-construct-the-binary-tree">If you are given two traversal sequences, can you construct the binary tree</a>
+<a href="linked-list-deletion">Linked List Deletion (Deleting a key at a given position)</a>
+<a href="mastering-bracket-problems-for-competitive-programming">Mastering Bracket Problems for Competitive Programming</a>
+<a href="merge-overlapping-intervals">Merge Overlapping Intervals</a>
+<a href="mirror-of-matrix-across-diagonal">MIRROR OF MATRIX ACROSS DIAGONAL</a>
+<a href="pair-of-strings-having-longest-common-prefix-of-maximum-length-in-given-array">Pair of strings having longest common prefix of maximum length in given array</a>
+<a href="print-all-possible-combinations-of-words-from-dictionary-using-trie">Print all Possible Combinations of Words from the Dictionary using Trie</a>
+<a href="segment-tree">Segment Tree (Range Maximum Query with Node Update)</a>
+<a href="tree-vertex-splitting-in-data-structure">Tree Vertex Splitting in data structure</a>
+<a href="why-is-binary-heap-preferred-over-bst-for-priority-queue">Why is Binary Heap Preferred over BST for Priority Queue</a>
+<a href="arrange-consonants-and-vowels-in-a-linked-list">Arrange Consonants and Vowels in a linked list</a>
+<a href="copy-a-linked-list-with-next-and-arbit-pointer">Copy a linked list with next and arbit pointer</a>
+<a href="kahns-algorithm-vs-dfs-approach">Kahn's Algorithm vs DFS Approach: A Comparative Analysis</a>
+<a href="minimum-flip-required-to-make-binary-matrix-symmetric">Minimum flip required to make Binary Matrix symmetric</a>
+<a href="sorted-insert-for-circular-linked-list">Sorted insert for circular linked list</a>
+<a href="cpp-program-for-arranging-single-linked-list-in-alternate-odd-and-even-nodes-order">C++ Program for Arranging Single Linked List in Alternate Odd and Even Nodes Order</a>
+<a href="reservoir-sampling-in-cpp">Reservoir sampling in C++</a>
+<a href="0-1-knapsack-using-least-cost-branch-and-bound">0/1 Knapsack using Least Cost Branch and Bound</a>
+<a href="merge-k-sorted-linked-lists-using-min-heap">Merge K Sorted Linked Lists using Min Heap</a>
+<a href="number-of-elements-greater-than-k-in-the-range-l-to-r-using-fenwick-tree-offline-queries">Number of elements greater than K in the range L to R using Fenwick Tree (Offline queries)</a>
+<a href="detect-cycle-in-graph-using-dsu">Detect Cycle in Graph using DSU</a>
+<a href="merkle-tree-and-hash-chain-data-structures-with-a-difference">Merkle Tree and Hash Chain Data Structures with a difference</a>
+<a href="create-a-matrix-with-alternating-rectangles-of-o-and-x">Create a matrix with alternating rectangles of O and X</a>
+<a href="find-the-first-non-repeating-character-from-a-stream-of-characters">Find the first non-repeating character from a stream of characters</a>
+<a href="find-the-first-circular-tour-that-visits-all-petrol-pumps">Find the first circular tour that visits all petrol pumps</a>
+<a href="find-the-tasks-completed-by-soldiers-based-on-their-ranks">Find the tasks completed by soldiers based on their ranks</a>
+<a href="k-th-largest-sum-contiguous-subarray">K-th Largest Sum Contiguous Subarray</a>
+<a href="numbsubarrayer-of-elements-less-than-or-equal-to-a-given-number-in-a-given">Numbsubarrayer of elements less than or equal to a given number in a given</a>
+<a href="queries-to-add-remove-and-return-the-difference-of-maximum-and-minimum">Queries to add, remove and return the difference of maximum and minimum</a>
+<a href="time-complexity-of-building-a-heap">Time Complexity of building a heap</a>
+<a href="build-linear-type-suffix">Build linear type suffix</a>
+<a href="count-of-valid-splits-in-a-string">Count of Valid Splits in a String</a>
+<a href="delete-all-occurrences-of-a-given-key-in-a-linked-list">Delete all occurrences of a given key in a linked list</a>
+<a href="design-a-data-structure-that-supports-insert-delete-search-and-getrandom-in-cconstant-time">Design a data structure that supports insert, delete, search and getRandom in constant time</a>
+<a href="find-the-largest-subarray-with-0-sum">Find the largest subarray with 0 sum</a>
+<a href="free-tree-in-data-structures">Free Tree in Data Structures</a>
+<a href="how-to-insert-strings-into-an-avl-tree">How to insert Strings into an AVL Tree</a>
+<a href="longest-consecutive-subsequence">Longest Consecutive Subsequence</a>
+<a href="merge-two-binary-max-heaps">Merge two binary Max Heaps</a>
+<a href="secure-message-encoding">Secure Message Encoding</a>
+<a href="sort-an-almost-sorted-array">Sort an almost sorted array</a>
+<a href="tree-of-space-locking-and-unlocking-n-ary-tree">Tree of Space - Locking and Unlocking N-Ary Tree</a>
+<a href="triply-linked-list">Triply Linked list</a>
+<a href="count-of-zeroes">COUNT OF ZEROES</a>
+<a href="design-a-chess-game">Design a Chess Game</a>
+<a href="design-a-data-structure-that-supports-insert-delete-search-and-getrandom-in-constant-time">Design a data structure that supports insert, delete, search and getRandom in constant time</a>
+<a href="design-and-implement-special-stack-data-structure">Design and Implement Special Stack Data Structure</a>
+<a href="enhancing-password-strength">Enhancing Password Strength</a>
+<a href="enumeration-of-binary-tree">Enumeration of Binary Tree</a>
+<a href="eulerian-and-hamiltonian-path">Eulerian and Hamiltonian path</a>
+<a href="fair-array-removal-indices">Fair Array Removal Indices</a>
+<a href="find-the-absolute-difference-between-the-right-view-sum-of-two-binary-trees">Find the Absolute Difference between the Right View Sum of two Binary Trees</a>
+<a href="find-the-number-of-colored-nodes-according-to-given-queries-in-a-full-binary-tree">Find the number of colored nodes according to given queries in a full Binary Tree</a>
+<a href="finding-minimum-steps-in-special-binary-tree">Finding Minimum Steps in Special Binary Tree</a>
+<a href="finding-the-largest-multiple-of-three">Finding the Largest Multiple of Three</a>
+<a href="flatten-a-binary-tree-into-linked-list">Flatten a binary tree into linked list</a>
+<a href="general-tree-level-order-traversal">General Tree (Each node can have arbitrary number of children) Level Order Traversal</a>
+<a href="generating-the-maximum-number-from-two-arrays">Generating the Maximum Number from Two Arrays</a>
+<a href="hashing-and-its-applications">Hashing and its Applications</a>
+<a href="islands-in-a-graph-using-bfs">Islands in a graph using BFS</a>
+<a href="iterative-letter-combinations-of-a-phone-number">Iterative Letter Combinations of a Phone Number</a>
+<a href="k-way-merge-sort">K-way Merge Sort</a>
+<a href="maximize-total-score">Maximize Total Score</a>
+<a href="permuted-rows-in-a-matrix">PERMUTED ROWS IN A MATRIX</a>
+<a href="remove-extra-edge-from-a-bst">Remove extra edge from a BST</a>
+<a href="van-emde-boas-tree">Van Emde Boas Tree</a>
+<a href="which-minimum-spanning-tree-algorithm-is-better">Which Minimum Spanning Tree Algorithm is better</a>
+<a href="ackermann-function">Ackermann Function</a>
+<a href="binary-to-symmetrix">BINARY TO SYMMETRIX</a>
+<a href="inplace-matrix-transpose">INPLACE MATRIX TRANSPOSE</a>
+<a href="print-all-words-matching-a-pattern-in-camelcase-notation-dictionary">Print all words matching a pattern in CamelCase Notation Dictionary</a>
+<a href="reduce-the-string-by-removing-k-consecutive-identical-characters">Reduce the string by removing K consecutive identical characters</a>
+<a href="subtraction-in-linked-list">Subtraction in Linked List</a>
+<a href="transitions-of-matrix">TRANSITIONS OF MATRIX</a>
+<a href="blending-vs-stacking">Blending vs Stacking</a>
+<a href="bloom-filters">Bloom Filters</a>
+<a href="count-array-pairs-divisible-by-k">Count Array Pairs Divisible by k</a>
+<a href="counting-beautiful-numbers-in-a-specified-range">Counting Beautiful Numbers in a Specified Range</a>
+<a href="find-the-closest-palindrome">Find the Closest Palindrome</a>
+<a href="minimizing-water-collection-distance-in-javat-village">Minimizing water collection distance in javaT village</a>
+<a href="minimum-array-length-after-pair-removals">Minimum Array Length After Pair Removals</a>
+<a href="nth-even-fibonacci-sequence">Nth even Fibonacci Sequence</a>
+<a href="persistent-data-structure">Persistent Data Structure</a>
+<a href="queue-for-competitive-programming">Queue for Competitive Programming</a>
+<a href="recursively-remove-all-adjacent-duplicates">Recursively remove all adjacent duplicates</a>
+<a href="remove-the-letter-to-equalize-the-frequency">Remove the letter to equalize the frequency</a>
+<a href="chocolate-distribution-problem">Chocolate Distribution Problem</a>
+<a href="find-out-the-person-who-got-the-ticket-last-problem-in-queue">Find out the person who got the ticket last problem in queue</a>
+<a href="product-array-puzzle">Product Array Puzzle</a>
+<a href="mcq-on-backtracking">MCQs on backtracking</a>
+<a href="design-a-data-structure-that-supports-insert-delete-search-and-getrandom-in-constant-time">Design a data structure that supports insert, delete, search, and getRandom in constant time</a>
+<a href="assign-directions-to-edges-so-that-the-directed-graph-remains-acyclic">Assign directions to edges so that the directed graph remains acyclic</a>
+<a href="print-the-frequency-of-each-character-in-alphabetical-order">Print the frequency of each character in Alphabetical order</a>
+<a href="check-if-a-queue-can-be-sorted-into-another-queue-using-a-stack">Check if a queue can be sorted into another queue using a stack</a>
+<a href="auto-complete-feature-using-trie">Auto-complete feature using Trie</a>
+<a href="connect-nodes-at-same-level">Connect nodes at same level</a>
+<a href="construct-tree-from-given-inorder-and-preorder-traversals">Construct Tree from Given Inorder and Preorder Traversals</a>
+<a href="decimal-equivalent-of-binary-linked-list">Decimal Equivalent of Binary Linked List</a>
+<a href="how-do-you-implement-stack-using-priority-queue-or-heap">How do you implement Stack using Priority Queue or Heap</a>
+<a href="introduction-to-monotonic-stacks">Introduction to Monotonic Stacks</a>
+<a href="minimum-initial-points-to-reach-destination">Minimum Initial Points to Reach Destination</a>
+<a href="print-ancestors-of-a-given-node-in-binary-tree">Print Ancestors of a given node in Binary Tree</a>
+<a href="priority-queue-using-doubly-linked-list">Priority Queue using Doubly Linked List</a>
+<a href="shortest-distance-between-two-cells-in-a-matrix-or-grid">Shortest distance between two cells in a matrix or grid</a>
+<a href="sort-an-array-in-wave-form">Sort an Array in Wave Form</a>
+<a href="burn-the-binary-tree-starting-from-the-target-node">Burn the binary tree starting from the target node</a>
+<a href="check-for-possible-paths-in-the-2d-matrix">Check for possible paths in the 2D Matrix</a>
+<a href="find-triplets-with-zero-sum">Find Triplets with zero-sum</a>
+<a href="print-a-given-matrix-in-spiral-form">Print a Given Matrix in Spiral form</a>
+<a href="alien-dictionary-problem-in-dsa">Alien Dictionary problem in dsa</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">DS MCQ</span></h2>
+</div>
+<div class="leftmenu">
+<a href="data-structure-mcq">Data Structure MCQ</a>
+<a href="advanced-data-structure-mcq">Advanced DS MCQ</a>
+</div>
+<img src="https://www.javatpoint.com/wh.JPG" alt="JavaTpoint" />
+<br/>
+</div>
+</div>
+<div class="onlycontent">
+<div class="onlycontentad">
+</div>
+<div class="onlycontentinner">
+<div id="city">
+<table>
+<tr><td>
+<div id="bottomnextup">
+<a class="next" href="data-structure-introduction">next &rarr;</a>
+</div>
+<h1 class="h1">Data Structures Tutorial</h1>
+<img src="https://static.javatpoint.com/ds/images/ds-tutorial.png" alt="DS Tutorial" class="imageright" />
+<p>Data Structures (DS) tutorial provides basic and advanced concepts of Data Structure. Our Data Structure tutorial is designed for beginners and professionals.</p>
+<p>Data Structure is a way to store and organize data so that it can be used efficiently.</p>
+<p>Our Data Structure tutorial includes all topics of Data Structure such as Array, Pointer, Structure, Linked List, Stack, Queue, Graph, Searching, Sorting, Programs, etc.</p>
+<h3 class="h3">What is Data Structure?</h3>
+<p>The data structure name indicates itself that organizing the data in memory. There are many ways of organizing the data in the memory as we have already seen one of the data structures, i.e., array in C language. Array is a collection of memory elements in which data is stored sequentially, i.e., one after another. In other words, we can say that array stores the elements in a continuous manner. This organization of data is done with the help of an array of data structures. There are also other ways to organize the data in memory. Let's see the different types of data structures.</p>
+<p>The data structure is not any programming language like C, C++, java, etc. It is a set of algorithms that we can use in any programming language to structure the data in the memory.</p>
+<p>To structure the data in memory, 'n' number of algorithms were proposed, and all these algorithms are known as Abstract data types. These abstract data types are the set of rules.</p>
+<img src="https://static.javatpoint.com/ds/images/data-structure-tutorial2.png" alt="Data Structures Tutorial" />
+<h3 class="h3">Types of Data Structures</h3>
+<p>There are two types of data structures:</p>
+<ul class="points">
+<li>Primitive data structure</li>
+<li>Non-primitive data structure</li>
+</ul>
+<p><strong>Primitive Data structure</strong></p>
+<p>The primitive data structures are primitive data types. The int, char, float, double, and pointer are the primitive data structures that can hold a single value.</p>
+<p><strong>Non-Primitive Data structure</strong></p>
+<p>The non-primitive data structure is divided into two types:</p>
+<ul class="points">
+<li>Linear data structure</li>
+<li>Non-linear data structure</li>
+</ul>
+<p><strong>Linear Data Structure</strong></p>
+<p>The arrangement of data in a sequential manner is known as a linear data structure. The data structures used for this purpose are Arrays, Linked list, Stacks, and Queues. In these data structures, one element is connected to only one another element in a linear form.</p>
+<p><strong>When one element is connected to the 'n' number of elements known as a non-linear data structure. The best example is trees and graphs. In this case, the elements are arranged in a random manner.</strong></p>
+<p>We will discuss the above data structures in brief in the coming topics. Now, we will see the common operations that we can perform on these data structures.</p>
+<p><strong>Data structures can also be classified as:</strong></p>
+<ul class="points">
+<li><strong>Static data structure:</strong> It is a type of data structure where the size is allocated at the compile time. Therefore, the maximum size is fixed.</li>
+<li><strong>Dynamic data structure:</strong> It is a type of data structure where the size is allocated at the run time. Therefore, the maximum size is flexible.</li>
+</ul>
+<h3 class="h3">Major Operations</h3>
+<p>The major or the common operations that can be performed on the data structures are:</p>
+<ul class="points">
+<li><strong>Searching:</strong> We can search for any element in a data structure.</li>
+<li><strong>Sorting:</strong> We can sort the elements of a data structure either in an ascending or descending order.</li>
+<li><strong>Insertion:</strong> We can also insert the new element in a data structure.</li>
+<li><strong>Updation:</strong> We can also update the element, i.e., we can replace the element with another element.</li>
+<li><strong>Deletion:</strong> We can also perform the delete operation to remove the element from the data structure.</li>
+</ul>
+<h3 class="h3">Which Data Structure?</h3>
+<p>A data structure is a way of organizing the data so that it can be used efficiently. Here, we have used the word efficiently, which in terms of both the space and time. For example, a stack is an ADT (Abstract data type) which uses either arrays or linked list data structure for the implementation. Therefore, we conclude that we require some data structure to implement a particular ADT.</p>
+<p>An ADT tells <strong>what</strong> is to be done and data structure tells <strong>how</strong> it is to be done. In other words, we can say that ADT gives us the blueprint while data structure provides the implementation part. Now the question arises: how can one get to know which data structure to be used for a particular ADT?.</p>
+<p>As the different data structures can be implemented in a particular ADT, but the different implementations are compared for time and space. For example, the Stack ADT can be implemented by both Arrays and linked list. Suppose the array is providing time efficiency while the linked list is providing space efficiency, so the one which is the best suited for the current user's requirements will be selected.</p>
+<h3 class="h3">Advantages of Data structures</h3>
+<p><strong>The following are the advantages of a data structure:</strong></p>
+<ul class="points">
+<li><strong>Efficiency:</strong> If the choice of a data structure for implementing a particular ADT is proper, it makes the program very efficient in terms of time and space.</li>
+<li><strong>Reusability:</strong> The data structure provides reusability means that multiple client programs can use the data structure.</li>
+<li><strong>Abstraction:</strong> The data structure specified by an ADT also provides the level of abstraction. The client cannot see the internal working of the data structure, so it does not have to worry about the implementation part. The client can only see the interface.</li>
+</ul>
+<hr/>
+<h2 class="h2 center textshadow">Data Structures Index</h2>
+<hr/>
+<div class="responsivediv">
+<div class="col-2">
+<p><strong>DS Basics</strong></p>
+<ul class="pointsa">
+<li><a href="data-structure-tutorial">DS Tutorial</a></li>
+<li><a href="data-structure-introduction">DS Introduction</a></li>
+<li><a href="data-structure-algorithm">DS Algorithm</a></li>
+<li><a href="data-structure-asymptotic-analysis">Ds Asymptotic Analysis</a></li>
+<li><a href="data-structure-pointer">DS Pointer</a></li>
+<li><a href="data-structure-structure">DS Structure</a></li>
+</ul>
+<p><strong>DS Array</strong></p>
+<ul class="pointsa">
+<li><a href="data-structure-array">Array</a></li>
+<li><a href="data-structure-2d-array">2D Array</a></li>
+</ul>
+<p><strong>DS Linked List</strong></p>
+<ul class="pointsa">
+<li><a href="singly-linked-list">Linked List</a>
+<ul class="pointsa">
+<li><a href="insertion-in-singly-linked-list-at-beginning">Insertion at beginning</a></li>
+<li><a href="insertion-in-singly-linked-list-at-end">Insertion at end</a></li>
+<li><a href="insertion-in-singly-linked-list-after-specified-node">Insertion after specified node</a></li>
+<li><a href="deletion-in-singly-linked-list-at-beginning">Deletion at beginning</a></li>
+<li><a href="deletion-in-singly-linked-list-at-end">Deletion at end</a></li>
+<li><a href="deletion-in-singly-linked-list-after-specified-node">Deletion after specified node</a></li>
+<li><a href="traversing-in-singly-linked-list">Traversing</a></li>
+<li><a href="searching-in-singly-linked-list">Searching</a></li>
+</ul>
+</li>
+<li><a href="doubly-linked-list">Doubly Linked List</a>
+<ul class="pointsa">
+<li><a href="insertion-in-doubly-linked-list-at-beginning">Insertion at beginning</a></li>
+<li><a href="insertion-in-doubly-linked-list-at-the-end">Insertion at end</a></li>
+<li><a href="insertion-in-doubly-linked-list-after-specified-node">Insertion after specified node</a></li>
+<li><a href="deletion-in-doubly-linked-list-at-beginning">Deletion at beginning</a></li>
+<li><a href="deletion-in-doubly-linked-list-at-the-end">Deletion at end</a></li>
+<li><a href="deletion-in-doubly-linked-list-after-the-specified-node">Deletion of node having given data </a></li>
+<li><a href="traversing-in-doubly-linked-list">Traversing</a></li>
+<li><a href="searching-in-doubly-linked-list">Searching</a></li>
+</ul>
+</li>
+<li><a href="circular-singly-linked-list">Circular Linked List</a>
+<ul class="pointsa">
+<li><a href="insertion-in-circular-singly-list-at-beginning">Insertion at beginning</a></li>
+<li><a href="insertion-in-circular-singly-linked-list-at-end">Insertion at end</a></li>
+<li><a href="deletion-in-circular-singly-linked-list-at-beginning">Deletion at beginning</a></li>
+<li><a href="deletion-in-circular-singly-linked-list-at-end">Deletion at the end</a></li>
+<li><a href="deletion-in-circular-singly-linked-list-at-end">Traversing</a></li>
+<li><a href="deletion-in-circular-singly-linked-list-at-end">Searching</a></li>
+</ul>
+</li>
+<li><a href="circular-doubly-linked-list">Circular Doubly List</a>
+<ul class="pointsa">
+<li><a href="insertion-in-circular-doubly-linked-list-at-beginning">Insertion at beginning</a></li>
+<li><a href="insertion-in-circular-doubly-linked-list-at-end">Insertion at end</a></li>
+<li><a href="deletion-in-circular-doubly-linked-list-at-beginning">Deletion at beginning</a></li>
+<li><a href="deletion-in-circular-doubly-linked-list-at-end">Deletion at the end</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>DS Stack</strong></p>
+<ul class="pointsa">
+<li><a href="data-structure-stack">DS Stack</a></li>
+<li><a href="ds-array-implementation-of-stack">Array Implementation</a></li>
+<li><a href="ds-linked-list-implementation-of-stack">Linked List Implementation</a></li>
+</ul>
+<p><strong>DS Queue</strong></p>
+<ul class="pointsa">
+<li><a href="data-structure-queue">DS Queue</a></li>
+<li><a href="array-representation-of-queue">Array Implementation</a></li>
+<li><a href="linked-list-implementation-of-queue">Linked List Implementation</a></li>
+<li><a href="circular-queue">Circular Queue</a></li>
+</ul>
+<p><strong>DS Tree</strong></p>
+<ul class="pointsa">
+<li><a href="tree">Tree</a></li>
+<li><a href="binary-tree">Binary Tree</a>
+<ul class="pointsa">
+<li><a href="binary-tree-preorder-traversal">Pre-order Traversal</a></li>
+<li><a href="binary-tree-inorder-traversal">In-order Traversal</a></li>
+<li><a href="binary-tree-postorder-traversal">Post-order Traversal</a></li>
+</ul>
+</li>
+<li><a href="binary-search-tree">Binary Search Tree</a>
+<ul class="pointsa">
+<li><a href="searching-in-binary-search-tree">Searching in BST</a></li>
+<li><a href="insertion-in-binary-search-tree">Insertion in BST</a></li>
+<li><a href="deletion-in-binary-search-tree">Deletion in BST</a></li>
+</ul>
+</li>
+<li><a href="avl-tree">AVL Tree</a>
+<ul class="pointsa">
+<li><a href="insertion-in-avl-tree">Insertion in AVL Tree</a>
+<ul class="pointsa">
+<li><a href="ll-rotation-in-avl-tree">LL Rotation</a></li>
+<li><a href="lr-rotation-in-avl-tree">LR Rotation</a></li>
+<li><a href="rl-rotation-in-avl-tree">RL Rotation</a></li>
+<li><a href="rr-rotation-in-avl-tree">RR Rotation</a></li>
+</ul>
+</li>
+</ul>
+<ul class="pointsa">
+<li><a href="deletion-in-avl-tree">Deletion in AVL Tree</a></li>
+</ul>
+<li><a href="b-tree">B Tree</a></li>
+<li><a href="b-plus-tree">B+ Tree</a></li>
+<li><a href="red-black-tree">Red Black Tree</a></li>
+</ul>
+<p><strong>DS Graph</strong></p>
+<ul class="pointsa">
+<li><a href="ds-graph">DS Graph</a></li>
+<li><a href="graph-representation">Graph Implementation</a></li>
+<li><a href="breadth-first-search-algorithm">BFS Algorithm</a></li>
+<li><a href="depth-first-search-algorithm">DFS Algorithm</a></li>
+<li><a href="spanning-tree">Spanning Tree</a>
+<ul class="pointsa">
+<li><a href="prim-algorithm">Prim's Algorithm</a></li>
+<li><a href="kruskal-algorithm">Kruskal's Algorithm</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>DS Searching</strong></p>
+<ul class="pointsa">
+<li><a href="linear-search">Linear Search</a></li>
+<li><a href="binary-search">Binary Search</a></li>
+</ul>
+<p><strong>DS Sorting</strong></p>
+<ul class="pointsa">
+<li><a href="bubble-sort">Bubble Sort</a></li>
+<li><a href="bucket-sort">Bucket Sort</a></li>
+<li><a href="comb-sort">Comb Sort</a></li>
+<li><a href="counting-sort">Counting Sort</a></li>
+<li><a href="heap-sort">Heap Sort</a></li>
+<li><a href="insertion-sort">Insertion Sort</a></li>
+<li><a href="merge-sort">Merge Sort</a></li>
+<li><a href="quick-sort">Quick Sort</a></li>
+<li><a href="radix-sort">Radix Sort</a></li>
+<li><a href="selection-sort">Selection Sort</a></li>
+<li><a href="shell-sort">Shell Sort</a></li>
+<li><a href="bitonic-sort">Bitonic Sort</a></li>
+<li><a href="cocktail-sort">Cocktail Sort</a></li>
+<li><a href="cycle-sort">Cycle Sort</a></li>
+<li><a href="tim-sort">Tim Sort</a></li>
+</ul>
+<p><strong>Interview Questions</strong></p>
+<ul class="pointsa">
+<li><a href="data-structure-interview-questions">DS Interview Questions</a></li>
+</ul>
+</div>
+<div class="col-2">
+<p><strong>Singly Linked List Programs</strong></p>
+<ul class="pointsa">
+<li><a href="program-to-create-and-display-a-singly-linked-list">Program to create and display a singly linked list</a></li>
+<li><a href="program-to-create-a-singly-linked-list-of-n-nodes-and-count-the-number-of-nodes">Program to create a singly linked list of n nodes and count the number of nodes</a></li>
+<li><a href="program-to-create-a-singly-linked-list-of-n-nodes-and-display-it-in-reverse-order">Program to create a singly linked list of n nodes and display it in reverse order</a></li>
+<li><a href="program-to-delete-a-new-node-from-the-beginning-of-the-singly-linked-list">Program to delete a new node from the beginning of the singly linked list</a></li>
+<li><a href="program-to-delete-a-new-node-from-the-middle-of-the-singly-linked-list">Program to delete a new node from the middle of the singly linked list</a></li>
+<li><a href="program-to-delete-a-node-from-the-end-of-the-singly-linked-list">Program to delete a node from the end of the singly linked list</a></li>
+<li><a href="program-to-determine-whether-a-singly-linked-list-is-the-palindrome">Program to determine whether a singly linked list is the palindrome</a></li>
+<li><a href="program-to-find-the-maximum-and-minimum-value-node-from-a-singly-linked-list">Program to find the maximum and minimum value node from a singly linked list</a></li>
+<li><a href="program-to-insert-a-new-node-at-the-middle-of-the-singly-linked-list">Program to insert a new node at the middle of the singly linked list</a></li>
+<li><a href="program-to-insert-a-new-node-at-the-beginning-of-the-singly-linked-list">Program to insert a new node at the beginning of the singly linked list</a></li>
+<li><a href="program-to-insert-a-new-node-at-the-end-of-the-singly-linked-list">Program to insert a new node at the end of the singly linked list</a></li>
+<li><a href="program-to-remove-duplicate-elements-from-a-singly-linked-list">Program to remove duplicate elements from a singly linked list</a></li>
+<li><a href="program-to-search-an-element-in-a-singly-linked-list">Program to search an element in a singly linked list</a></li>
+<li><a href="program-to-sort-the-elements-of-the-singly-linked-list">Program to sort the elements of the singly linked list</a></li>
+<li><a href="program-to-swap-nodes-in-a-singly-linked-list-without-swapping-data">Program to swap nodes in a singly linked list without swapping data</a></li>
+<li><a href="program-to-swap-the-last-element-of-the-singly-linked-list-from-the-first-one">Program to swap the last element of the singly linked list from the first one</a></li>
+</ul>
+<p><strong>Doubly Linked List Programs</strong></p>
+<ul class="pointsa">
+<li><a href="program-to-convert-a-given-binary-tree-to-doubly-linked-list">Program to Convert a Given Binary Tree to Doubly Linked List</a></li>
+<li><a href="program-to-create-a-doubly-linked-list-from-a-ternary-tree">Program to Create a Doubly Linked List From a Ternary Tree</a></li>
+<li><a href="program-to-create-a-doubly-linked-list-of-n-nodes-and-count-the-number-of-nodes">Program to Create a Doubly Linked List of N Nodes and Count the Number of Nodes</a></li>
+<li><a href="program-to-create-a-doubly-linked-list-of-n-nodes-and-display-it-in-reverse-order">Program to Create a Doubly Linked List of N Nodes and Display it in Reverse Order</a></li>
+<li><a href="program-to-create-and-display-a-doubly-linked-list">Program to Create and Display a Doubly Linked List</a></li>
+<li><a href="program-to-delete-a-new-node-from-the-beginning-of-the-doubly-linked-list">Program to Delete a New Node From the Beginning of the Doubly Linked List</a></li>
+<li><a href="program-to-delete-a-new-node-from-the-end-of-the-doubly-linked-list">Program to Delete a New Node From the End of the Doubly Linked List</a></li>
+<li><a href="program-to-delete-a-new-node-from-the-middle-of-the-doubly-linked-list">Program to Delete a New Node From the Middle of the Doubly Linked List</a></li>
+<li><a href="program-to-find-the-maximum-and-minimum-value-node-from-a-doubly-linked-list">Program to Find the Maximum and Minimum Value Node From a Doubly Linked List</a></li>
+<li><a href="program-to-insert-a-new-node-at-the-beginning-of-the-doubly-linked-list">Program to Insert a New Node at the Beginning of the Doubly Linked List</a></li>
+<li><a href="program-to-insert-a-new-node-at-the-end-of-doubly-linked-list">Program to Insert a New Node at the End of Doubly Linked List</a></li>
+<li><a href="program-to-insert-a-new-node-at-the-middle-of-doubly-linked-list">Program to Insert a New Node at the Middle of Doubly Linked List</a></li>
+<li><a href="program-to-remove-duplicate-elements-from-a-doubly-linked-list">Program to Remove Duplicate Elements From a Doubly Linked List</a></li>
+<li><a href="program-to-rotate-doubly-linked-list-by-n-nodes">Program to Rotate Doubly Linked List by N Nodes</a></li>
+<li><a href="program-to-search-an-element-in-a-doubly-linked-list">Program to Search an Element in a Doubly Linked List</a></li>
+<li><a href="program-to-sort-the-elements-of-the-doubly-linked-list">Program to Sort the Elements of the Doubly Linked List</a></li>
+</ul>
+<p><strong>Circular Linked List Programs</strong></p>
+<ul class="pointsa">
+<li><a href="program-to-create-a-circular-linked-list-of-n-nodes-and-count-the-number-of-nodes">Program to Create a Circular Linked List of N Nodes and Count the Number of Nodes</a></li>
+<li><a href="program-to-create-a-circular-linked-list-of-n-nodes-and-display-it-in-reverse-order">Program to Create a Circular Linked List of N Nodes and Display it in Reverse Order</a></li>
+<li><a href="program-to-create-and-display-a-circular-linked-list">Program to Create and Display a Circular Linked List</a></li>
+<li><a href="program-to-delete-a-new-node-from-the-beginning-of-the-circular-linked-list">Program to Delete a New Node From the Beginning of the Circular Linked List</a></li>
+<li><a href="program-to-delete-a-new-node-from-the-end-of-the-circular-linked-list">Program to Delete a New Node From the End of the Circular Linked List</a></li>
+<li><a href="program-to-delete-a-new-node-from-the-middle-of-the-circular-linked-list">Program to Delete a New Node From the Middle of the Circular Linked List</a></li>
+<li><a href="program-to-find-the-maximum-and-minimum-value-node-from-a-circular-linked-list">Program to Find the Maximum and Minimum Value Node From a Circular Linked List</a></li>
+<li><a href="program-to-insert-a-new-node-at-the-beginning-of-the-circular-linked-list">Program to Insert a New Node at the Beginning of the Circular Linked List</a></li>
+<li><a href="program-to-insert-a-new-node-at-the-end-of-the-circular-linked-list">Program to Insert a New Node at the End of the Circular Linked List</a></li>
+<li><a href="program-to-insert-a-new-node-at-the-middle-of-the-circular-linked-list">Program to Insert a New Node at the Middle of the Circular Linked List</a></li>
+<li><a href="program-to-remove-duplicate-elements-from-a-circular-linked-list">Program to Remove Duplicate Elements From a Circular Linked List</a></li>
+<li><a href="program-to-search-an-element-in-a-circular-linked-list">Program to Search an Element in a Circular Linked List</a></li>
+<li><a href="program-to-sort-the-elements-of-the-circular-linked-list">Program to Sort the Elements of the Circular Linked List</a></li>
+</ul>
+<p><strong>Tree Programs</strong></p>
+<ul class="pointsa">
+<li><a href="program-to-calculate-the-difference-between-the-sum-of-the-odd-level-and-even-level-nodes-of-a-binary-tree">Program to Calculate the Difference Between the Sum of the Odd Level and Even Level Nodes of a Binary Tree</a></li>
+<li><a href="program-to-construct-a-binary-search-tree-and-perform-deletion-and-inorder-traversal">Program to Construct a Binary Search Tree and Perform Deletion and Inorder Traversal</a></li>
+<li><a href="program-to-convert-binary-tree-to-binary-search-tree">Program to Convert Binary Tree to Binary Search Tree</a></li>
+<li><a href="program-to-determine-whether-all-leaves-are-at-same-level">Program to Determine Whether all Leaves are at Same Level</a></li>
+<li><a href="program-to-determine-whether-two-trees-are-identical">Program to Determine Whether two Trees are Identical</a></li>
+<li><a href="program-to-find-maximum-width-of-a-binary-tree">Program to Find Maximum Width of a Binary Tree</a></li>
+<li><a href="program-to-find-the-largest-element-in-a-binary-tree">Program to Find the Largest Element in a Binary Tree</a></li>
+<li><a href="program-to-find-the-maximum-depth-or-height-of-a-tree">Program to Find the Maximum Depth or Height of a Tree</a></li>
+<li><a href="program-to-find-the-nodes-which-are-at-the-maximum-distance-in-a-binary-tree">Program to Find the Nodes Which are at the Maximum Distance in a Binary Tree</a></li>
+<li><a href="program-to-find-the-smallest-element-in-a-binary-tree">Program to Find the Smallest Element in a Binary Tree</a></li>
+<li><a href="program-to-find-the-sum-of-all-the-nodes-of-a-binary-tree">Program to Find the Sum of all the Nodes of a Binary Tree</a></li>
+<li><a href="program-to-find-the-total-number-of-possible-binary-search-trees-with-n-keys">Program to Find the Total Number of Possible Binary Search Trees with N Keys</a></li>
+<li><a href="program-to-implement-binary-tree-using-the-linked-list">Program to Implement Binary Tree using the Linked List</a></li>
+<li><a href="program-to-search-a-node-in-a-binary-tree">Program to Search a Node in a Binary Tree</a></li>
+</ul>
+</div></div>
+<hr/>
+<h2 class="h2">Prerequisite</h2>
+<p>Before learning Data Structure, you must have the basic knowledge of C.</p>
+<h2 class="h2">Audience</h2>
+<p>Our Data Structure tutorial is designed to help beginners and professionals.</p>
+<h2 class="h2">Problem</h2>
+<p>We assure that you will not find any problem in this Data Structure tutorial. But if there is any mistake, please post it in the contact form.</p>
+<hr/>
+<div class="nexttopicdiv">
+<span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="data-structure-introduction">Data Structure Introduction</a></span>
+</div>
+
+<br/><br/>
+<div id="bottomnext">
+<a style="float:right" class="next" href="data-structure-introduction">next &rarr;</a>
+</div>
+<br/><br/>
+</td></tr></table>
+</div>
+<hr class="hrhomebox" />
+<div><img class="lazyload" data-src="https://static.javatpoint.com/images/youtube-32.png" style="vertical-align:middle;" alt="Youtube" />
+<span class="h3" style="vertical-align:middle;font-size:22px"> For Videos Join Our Youtube Channel: <a href="https://bit.ly/2FOeX6S" target="_blank"> Join Now</a></span>
+</div>
+<hr class="hrhomebox" />
+<h3 class="h3">Feedback</h3>
+<ul class="points">
+<li>Send your Feedback to <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="432526262721222028032922352237332c2a2d376d202c2e">[email&#160;protected]</a></li>
+</ul>
+<hr class="hrhomebox" />
+<h2 class="h2">Help Others, Please Share</h2>
+<a rel="nofollow" title="Facebook" target="_blank" href="https://www.facebook.com/sharer.php?u=https://www.javatpoint.com/data-structure-tutorial"><img src="https://www.javatpoint.com/images/facebook32.png" alt="facebook" /></a>
+<a rel="nofollow" title="Twitter" target="_blank" href="https://twitter.com/share?url=https://www.javatpoint.com/data-structure-tutorial"><img src="https://www.javatpoint.com/images/twitter32.png" alt="twitter" /></a>
+<a rel="nofollow" title="Pinterest" target="_blank" href="https://www.pinterest.com/pin/create/button/?url=https://www.javatpoint.com/data-structure-tutorial"><img src="https://www.javatpoint.com/images/pinterest32.png" alt="pinterest" /></a>
+
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Learn Latest Tutorials</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/splunk">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/splunk.png" alt="Splunk tutorial" />
+<p>Splunk</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/spss">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/spss.png" alt="SPSS tutorial" />
+<p>SPSS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/swagger">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/swagger.png" alt="Swagger tutorial" />
+<p>Swagger</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/t-sql">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/transact-sql.png" alt="T-SQL tutorial" />
+<p>Transact-SQL</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/tumblr">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/tumblr.png" alt="Tumblr tutorial" />
+<p>Tumblr</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reactjs-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="React tutorial" />
+<p>ReactJS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/regex">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/regex.png" alt="Regex tutorial" />
+<p>Regex</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reinforcement-learning">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="Reinforcement learning tutorial" />
+<p>Reinforcement Learning</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/r-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/r-programming.png" alt="R Programming tutorial" />
+<p>R Programming</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/rxjs">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/rxjs.png" alt="RxJS tutorial" />
+<p>RxJS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/react-native-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react-native.png" alt="React Native tutorial" />
+<p>React Native</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-design-pattern">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-design-patterns.png" alt="Python Design Patterns" />
+<p>Python Design Patterns</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-pillow">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-pillow.png" alt="Python Pillow tutorial" />
+<p>Python Pillow</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-turtle-programming">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-turtle.png" alt="Python Turtle tutorial" />
+<p>Python Turtle</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/keras">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/keras.png" alt="Keras tutorial" />
+<p>Keras</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Preparation</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/aptitude/quantitative">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/aptitude/images/quantitative-aptitude-home.png" alt="Aptitude" />
+<p>Aptitude</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reasoning">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/reasoning/images/reasoning-home.png" alt="Logical Reasoning" />
+<p>Reasoning</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/verbal-ability">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/verbal-ability/images/verbal-ability-home.png" alt="Verbal Ability" />
+<p>Verbal Ability</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/interview-questions-and-answers">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/interviewhome.png" alt="Interview Questions" />
+<p>Interview Questions</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/company-interview-questions-and-recruitment-process">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/interview/images/company-home.jpeg" alt="Company Interview Questions" />
+<p>Company Questions</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Trending Technologies</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/artificial-intelligence-ai">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/artificial-intelligence.png" alt="Artificial Intelligence" />
+<p>Artificial Intelligence</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/aws-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/amazon-web-services.png" alt="AWS Tutorial" />
+<p>AWS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/selenium-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/selenium.png" alt="Selenium tutorial" />
+<p>Selenium</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/cloud-computing">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cloud-computing.png" alt="Cloud Computing" />
+<p>Cloud Computing</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/hadoop-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/hadoop.png" alt="Hadoop tutorial" />
+<p>Hadoop</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reactjs-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/reactjs.png" alt="ReactJS Tutorial" />
+<p>ReactJS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-science">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-science.png" alt="Data Science Tutorial" />
+<p>Data Science</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/angular-7-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/angular7.png" alt="Angular 7 Tutorial" />
+<p>Angular 7</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/blockchain-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/blockchain.png" alt="Blockchain Tutorial" />
+<p>Blockchain</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/git">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/git.png" alt="Git Tutorial" />
+<p>Git</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/machine-learning">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/machine-learning.png" alt="Machine Learning Tutorial" />
+<p>Machine Learning</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/devops">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/devops.png" alt="DevOps Tutorial" />
+<p>DevOps</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">B.Tech / MCA</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/dbms-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dbms.png" alt="DBMS tutorial" />
+<p>DBMS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-structure-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-structures.png" alt="Data Structures tutorial" />
+<p>Data Structures</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/daa-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/daa.png" alt="DAA tutorial" />
+<p>DAA</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/operating-system">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/operating-system.png" alt="Operating System" />
+<p>Operating System</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/computer-network-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-network.png" alt="Computer Network tutorial" />
+<p>Computer Network</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/compiler-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/compiler-design.png" alt="Compiler Design tutorial" />
+<p>Compiler Design</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/computer-organization-and-architecture-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-organization.png" alt="Computer Organization and Architecture" />
+<p>Computer Organization</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/discrete-mathematics-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/discrete-mathematics.png" alt="Discrete Mathematics Tutorial" />
+<p>Discrete Mathematics</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/ethical-hacking">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/ethical-hacking.png" alt="Ethical Hacking" />
+<p>Ethical Hacking</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/computer-graphics-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-graphics.png" alt="Computer Graphics Tutorial" />
+<p>Computer Graphics</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/software-engineering">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/software-engineering.png" alt="Software Engineering " />
+<p>Software Engineering</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/html-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/web-technology.png" alt="html tutorial" />
+<p>Web Technology</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/cyber-security-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cyber-security.png" alt="Cyber Security tutorial" />
+<p>Cyber Security</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/automata-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/automata.png" alt="Automata Tutorial" />
+<p>Automata</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/c-programming-language-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/c-programming.png" alt="C Language tutorial" />
+<p>C Programming</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/cpp-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cpp.png" alt="C++ tutorial" />
+<p>C++</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/java-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/java.png" alt="Java tutorial" />
+<p>Java</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/net-framework">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dot-net.png" alt=".Net Framework tutorial" />
+<p>.Net</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python.png" alt="Python tutorial" />
+<p>Python</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/programs-list">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/programs.png" alt="List of Programs" />
+<p>Programs</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/control-system-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/control-system.png" alt="Control Systems tutorial" />
+<p>Control System</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-mining">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-mining.png" alt="Data Mining Tutorial" />
+<p>Data Mining</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-warehouse">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-warehouse.png" alt="Data Warehouse Tutorial" />
+<p>Data Warehouse</p>
+</div>
+</a>
+</div>
+</fieldset>
+</div>
+<br><br/><div class="mobilemenu" style="clear:both">
+</div></div>
+<div id="right">
+<br/><br/>
+</div>
+<div class="right1024" style="float:left;margin-left:10px;margin-top:120px;">
+
+</div>
+<br/>
+<div id="footer" style="clear:both;width:100%">
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="https://static.javatpoint.com/images/social/rss1.png" alt="RSS Feed" /></a> <a target="_blank" rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="https://static.javatpoint.com/images/social/mail1.png" alt="Subscribe to Get Email Alerts" /></a> <a rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="https://static.javatpoint.com/images/social/facebook1.jpg" alt="Facebook Page" /></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="https://static.javatpoint.com/images/social/twitter1.png" alt="Twitter Page" /></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="https://static.javatpoint.com/images/youtube32.png" alt="YouTube" /></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com"><img src="https://static.javatpoint.com/images/social/blog.png" alt="Blog Page" /></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="https://www.javatpoint.com/java-tutorial">Learn Java</a><a href="https://www.javatpoint.com/data-structure-tutorial">Learn Data Structures</a><a href="https://www.javatpoint.com/c-programming-language-tutorial">Learn C Programming</a><a href="https://www.javatpoint.com/cpp-tutorial">Learn C++ Tutorial</a><a href="https://www.javatpoint.com/c-sharp-tutorial">Learn C# Tutorial</a><a href="https://www.javatpoint.com/php-tutorial">Learn PHP Tutorial</a><a href="https://www.javatpoint.com/html-tutorial">Learn HTML Tutorial</a><a href="https://www.javatpoint.com/javascript-tutorial">Learn JavaScript Tutorial</a><a href="https://www.javatpoint.com/jquery-tutorial">Learn jQuery Tutorial</a><a href="https://www.javatpoint.com/spring-tutorial">Learn Spring Tutorial</a></div><div class="column4"><h3>Interview Questions</h3><a href="corejava-interview-questions">Java Interview Questions</a><a href="sql-interview-questions">SQL Interview Questions</a><a href="python-interview-questions">Python Interview Questions</a><a href="javascript-interview-questions">JavaScript Interview Questions</a><a href="top-angular-interview-questions">Angular Interview Questions</a><a href="selenium-interview-questions">Selenium Interview Questions</a><a href="spring-boot-interview-questions">Spring Boot Interview Questions</a><a href="job-interview-questions">HR Interview Questions</a><a href="cpp-interview-questions">C++ Interview Questions</a><a href="data-structure-interview-questions">Data Structure Interview Questions</a></div><div class="column4"><h3>About</h3><p>Javatpoint is developed to help students on various technologies such as Artificial Intelligence, Machine Learning, C, C++, Python, Java, PHP, HTML, CSS, JavaScript, jQuery, ReactJS, Node.js, AngularJS, Bootstrap, XML, SQL, PL/SQL, MySQL etc. </p><p>Javatpoint provides tutorials with examples, code snippets, and practical insights, making it suitable for both beginners and experienced developers.</p><p>There are also many interview questions which will help students to get placed in the companies.</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="https://www.javatpoint.com/contact-us">Contact Us</a> <a href="https://www.javatpoint.com/subscribe.jsp">Subscribe Us</a> <a href="https://www.javatpoint.com/privacy-policy">Privacy Policy</a><a href="https://www.javatpoint.com/sitemap.xml">Sitemap</a><br><a href="https://www.javatpoint.com/sonoo-jaiswal">About Me</a></div></footer><footer class="footer2"><p>&copy; Copyright 2011-2021 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer><div id="bot-root"></div><script> (function() { var e = document.createElement('script'); e.src = 'https://app.pushbrothers.com/js/notification-bot.js?cnfg=a3cc04a1-8471-450e-b01e-c9d752b16eb0'; document.getElementById('bot-root').appendChild(e);}());</script>
+</div>
+
+</div></div>
+<script src="https://static.javatpoint.com/js/shcoreandbrush.js"></script><script> dp.SyntaxHighlighter.HighlightAll('code'); </script>
+<script src="https://static.javatpoint.com/lazysizes.min.js?v=5.8" async></script>
+</body> </html> 

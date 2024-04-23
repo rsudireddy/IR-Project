@@ -1,0 +1,950 @@
+ <!DOCTYPE html><html lang="en"><head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BMVLE5WY82"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BMVLE5WY82');
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Learn SQL Tutorial - javatpoint</title><link rel="SHORTCUT ICON" href="https://static.javatpoint.com/images/favicon2.png" />
+<link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async /><link rel="dns-prefetch" href="https://clients1.google.com"><link rel="dns-prefetch" href="https://static.javatpoint.com"><link rel="dns-prefetch" href="https://googleads.g.doubleclick.net"><link rel="dns-prefetch" href="https://www.google.com"><link rel="dns-prefetch" href="https://feedify.net"><meta name="theme-color" content="#4CAF50" /><meta property="og:title" content="Learn SQL Tutorial - javatpoint" /><meta property="og:description" content="Learn SQL tutorial for beginners and professionals with sql, tutorial, examples, insert, update, delete, select, join, database, table, join" />
+<meta name="keywords" content="sql, tutorial, examples, insert, update, delete, select, join, database, table, join" /><meta name="description" content="Learn SQL tutorial for beginners and professionals with sql, tutorial, examples, insert, update, delete, select, join, database, table, join" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="canonical" href="https://www.javatpoint.com/sql-tutorial" />
+<meta property="og:locale" content="en_US" /><meta property="og:type" content="article" /><meta name="twitter:title" property="og:title" content="Learn SQL Tutorial - javatpoint" /><meta name="twitter:description" property="og:description" content="Learn SQL tutorial for beginners and professionals with sql, tutorial, examples, insert, update, delete, select, join, database, table, join" /><meta property="og:url" content="https://www.javatpoint.com/sql-tutorial" /><meta property="og:site_name" content="www.javatpoint.com" /><meta name="twitter:card" content="summary" /><meta name="twitter:site" content="@pagejavatpoint" /><meta name="twitter:domain" content="www.javatpoint.com" /><meta name="twitter:creator" content="@pagejavatpoint" />
+<link href="https://www.javatpoint.com/manifest.json" rel="manifest">
+<script data-cfasync="false" type="text/javascript">
+(function(w, d) {
+	var s = d.createElement('script');
+	s.src = '//cdn.adpushup.com/37780/adpushup.js';
+	s.crossOrigin='anonymous'; 
+	s.type = 'text/javascript'; s.async = true;
+	(d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s);
+	w.adpushup = w.adpushup || {que:[]};
+})(window, document);
+
+</script>
+<script data-cfasync="false" type="text/javascript">
+!function(e,t){var siteId = "37784";
+var r,a;let o=function(){var e=t.createElement("script");e.id="lzORaekbHNiuS",e["data-cfasync"]="false",e.src="//html-load.com/loader.min.js",e.charset="UTF-8",e.data="svmmawaaasa0njevas3ascattafa3aga6katacaseva05atkevarkka0asaga05qkacasa0kema0ayfevevasagara6ketacasngauefa03gatnafa3asa7cayattafa3a7as9e2",e.onload=function(){let e=!1,t=Math.random().toString(),r="html-load.com";window.addEventListener("message",r=>{r.data===t+"_as_res"&&(e=!0)}),window.setTimeout(()=>{if(!e){let t="Failed to load website properly since "+r+" is blocked. Please allow "+r;throw alert(t),fetch("https://error-report.com/report?type=loader_light&url="+btoa(location.href)+"&error="+btoa(t),{method:"POST"}).then(e=>e.text()).then(e=>{let r=document.createElement("iframe");r.src="https://info.error-report.com/modal?eventId="+e+"&error="+btoa(t),r.setAttribute("style","width: 100vw; height: 100vh; z-index: 2147483647; position: fixed; left: 0; top: 0;"),document.body.appendChild(r);let a=e=>{"close-error-report"===e.data&&(r.remove(),window.removeEventListener("message",a))};window.addEventListener("message",a)}).catch(e=>{confirm(navigator.language.toLowerCase().startsWith("ko")?"잘못된 애드블록 필터로 웹페이지 로딩에 실패하였습니다. 애드블록을 비활성화한 후 웹사이트를 이용해주세요. (자세한 내용은 '확인' 버튼을 눌러 확인해주세요)":"This page could not be loaded properly due to incorrect / bad filtering rule(s) of adblockers in use. Please disable all adblockers to continue using the website. (click OK if you'd like to learn more)")?location.href="https://info.error-report.com/modal?eventId=&error="+btoa(e.toString()):location.reload()}),Error(t)}},1e3),window.postMessage(t+"_as_req","*")},e.onerror=function(){let e=document.getElementById("lzORaekbHNiuS"),t=document.createElement("script");for(let r=0;r<e.attributes.length;r++)t.setAttribute(e.attributes[r].name,e.attributes[r].value);let a=new window.URL(e.src),o=["html-load.com","fb.html-load.com","content-loader.com","fb.content-loader.com"];if(void 0===window.as_retry&&(window.as_retry=0),window.as_retry>=o.length){let n="Failed to load website properly since "+o[0]+" is blocked. Please allow "+o[0];throw alert(n),fetch("https://error-report.com/report?type=loader_light&url="+btoa(location.href)+"&error="+btoa(n),{method:"POST"}).then(e=>e.text()).then(e=>{let t=document.createElement("iframe");t.src="https://info.error-report.com/modal?eventId="+e+"&error="+btoa(n),t.setAttribute("style","width: 100vw; height: 100vh; z-index: 2147483647; position: fixed; left: 0; top: 0;"),document.body.appendChild(t);let r=e=>{"close-error-report"===e.data&&(t.remove(),window.removeEventListener("message",r))};window.addEventListener("message",r)}).catch(e=>{confirm(navigator.language.toLowerCase().startsWith("ko")?"잘못된 애드블록 필터로 웹페이지 로딩에 실패하였습니다. 애드블록을 비활성화한 후 웹사이트를 이용해주세요. (자세한 내용은 '확인' 버튼을 눌러 확인해주세요)":"This page could not be loaded properly due to incorrect / bad filtering rule(s) of adblockers in use. Please disable all adblockers to continue using the website. (click OK if you'd like to learn more)")?location.href="https://info.error-report.com/modal?eventId=&error="+btoa(e.toString()):location.reload()}),Error(n)}a.host=o[window.as_retry++],t.setAttribute("src",a.href),t.setAttribute("as-async","true"),e.setAttribute("id",e.getAttribute("id")+"_"),e.parentNode.insertBefore(t,e),e.remove()},(t.getElementsByTagName("head")[0]||t.getElementsByTagName("body")[0]).appendChild(e)},n=function(r,a,o){var n=e.Image?new Image:t.createElement("img");n.onload=function(e){a&&"function"==typeof a&&a()},n.onerror=function(e){o&&"function"==typeof o&&o()},n.src=r};(r=t.createElement("script")).src="//delivery.adrecover.com/"+siteId+"/adRecover.js",r.type="text/javascript",r.async=!0,(t.getElementsByTagName("head")[0]||t.getElementsByTagName("body")[0]).appendChild(r),a=function(e){e||o()},n("//delivery.adrecover.com/block.jpg",function(){a(!1)},function(){n("//delivery.adrecover.com/allow.jpg",function(){a(!0)},function(){a(!1)})})}(window,document);
+</script>
+</head>
+<body onload="highlightlink()">
+
+<div id="page" style="margin:-8px;background-color:#f5f5f4;"><div id="container"> <div class="header"><table style="width:100%;margin-bottom:5px"> <tr> <td> <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:10px;margin-right:10px"> <a href="https://www.javatpoint.com"><img src="https://static.javatpoint.com/images/logo/jtp-logo3.png" alt="Javatpoint Logo" /></a> </div> <div style="float:left;width:60%;"><script> (function() { var cx = '005383125436438536544:y1edweedxwi'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script><gcse:search></gcse:search> </div> </td> </tr></table> </div>
+<div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<span style="float:left"><input type="image" src="https://www.javatpoint.com/images/menuhome64.png" alt="Go To Top" onclick="showmenu()" /></span>
+<span style="float:left"><a href="https://www.javatpoint.com"><img src="https://www.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo"></a></span>
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<script>
+  (function() {
+    var cx = '005383125436438536544:y1edweedxwi';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+</div>
+<div id="link" style="clear:both;z-index:999"> <div class="ddsmoothmenu">
+<ul>
+<li><a href="https://www.javatpoint.com"><img src="https://static.javatpoint.com/images/icon/home.png" alt="home" /> Home</a></li>
+<li><a href="sql-tutorial" class="selected"><img src="https://static.javatpoint.com/images/icon/sql.png" alt="sql" /> SQL</a></li>
+<li><a href="pl-sql-tutorial"><img src="https://static.javatpoint.com/images/icon/plsql.png" alt="plsql" /> PL/SQL</a></li>
+<li><a href="mysql-tutorial"><img src="https://static.javatpoint.com/images/icon/mysql.png" alt="mysql" /> MySQL</a></li>
+<li><a href="mongodb-tutorial"><img src="https://static.javatpoint.com/images/icon/mongodb.png" alt="mongodb" /> MongoDB</a></li>
+<li><a href="postgresql-tutorial"><img src="https://static.javatpoint.com/images/icon/postgresql.png" alt="postgresql" /> PostgreSQL</a></li>
+<li><a href="sql-server-tutorial"><img src="https://static.javatpoint.com/images/icon/sqlserver.png" alt="sql server" /> SQL Server</a></li>
+<li><a href="oracle-tutorial"><img src="https://static.javatpoint.com/images/icon/oracle.png" alt="oracle" /> Oracle</a></li>
+<li><a href="cassandra-tutorial"><img src="https://static.javatpoint.com/images/icon/cassandra.png" alt="cassandra" /> Cassandra</a></li>
+<li><a href="sqlite-tutorial"><img src="https://static.javatpoint.com/images/icon/sqlite.png" alt="sqlite" /> SQLite</a></li>
+<li><a href="dbms-tutorial"><img src="https://static.javatpoint.com/images/icon/dbms.png" alt="dbms" /> DBMS</a></li>
+<li><a href="python-tutorial"><img src="https://static.javatpoint.com/images/icon/python.png" alt="python" /> Python</a></li>
+<li><a href="java-tutorial"><img src="https://static.javatpoint.com/images/icon/java.png" alt="java" /> Java</a></li>
+<li><a href="https://www.javatpoint.com/aptitude/quantitative"><img src="https://static.javatpoint.com/images/icon/aptitude.png" alt="aptitude" /> Aptitude</a></li>
+<li><a href="sql-interview-questions"><img src="https://static.javatpoint.com/images/icon/interview.png" alt="interview questions" /> Interview Q</a></li>
+</ul>
+<br style="clear: left" />
+</div></div>
+<div class="mobilemenu" style="clear:both">
+
+</div>
+<div id="menu">
+
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">SQL Tutorial</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-tutorial">SQL Tutorial</a>
+<a href="sql-syntax" class="l1">SQL Syntax</a>
+<a href="sql-data-types" class="l1">SQL Data Types</a>
+<a href="sql-operators" class="l1">SQL Operators</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">SQL Database</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-create-database" class="l1">SQL CREATE Database</a>
+<a href="sql-drop-database" class="l1">SQL DROP Database</a>
+<a href="sql-rename-database" class="l1">SQL RENAME Database</a>
+<a href="sql-select-database" class="l1">SQL SELECT Database</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">SQL Table</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-table" class="l1">What is Table</a>
+<a href="sql-create-table" class="l1">SQL CREATE TABLE</a>
+<a href="sql-drop-table" class="l1">SQL DROP TABLE</a>
+<a href="sql-delete-table" class="l1">SQL DELETE TABLE</a>
+<a href="sql-rename-table" class="l1">SQL RENAME TABLE</a>
+<a href="sql-truncate-table" class="l1">SQL TRUNCATE TABLE</a>
+<a href="sql-copy-table" class="l1">SQL COPY TABLE</a>
+<a href="sql-temp-table" class="l1">SQL TEMP TABLE</a>
+<a href="sql-alter-table" class="l1">SQL ALTER TABLE</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">SQL Select</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-select" class="l1">SELECT Statement</a>
+<a href="sql-select-unique" class="l1">SQL SELECT UNIQUE</a>
+<a href="sql-select-distinct" class="l1">SQL SELECT DISTINCT</a>
+<a href="sql-select-count" class="l1">SQL SELECT COUNT</a>
+<a href="sql-select-top" class="l1">SQL SELECT TOP</a>
+<a href="sql-select-first" class="l1">SQL SELECT FIRST</a>
+<a href="sql-select-last" class="l1">SQL SELECT LAST</a>
+<a href="sql-select-random" class="l1">SQL SELECT RANDOM</a>
+<a href="sql-select-in" class="l1">SQL SELECT IN</a>
+<a href="sql-select-from-multiple-tables" class="l1">SQL SELECT Multiple</a>
+<a href="sql-select-date" class="l1">SQL SELECT DATE</a>
+<a href="sql-select-sum" class="l1">SQL SELECT SUM</a>
+<a href="sql-select-null" class="l1">SQL SELECT NULL</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">SQL Clause</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-where" class="l1">SQL WHERE</a>
+<a href="sql-and" class="l1">SQL AND</a>
+<a href="sql-or" class="l1">SQL OR</a>
+<a href="sql-with" class="l1">SQL WITH</a>
+<a href="sql-select-as" class="l1">SQL AS</a>
+<a href="having-clause-in-sql">SQL HAVING Clause</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">SQL Order By</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-order-by" class="l1">ORDER BY Clause</a>
+<a href="sql-order-by-asc" class="l1">ORDER BY ASC</a>
+<a href="sql-order-by-desc" class="l1">ORDER BY DESC</a>
+<a href="sql-order-by-random" class="l1">ORDER BY RANDOM</a>
+<a href="sql-order-by-limit" class="l1">ORDER BY LIMIT</a>
+<a href="sql-order-by-multiple-columns" class="l1">ORDER BY Multiple Cols</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">SQL Insert</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-insert" class="l1">INSERT Statement</a>
+<a href="sql-insert-multiple-rows" class="l1">INSERT Multiple Rows</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">SQL Update</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-update" class="l1">UPDATE Statement</a>
+<a href="sql-update-with-join" class="l1">SQL UPDATE JOIN</a>
+<a href="sql-update-date" class="l1">SQL UPDATE DATE</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">SQL Delete</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-delete" class="l1">DELETE Statement</a>
+<a href="sql-delete-table" class="l1">SQL DELETE TABLE</a>
+<a href="sql-delete-row" class="l1">SQL DELETE ROW</a>
+<a href="sql-delete-all-rows" class="l1">SQL DELETE All Rows</a>
+<a href="sql-delete-duplicate-rows" class="l1">DELETE Duplicate Rows</a>
+<a href="sql-delete-database" class="l1">SQL DELETE DATABASE</a>
+<a href="sql-delete-view" class="l1">SQL DELETE VIEW</a>
+<a href="sql-delete-join" class="l1">SQL DELETE JOIN</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">SQL Join</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-join">SQL JOIN</a>
+<a href="sql-outer-join" class="l1">SQL Outer Join</a>
+<a href="sql-left-join" class="l1">SQL Left Join</a>
+<a href="sql-right-join" class="l1">SQL Right Join</a>
+<a href="sql-full-join" class="l1">SQL Full Join</a>
+<a href="sql-cross-join" class="l1">SQL Cross Join</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">SQL Keys</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-primary-key" class="l1">Primary Key</a>
+<a href="sql-foreign-key" class="l1">Foreign Key</a>
+<a href="sql-composite-key" class="l1">Composite Key</a>
+<a href="unique-key-in-sql" class="l1">Unique Key</a>
+<a href="alternate-key-in-sql" class="l1">Alternate Key</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Difference</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-vs-nosql" class="l1">SQL vs NoSQL</a>
+<a href="in-vs-exists">IN vs EXISTS</a>
+<a href="group-by-vs-order-by">Group By vs Order By</a>
+<a href="where-vs-having">WHERE vs HAVING</a>
+<a href="where-condition-in-sql">Where condition in SQL</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">SQL Injection</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-injection">SQL Injection</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">SQL String Functions</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-string-functions">SQL String Functions</a>
+<a href="ltrim-function-in-sql">LTRIM Function in SQL</a>
+<a href="upper-function-in-sql">UPPER Function in SQL</a>
+<a href="rtrim-function-in-sql">RTRIM Function in SQL</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Misc</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-formatter">SQL Formatter</a>
+<a href="sql-group-by">SQL group by</a>
+<a href="sql-add-drop-update-column-operation">SQL add/drop/update column operation</a>
+<a href="sql-cast-function">SQL CAST Function</a>
+<a href="sql-comments">SQL Comments</a>
+<a href="sql-concat-function">SQL CONCAT Function</a>
+<a href="cte-sql">CTE SQL</a>
+<a href="how-to-use-distinct-in-sql">How to use distinct in SQL</a>
+<a href="joining-three-or-more-tables-in-sql">Joining Three or More Tables in SQL</a>
+<a href="what-is-web-sql">What is Web SQL</a>
+<a href="how-to-create-functions-in-sql">How to create functions in SQL</a>
+<a href="how-to-run-sql-script">How to run SQL Script</a>
+<a href="how-to-delete-duplicate-rows-in-sql">How to Delete Duplicate Rows in SQL</a>
+<a href="sql-nth-highest-salary">Nth Highest salary</a>
+<a href="12-codds-rules">12 Codd's Rules</a>
+<a href="sql-except">SQL EXCEPT</a>
+<a href="types-of-sql-join">Types of SQL JOIN</a>
+<a href="change-datatype-of-column-in-sql">Change datatype of column in SQL</a>
+<a href="sql-auto-increment">SQL Auto Increment</a>
+<a href="sql-like">SQL Like</a>
+<a href="commit-and-rollback-in-sql">Commit and Rollback in SQL</a>
+<a href="sql-concatenate">SQL Concatenate</a>
+<a href="sql-get-month-from-the-date">SQL get month from the date</a>
+<a href="savepoint-in-sql">Savepoint in SQL</a>
+<a href="sql-order-by-date">SQL ORDER BY DATE</a>
+<a href="time-datatype-in-sql">TIME Datatype in SQL</a>
+<a href="sql-between">SQL BETWEEN</a>
+<a href="crud-operations-in-sql">SQL CRUD Operations</a>
+<a href="sql-index">SQL INDEX</a>
+<a href="scalar-functions-in-sql">Scalar Functions in SQL</a>
+<a href="set-operators-in-sql">SET Operators in SQL</a>
+<a href="types-of-sql-commands">Types of SQL Commands</a>
+<a href="tcl-commands-in-sql">TCL Commands in SQL</a>
+<a href="sql-subquery">SQL Subquery</a>
+<a href="sql-view">SQL View</a>
+<a href="constraints-in-sql">Constraints in SQL</a>
+<a href="pattern-matching-in-sql">Pattern Matching in SQL</a>
+<a href="sql-date-functions">SQL Date Functions</a>
+<a href="ddl-commands-in-sql">DDL Commands in SQL</a>
+<a href="dml-commands-in-sql">DML Commands in SQL</a>
+<a href="sql-case">SQL CASE</a>
+<a href="sql-inner-join">SQL Inner Join</a>
+<a href="sql-in-operator">SQL IN Operator</a>
+<a href="check-constraint-in-sql">Check Constraint in SQL</a>
+<a href="sql-clauses">SQL CLAUSES</a>
+<a href="sql-logical-operators">SQL LOGICAL OPERATORS</a>
+<a href="how-to-delete-column-from-table-in-sql">How to Delete Column from Table in SQL</a>
+<a href="how-to-add-column-in-the-table-in-sql">How to Add Column in the Table in SQL</a>
+<a href="how-to-delete-one-row-in-sql">How to Delete one row in SQL</a>
+<a href="how-to-change-the-column-value-in-sql">How to Change the Column Value in SQL</a>
+<a href="how-to-add-foreign-key-in-sql">How to Add Foreign Key in SQL</a>
+<a href="how-to-add-a-primary-key-in-sql">How to Add a Primary Key in SQL</a>
+<a href="how-to-insert-one-or-more-rows-in-sql">How to Insert One or More rows in SQL</a>
+<a href="how-to-use-like-in-sql">How to Use LIKE in SQL</a>
+<a href="cursor-in-sql">Cursor in SQL</a>
+<a href="drop-vs-truncate-in-sql">DROP vs Truncate in SQL</a>
+<a href="sql-comparison-operators">SQL Comparison Operators</a>
+<a href="sql-count-where">SQL COUNT WHERE</a>
+<a href="sql-select-min">SQL SELECT MIN</a>
+<a href="sql-stored-procedure">SQL Stored Procedure</a>
+<a href="sql-select-avg">SQL SELECT AVG</a>
+<a href="sql-select-max">SQL SELECT MAX</a>
+<a href="sql-add-column">SQL ADD COLUMN</a>
+<a href="how-to-use-auto-increment-in-sql">How to use Auto-Increment in SQL</a>
+<a href="sql-languages">SQL Languages</a>
+<a href="sql-arithmetic-operators">SQL Arithmetic Operators</a>
+<a href="how-to-use-group-by-in-sql">How to Use GROUP BY in SQL</a>
+<a href="how-to-use-order-by-in-sql">How to Use ORDER BY in SQL</a>
+<a href="trigger-in-sql">Trigger in SQL</a>
+<a href="what-is-race-condition">What is Race Condition</a>
+<a href="sql-count-distinct">SQL COUNT DISTINCT</a>
+<a href="sql-union">SQL UNION</a>
+<a href="how-to-use-any-keyword-in-sql">How to Use ANY keyword in SQL</a>
+<a href="how-to-use-check-in-sql">How to use CHECK in SQL</a>
+<a href="how-to-use-default-in-sql">How to use DEFAULT in SQL</a>
+<a href="how-to-use-not-null-in-sql">How to use NOT NULL in SQL</a>
+<a href="how-to-use-between-in-sql">How to Use BETWEEN in SQL</a>
+<a href="how-to-use-in-in-sql">How to Use IN in SQL</a>
+<a href="sql-intersect">SQL INTERSECT</a>
+<a href="how-to-use-union-in-sql">How to use UNION in SQL</a>
+<a href="sql-not-operator">SQL NOT Operator</a>
+<a href="instr-function-in-sql">INSTR Function in SQL</a>
+<a href="left-function-in-sql">LEFT Function in SQL</a>
+<a href="locate-function-in-sql">LOCATE Function in SQL</a>
+<a href="right-function-in-sql">RIGHT Function in SQL</a>
+<a href="strcmp-function-in-sql">STRCMP Function in SQL</a>
+<a href="how-to-use-having-in-sql">How to Use HAVING in SQL</a>
+<a href="concat-function-in-sql">CONCAT Function in SQL</a>
+<a href="lower-function-in-sql">LOWER Function in SQL</a>
+<a href="replace-function-in-sql">REPLACE Function in SQL</a>
+<a href="substr-function-in-sql">SUBSTR Function in SQL</a>
+<a href="mid-function-in-sql">MID Function in SQL</a>
+<a href="repeat-function-in-sql">REPEAT Function in SQL</a>
+<a href="substring_index-function-in-sql">SUBSTRING_INDEX Function in SQL</a>
+<a href="ascii-function-in-sql">ASCII Function in SQL</a>
+<a href="find_in_set-function-in-sql">FIND_IN_SET Function in SQL</a>
+<a href="position-function-in-sql">POSITION Function in SQL</a>
+<a href="space-function-in-sql">SPACE Function in SQL</a>
+<a href="substring-function-in-sql">SUBSTRING Function in SQL</a>
+<a href="char_length-function-in-sql">CHAR_LENGTH Function in SQL</a>
+<a href="character_length-function-in-sql">CHARACTER_LENGTH Function in SQL</a>
+<a href="format-function-in-sql">FORMAT Function in SQL</a>
+<a href="insert-function-in-sql">INSERT Function in SQL</a>
+<a href="bit_length-function-in-sql">BIT_LENGTH Function in SQL</a>
+<a href="concat_ws-function-in-sql">CONCAT_WS Function in SQL</a>
+<a href="length-function-in-sql">LENGTH Function in SQL</a>
+<a href="reverse-string-function-in-sql">REVERSE String Function in SQL</a>
+<a href="how-to-use-all-in-sql">How to Use ALL in SQL</a>
+<a href="sql-compare-string">SQL Compare String</a>
+<a href="sql-minus">SQL Minus</a>
+<a href="sql-modify-column">SQL MODIFY COLUMN</a>
+<a href="make_set-function-in-sql">MAKE_SET Function in SQL</a>
+<a href="field-function-in-sql">FIELD Function in SQL</a>
+<a href="char-function-in-sql">CHAR Function in SQL</a>
+<a href="elt-function-in-sql">ELT Function in SQL</a>
+<a href="count-function-in-sql">COUNT Function in SQL</a>
+<a href="power-function-in-sql">POWER Function in SQL</a>
+<a href="round-function-in-sql">ROUND Function in SQL</a>
+<a href="sum-function-in-sql">SUM Function in SQL</a>
+<a href="avg-function-in-sql">AVG Function in SQL</a>
+<a href="bin-function-in-sql">BIN Function in SQL</a>
+<a href="max-function-in-sql">MAX Function in SQL</a>
+<a href="min-function-in-sql">MIN Function in SQL</a>
+<a href="mod-function-in-sql">MOD Function in SQL</a>
+<a href="oct-function-in-sql">OCT Function in SQL</a>
+<a href="sign-function-in-sql">SIGN Function in SQL</a>
+<a href="sqrt-function-in-sql">SQRT Function in SQL</a>
+<a href="square-function-in-sql">SQUARE Function in SQL</a>
+<a href="abs-function-in-sql">ABS Function in SQL</a>
+<a href="cos-function-in-sql">COS Function in SQL</a>
+<a href="cot-function-in-sql">COT Function in SQL</a>
+<a href="sin-function-in-sql">SIN Function in SQL</a>
+<a href="acos-function-in-sql">ACOS Function in SQL</a>
+<a href="asin-function-in-sql">ASIN Function in SQL</a>
+<a href="atan-function-in-sql">ATAN Function in SQL</a>
+<a href="tan-function-in-sql">TAN Function in SQL</a>
+<a href="ceil-function-in-sql">CEIL Function in SQL</a>
+<a href="floor-function-in-sql">FLOOR Function in SQL</a>
+<a href="limit-function-in-sql">LIMIT Function in SQL</a>
+<a href="ceiling-function-in-sql">CEILING Function in SQL</a>
+<a href="degrees-function-in-sql">DEGREES Function in SQL</a>
+<a href="exp-function-in-sql">EXP Function in SQL</a>
+<a href="radians-function-in-sql">RADIANS Function in SQL</a>
+<a href="rand-function-in-sql">RAND Function in SQL</a>
+<a href="atn2-function-in-sql">ATN2 Function in SQL</a>
+<a href="log-function-in-sql">LOG Function in SQL</a>
+<a href="log2-function-in-sql">LOG2 Function in SQL</a>
+<a href="log10-function-in-sql">LOG10 Function in SQL</a>
+<a href="greatest-function-in-sql">GREATEST Function in SQL</a>
+<a href="pow-function-in-sql">POW Function in SQL</a>
+<a href="div-function-in-sql">DIV Function in SQL</a>
+<a href="least-function-in-sql">LEAST Function in SQL</a>
+<a href="ln-function-in-sql">LN Function in SQL</a>
+<a href="unicode-function-in-sql">UNICODE Function in SQL</a>
+<a href="replicate-function-in-sql">REPLICATE Function in SQL</a>
+<a href="truncate-function-in-sql">TRUNCATE Function in SQL</a>
+<a href="datalength-function-in-sql">DATALENGTH Function in SQL</a>
+<a href="nchar-function-in-sql">NCHAR Function in SQL</a>
+<a href="octet_length-function-in-sql">OCTET_LENGTH Function in SQL</a>
+<a href="patindex-function-in-sql">PATINDEX Function in SQL</a>
+<a href="pi-function-in-sql">PI Function in SQL</a>
+<a href="like-function-in-sql">LIKE Function in SQL</a>
+<a href="ord-function-in-sql">ORD Function in SQL</a>
+<a href="different-star-patterns-in-sql">Different Star Patterns in SQL</a>
+<a href="sql-general-functions-nvl-nvl2-decode-coalesce-nullif-lnnvl-and-nanvl">SQL General Functions: NVL, NVL2, DECODE, COALESCE, NULLIF, LNNVL and NANVL</a>
+<a href="sql-servers-categorization-of-stored-procedures-based-on-input-and-output-parameters">SQL Server's Categorization of Stored Procedures based on Input and Output Parameters</a>
+<a href="use-of-single-quotes-for-stored-procedure-paramete">Use of Single Quotes for Stored Procedure Parameters in SQL Server</a>
+<a href="what-is-sql">What is SQL</a>
+<a href="sql-general-functions">SQL General Functions</a>
+<a href="7-reasons-why-to-learn-sql">7 Reasons Why to Learn SQL in 2023</a>
+<a href="analytical-functions-in-sql">Analytical Functions in SQL</a>
+<a href="rollback-sql">Rollback SQL</a>
+<a href="sql-rank-function">SQL RANK Function</a>
+<a href="rename-column-name-in-sql">Rename Column Name in SQL</a>
+<a href="sql-exists">SQL EXISTS</a>
+<a href="change-the-datatype-of-a-column-in-sql">Change the Datatype of a Column in SQL</a>
+<a href="difference-between-sql-and-mysql">Difference Between SQL and MySQL</a>
+<a href="normalisation-in-sql">Normalisation in SQL</a>
+<a href="sql-aggregate-functions">SQL Aggregate Functions</a>
+<a href="commit-in-sql">Commit in SQL</a>
+<a href="sql-full-outer-join">SQL FULL OUTER JOIN</a>
+<a href="sql-not-in">SQL NOT IN</a>
+<a href="row-number-sql">Row Number SQL</a>
+<a href="sql-windows-functions">SQL Windows Functions</a>
+<a href="coalesce-sql">Coalesce SQL</a>
+<a href="create-view-sql">Create View SQL</a>
+<a href="dcl-commands-in-sql">DCL Commands in SQL</a>
+<a href="sql-limit">SQL Limit</a>
+<a href="sql-developer-downloads">SQL Developer Downloads</a>
+<a href="sql-developer">SQL Developer</a>
+<a href="sql-isnull">SQL ISNULL</a>
+<a href="sql-schema">SQL Schema</a>
+<a href="sql-queries-for-practice">SQL Queries for Practice</a>
+<a href="nested-query-in-sql">Nested Query In SQL</a>
+<a href="sql-join-example">SQL Join Example</a>
+<a href="sql-not-equal">SQL Not Equal</a>
+<a href="datediff-sql-function">DATEDIFF() SQL Function</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">SQL MCQ</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-mcq">SQL MCQ</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">PL/SQL Tutorial</span></h2>
+</div>
+<div class="leftmenu">
+<a href="pl-sql-tutorial" class="l1">PL/SQL Tutorial</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-interview-questions" class="l1">SQL Interview</a>
+<a href="pl-sql-interview-questions" class="l1">PL/SQL Interview</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Quiz</span></h2>
+</div>
+<div class="leftmenu">
+<a href="sql-quiz" class="l1">SQL Quiz</a>
+</div>
+<img src="https://www.javatpoint.com/wh.JPG" alt="JavaTpoint" />
+<br/>
+</div>
+</div>
+<div class="onlycontent">
+<div class="onlycontentad">
+</div>
+<div class="onlycontentinner">
+<div id="city">
+<table>
+<tr><td>
+<div id="bottomnextup">
+<a class="next" href="sql-syntax">next &rarr;</a>
+</div>
+<h1 class="h1">SQL Tutorial</h1>
+<a href="https://training.javatpoint.com" target="_blank"><img src="https://static.javatpoint.com/corebasic/images/sql.png" style="width:350px" class="imageright" alt="SQL Tutorial" /></a>
+<p>SQL tutorial provides basic and advanced concepts of SQL. Our SQL tutorial is designed for both beginners and professionals.</p>
+<p>SQL (Structured Query Language) is used to perform operations on the records stored in the database, such as updating records, inserting records, deleting records, creating and modifying database tables, views, etc.</p>
+<p>SQL is not a database system, but it is a query language.</p>
+<p>Suppose you want to perform the queries of SQL language on the stored data in the database. You are required to install any database management system in your systems, for example, <a href="https://www.javatpoint.com/oracle-tutorial">Oracle</a>, <a href="https://www.javatpoint.com/mysql-tutorial">MySQL</a>, <a href="https://www.javatpoint.com/mongodb-tutorial">MongoDB</a>, <a href="https://www.javatpoint.com/postgresql-tutorial">PostgreSQL</a>, <a href="https://www.javatpoint.com/sql-server-tutorial">SQL Server</a>, <a href="https://www.javatpoint.com/db2-tutorial">DB2</a>, etc.</p>
+<h2 class="h2">What is SQL?</h2>
+<p>SQL is a short-form of the structured query language, and it is pronounced as S-Q-L or sometimes as See-Quell.</p>
+<p>This database language is mainly designed for maintaining the data in relational database management systems. It is a special tool used by data professionals for handling structured data (data which is stored in the form of tables). It is also designed for stream processing in RDSMS.</p>
+<p>You can easily create and manipulate the database, access and modify the table rows and columns, etc. This query language became the standard of ANSI in the year of 1986 and ISO in the year of 1987. </p>
+<p>If you want to get a job in the field of data science, then it is the most important query language to learn. Big enterprises like Facebook, Instagram, and LinkedIn, use SQL for storing the data in the back-end.</p>
+<h2 class="h2">Why SQL?</h2>
+<p>Nowadays, SQL is widely used in data science and analytics. Following are the reasons which explain why it is widely used:</p>
+<ul class="points">
+<li>The basic use of SQL for data professionals and SQL users is to insert, update, and delete the data from the relational database.</li>
+<li>SQL allows the data professionals and users to retrieve the data from the relational database management systems.</li>
+<li>It also helps them to describe the structured data.</li>
+<li>It allows SQL users to create, drop, and manipulate the database and its tables.</li>
+<li>It also helps in creating the view, stored procedure, and functions in the relational database.</li>
+<li>It allows you to define the data and modify that stored data in the relational database.</li>
+<li>It also allows SQL users to set the permissions or constraints on table columns, views, and stored procedures.</li>
+</ul>
+<h2 class="h2">History of SQL</h2>
+<p>"A Relational Model of Data for Large Shared Data Banks" was a paper which was published by the great computer scientist "E.F. Codd" in 1970.</p>
+<p>The IBM researchers Raymond Boyce and Donald Chamberlin originally developed the SEQUEL (Structured English Query Language) after learning from the paper given by E.F. Codd. They both developed the SQL at the San Jose Research laboratory of IBM Corporation in 1970.</p>
+<p>At the end of the 1970s, relational software Inc. developed their own first SQL using the concepts of E.F. Codd, Raymond Boyce, and Donald Chamberlin. This SQL was totally based on RDBMS. Relational Software Inc., which is now known as Oracle Corporation, introduced the Oracle V2 in June 1979, which is the first implementation of SQL language. This Oracle V2 version operates on VAX computers.</p>
+<h2 class="h2">Process of SQL</h2>
+<p>When we are executing the command of SQL on any Relational database management system, then the system automatically finds the best routine to carry out our request, and the SQL engine determines how to interpret that particular command.</p>
+<p>Structured Query Language contains the following four components in its process:</p>
+<ul class="points">
+<li>Query Dispatcher</li>
+<li>Optimization Engines</li>
+<li>Classic Query Engine</li>
+<li>SQL Query Engine, etc.</li>
+</ul>
+<p>A classic query engine allows data professionals and users to maintain non-SQL queries. The architecture of SQL is shown in the following diagram:</p>
+<img src="https://static.javatpoint.com/sqlpages/images/sql-process.png" alt="SQL Tutorial" />
+<h2 class="h2">Some SQL Commands</h2>
+<p>The SQL commands help in creating and managing the database. The most common SQL commands which are highly used are mentioned below:</p>
+<ol class="points">
+<li>CREATE command</li>
+<li>UPDATE command</li>
+<li>DELETE command</li>
+<li>SELECT command</li>
+<li>DROP command</li>
+<li>INSERT command</li>
+</ol>
+<h3 class="h3">CREATE Command</h3>
+<p>This command helps in creating the new database, new table, table view, and other objects of the database.</p>
+<h3 class="h3">UPDATE Command</h3>
+<p>This command helps in updating or changing the stored data in the database.</p>
+<h3 class="h3">DELETE Command</h3>
+<p>This command helps in removing or erasing the saved records from the database tables. It erases single or multiple tuples from the tables of the database.</p>
+<h3 class="h3">SELECT Command</h3>
+<p>This command helps in accessing the single or multiple rows from one or multiple tables of the database. We can also use this command with the WHERE clause.</p>
+<h3 class="h3">DROP Command</h3>
+<p>This command helps in deleting the entire table, table view, and other objects from the database.</p>
+<h3 class="h3">INSERT Command</h3>
+<p>This command helps in inserting the data or records into the database tables. We can easily insert the records in single as well as multiple rows of the table.</p>
+<h2 class="h2">SQL vs No-SQL</h2>
+<img src="https://static.javatpoint.com/sqlpages/images/sqlvsnosql.png" alt="SQL Tutorial" />
+<p>The following table describes the <a href="https://www.javatpoint.com/sql-vs-nosql">differences between the SQL and NoSQL</a>, which are necessary to understand:</p>
+<table class="alt">
+<tr>
+<th>SQL</th>
+<th>No-SQL</th>
+</tr>
+<tr>
+<td>1. SQL is a relational database management system.</td>
+<td>1. While No-SQL is a non-relational or distributed database management system.</td>
+</tr>
+<tr>
+<td>2. The query language used in this database system is a structured query language.</td>
+<td>2. The query language used in the No-SQL database systems is a non-declarative query language.</td>
+</tr>
+<tr>
+<td>3. The schema of SQL databases is predefined, fixed, and static.</td>
+<td>3. The schema of No-SQL databases is a dynamic schema for unstructured data.</td>
+</tr>
+<tr>
+<td>4. These databases are vertically scalable.</td>
+<td>4. These databases are horizontally scalable.</td>
+</tr>
+<tr>
+<td>5. The database type of SQL is in the form of tables, i.e., in the form of rows and columns.</td>
+<td>5. The database type of No-SQL is in the form of documents, key-value, and graphs.</td>
+</tr>
+<tr>
+<td>6. It follows the ACID model.</td>
+<td>6. It follows the BASE model.</td>
+</tr>
+<tr>
+<td>7. Complex queries are easily managed in the SQL database.</td>
+<td>7. NoSQL databases cannot handle complex queries.</td>
+</tr>
+<tr>
+<td>8. This database is not the best choice for storing hierarchical data.</td>
+<td>8. While No-SQL database is a perfect option for storing hierarchical data.</td>
+</tr>
+<tr>
+<td>9. All SQL databases require object-relational mapping.</td>
+<td>9. Many No-SQL databases do not require object-relational mapping.</td>
+</tr>
+<tr>
+<td>10. Gauges, CircleCI, Hootsuite, etc., are the top enterprises that are using this query language.</td>
+<td>10. Airbnb, Uber, and Kickstarter are the top enterprises that are using this query language.</td>
+</tr>
+<tr>
+<td>11. SQLite, Ms-SQL, Oracle, PostgreSQL, and MySQL are examples of SQL database systems.</td>
+<td>11. Redis, MongoDB, Hbase, BigTable, CouchDB, and Cassandra are examples of NoSQL database systems.</td>
+</tr>
+</table>
+<h2 class="h2">Advantages of SQL</h2>
+<p>SQL provides various advantages which make it more popular in the field of data science. It is a perfect query language which allows data professionals and users to communicate with the database. Following are the best advantages or benefits of Structured Query Language:</p>
+<p><strong>1. No programming needed</strong></p>
+<p>SQL does not require a large number of coding lines for managing the database systems. We can easily access and maintain the database by using simple SQL syntactical rules. These simple rules make the SQL user-friendly.</p>
+<p><strong>2. High-Speed Query Processing</strong></p>
+<p>A large amount of data is accessed quickly and efficiently from the database by using SQL queries. Insertion, deletion, and updation operations on data are also performed in less time.</p>
+<p><strong>3. Standardized Language</strong></p>
+<p>SQL follows the long-established standards of ISO and ANSI, which offer a uniform platform across the globe to all its users.</p>
+<p><strong>4. Portability</strong></p>
+<p>The structured query language can be easily used in desktop computers, laptops, tablets, and even smartphones. It can also be used with other applications according to the user's requirements.</p>
+<p><strong>5. Interactive language</strong></p>
+<p>We can easily learn and understand the SQL language. We can also use this language for communicating with the database because it is a simple query language. This language is also used for receiving the answers to complex queries in a few seconds.</p>
+<p><strong>6. More than one Data View</strong></p>
+<p>The SQL language also helps in making the multiple views of the database structure for the different database users.</p>
+<h2 class="h2">Disadvantages of SQL</h2>
+<p>With the advantages of SQL, it also has some disadvantages, which are as follows:</p>
+<p><strong>1. Cost</strong></p>
+<p>The operation cost of some SQL versions is high. That's why some programmers cannot use the Structured Query Language.</p>
+<p><strong>2. Interface is Complex</strong></p>
+<p>Another big disadvantage is that the interface of Structured query language is difficult, which makes it difficult for SQL users to use and manage it.</p>
+<p><strong>3. Partial Database control</strong></p>
+<p>The business rules are hidden. So, the data professionals and users who are using this query language cannot have full database control.</p>
+<hr/>
+<div class="nexttopicdiv">
+<span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="sql-syntax">SQL Syntax</a></span>
+</div>
+
+<br/><br/>
+<div id="bottomnext">
+<a style="float:right" class="next" href="sql-syntax">next &rarr;</a>
+</div>
+<br/><br/>
+</td></tr>
+</table>
+</div>
+<hr class="hrhomebox" />
+<div><img class="lazyload" data-src="https://static.javatpoint.com/images/youtube-32.png" style="vertical-align:middle;" alt="Youtube" />
+<span class="h3" style="vertical-align:middle;font-size:22px"> For Videos Join Our Youtube Channel: <a href="https://bit.ly/2FOeX6S" target="_blank"> Join Now</a></span>
+</div>
+<hr class="hrhomebox" />
+<h3 class="h3">Feedback</h3>
+<ul class="points">
+<li>Send your Feedback to <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="99fffcfcfdfbf8faf2d9f3f8eff8ede9f6f0f7edb7faf6f4">[email&#160;protected]</a></li>
+</ul>
+<hr class="hrhomebox" />
+<h2 class="h2">Help Others, Please Share</h2>
+<a rel="nofollow" title="Facebook" target="_blank" href="https://www.facebook.com/sharer.php?u=https://www.javatpoint.com/sql-tutorial"><img src="https://www.javatpoint.com/images/facebook32.png" alt="facebook" /></a>
+<a rel="nofollow" title="Twitter" target="_blank" href="https://twitter.com/share?url=https://www.javatpoint.com/sql-tutorial"><img src="https://www.javatpoint.com/images/twitter32.png" alt="twitter" /></a>
+<a rel="nofollow" title="Pinterest" target="_blank" href="https://www.pinterest.com/pin/create/button/?url=https://www.javatpoint.com/sql-tutorial"><img src="https://www.javatpoint.com/images/pinterest32.png" alt="pinterest" /></a>
+
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Learn Latest Tutorials</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/splunk">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/splunk.png" alt="Splunk tutorial" />
+<p>Splunk</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/spss">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/spss.png" alt="SPSS tutorial" />
+<p>SPSS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/swagger">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/swagger.png" alt="Swagger tutorial" />
+<p>Swagger</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/t-sql">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/transact-sql.png" alt="T-SQL tutorial" />
+<p>Transact-SQL</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/tumblr">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/tumblr.png" alt="Tumblr tutorial" />
+<p>Tumblr</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reactjs-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="React tutorial" />
+<p>ReactJS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/regex">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/regex.png" alt="Regex tutorial" />
+<p>Regex</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reinforcement-learning">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="Reinforcement learning tutorial" />
+<p>Reinforcement Learning</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/r-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/r-programming.png" alt="R Programming tutorial" />
+<p>R Programming</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/rxjs">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/rxjs.png" alt="RxJS tutorial" />
+<p>RxJS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/react-native-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react-native.png" alt="React Native tutorial" />
+<p>React Native</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-design-pattern">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-design-patterns.png" alt="Python Design Patterns" />
+<p>Python Design Patterns</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-pillow">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-pillow.png" alt="Python Pillow tutorial" />
+<p>Python Pillow</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-turtle-programming">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-turtle.png" alt="Python Turtle tutorial" />
+<p>Python Turtle</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/keras">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/keras.png" alt="Keras tutorial" />
+<p>Keras</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Preparation</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/aptitude/quantitative">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/aptitude/images/quantitative-aptitude-home.png" alt="Aptitude" />
+<p>Aptitude</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reasoning">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/reasoning/images/reasoning-home.png" alt="Logical Reasoning" />
+<p>Reasoning</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/verbal-ability">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/verbal-ability/images/verbal-ability-home.png" alt="Verbal Ability" />
+<p>Verbal Ability</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/interview-questions-and-answers">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/interviewhome.png" alt="Interview Questions" />
+<p>Interview Questions</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/company-interview-questions-and-recruitment-process">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/interview/images/company-home.jpeg" alt="Company Interview Questions" />
+<p>Company Questions</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Trending Technologies</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/artificial-intelligence-ai">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/artificial-intelligence.png" alt="Artificial Intelligence" />
+<p>Artificial Intelligence</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/aws-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/amazon-web-services.png" alt="AWS Tutorial" />
+<p>AWS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/selenium-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/selenium.png" alt="Selenium tutorial" />
+<p>Selenium</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/cloud-computing">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cloud-computing.png" alt="Cloud Computing" />
+<p>Cloud Computing</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/hadoop-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/hadoop.png" alt="Hadoop tutorial" />
+<p>Hadoop</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reactjs-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/reactjs.png" alt="ReactJS Tutorial" />
+<p>ReactJS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-science">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-science.png" alt="Data Science Tutorial" />
+<p>Data Science</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/angular-7-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/angular7.png" alt="Angular 7 Tutorial" />
+<p>Angular 7</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/blockchain-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/blockchain.png" alt="Blockchain Tutorial" />
+<p>Blockchain</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/git">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/git.png" alt="Git Tutorial" />
+<p>Git</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/machine-learning">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/machine-learning.png" alt="Machine Learning Tutorial" />
+<p>Machine Learning</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/devops">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/devops.png" alt="DevOps Tutorial" />
+<p>DevOps</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">B.Tech / MCA</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/dbms-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dbms.png" alt="DBMS tutorial" />
+<p>DBMS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-structure-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-structures.png" alt="Data Structures tutorial" />
+<p>Data Structures</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/daa-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/daa.png" alt="DAA tutorial" />
+<p>DAA</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/operating-system">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/operating-system.png" alt="Operating System" />
+<p>Operating System</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/computer-network-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-network.png" alt="Computer Network tutorial" />
+<p>Computer Network</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/compiler-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/compiler-design.png" alt="Compiler Design tutorial" />
+<p>Compiler Design</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/computer-organization-and-architecture-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-organization.png" alt="Computer Organization and Architecture" />
+<p>Computer Organization</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/discrete-mathematics-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/discrete-mathematics.png" alt="Discrete Mathematics Tutorial" />
+<p>Discrete Mathematics</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/ethical-hacking">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/ethical-hacking.png" alt="Ethical Hacking" />
+<p>Ethical Hacking</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/computer-graphics-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-graphics.png" alt="Computer Graphics Tutorial" />
+<p>Computer Graphics</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/software-engineering">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/software-engineering.png" alt="Software Engineering " />
+<p>Software Engineering</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/html-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/web-technology.png" alt="html tutorial" />
+<p>Web Technology</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/cyber-security-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cyber-security.png" alt="Cyber Security tutorial" />
+<p>Cyber Security</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/automata-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/automata.png" alt="Automata Tutorial" />
+<p>Automata</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/c-programming-language-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/c-programming.png" alt="C Language tutorial" />
+<p>C Programming</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/cpp-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cpp.png" alt="C++ tutorial" />
+<p>C++</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/java-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/java.png" alt="Java tutorial" />
+<p>Java</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/net-framework">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dot-net.png" alt=".Net Framework tutorial" />
+<p>.Net</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python.png" alt="Python tutorial" />
+<p>Python</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/programs-list">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/programs.png" alt="List of Programs" />
+<p>Programs</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/control-system-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/control-system.png" alt="Control Systems tutorial" />
+<p>Control System</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-mining">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-mining.png" alt="Data Mining Tutorial" />
+<p>Data Mining</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-warehouse">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-warehouse.png" alt="Data Warehouse Tutorial" />
+<p>Data Warehouse</p>
+</div>
+</a>
+</div>
+</fieldset>
+</div>
+<br><br/><div class="mobilemenu" style="clear:both">
+</div></div>
+<div id="right">
+<br/><br/>
+</div>
+<div class="right1024" style="float:left;margin-left:10px;margin-top:120px;">
+
+</div>
+<br/>
+<div id="footer" style="clear:both;width:100%">
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="https://static.javatpoint.com/images/social/rss1.png" alt="RSS Feed" /></a> <a target="_blank" rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="https://static.javatpoint.com/images/social/mail1.png" alt="Subscribe to Get Email Alerts" /></a> <a rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="https://static.javatpoint.com/images/social/facebook1.jpg" alt="Facebook Page" /></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="https://static.javatpoint.com/images/social/twitter1.png" alt="Twitter Page" /></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="https://static.javatpoint.com/images/youtube32.png" alt="YouTube" /></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com"><img src="https://static.javatpoint.com/images/social/blog.png" alt="Blog Page" /></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="https://www.javatpoint.com/java-tutorial">Learn Java</a><a href="https://www.javatpoint.com/data-structure-tutorial">Learn Data Structures</a><a href="https://www.javatpoint.com/c-programming-language-tutorial">Learn C Programming</a><a href="https://www.javatpoint.com/cpp-tutorial">Learn C++ Tutorial</a><a href="https://www.javatpoint.com/c-sharp-tutorial">Learn C# Tutorial</a><a href="https://www.javatpoint.com/php-tutorial">Learn PHP Tutorial</a><a href="https://www.javatpoint.com/html-tutorial">Learn HTML Tutorial</a><a href="https://www.javatpoint.com/javascript-tutorial">Learn JavaScript Tutorial</a><a href="https://www.javatpoint.com/jquery-tutorial">Learn jQuery Tutorial</a><a href="https://www.javatpoint.com/spring-tutorial">Learn Spring Tutorial</a></div><div class="column4"><h3>Interview Questions</h3><a href="corejava-interview-questions">Java Interview Questions</a><a href="sql-interview-questions">SQL Interview Questions</a><a href="python-interview-questions">Python Interview Questions</a><a href="javascript-interview-questions">JavaScript Interview Questions</a><a href="top-angular-interview-questions">Angular Interview Questions</a><a href="selenium-interview-questions">Selenium Interview Questions</a><a href="spring-boot-interview-questions">Spring Boot Interview Questions</a><a href="job-interview-questions">HR Interview Questions</a><a href="cpp-interview-questions">C++ Interview Questions</a><a href="data-structure-interview-questions">Data Structure Interview Questions</a></div><div class="column4"><h3>About</h3><p>Javatpoint is developed to help students on various technologies such as Artificial Intelligence, Machine Learning, C, C++, Python, Java, PHP, HTML, CSS, JavaScript, jQuery, ReactJS, Node.js, AngularJS, Bootstrap, XML, SQL, PL/SQL, MySQL etc. </p><p>Javatpoint provides tutorials with examples, code snippets, and practical insights, making it suitable for both beginners and experienced developers.</p><p>There are also many interview questions which will help students to get placed in the companies.</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="https://www.javatpoint.com/contact-us">Contact Us</a> <a href="https://www.javatpoint.com/subscribe.jsp">Subscribe Us</a> <a href="https://www.javatpoint.com/privacy-policy">Privacy Policy</a><a href="https://www.javatpoint.com/sitemap.xml">Sitemap</a><br><a href="https://www.javatpoint.com/sonoo-jaiswal">About Me</a></div></footer><footer class="footer2"><p>&copy; Copyright 2011-2021 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer><div id="bot-root"></div><script> (function() { var e = document.createElement('script'); e.src = 'https://app.pushbrothers.com/js/notification-bot.js?cnfg=a3cc04a1-8471-450e-b01e-c9d752b16eb0'; document.getElementById('bot-root').appendChild(e);}());</script>
+</div>
+
+</div></div>
+<script src="https://static.javatpoint.com/js/shcoreandbrush.js"></script><script> dp.SyntaxHighlighter.HighlightAll('code'); </script>
+<script src="https://static.javatpoint.com/lazysizes.min.js?v=5.8" async></script>
+</body> </html> 

@@ -1,0 +1,1294 @@
+ <!DOCTYPE html><html lang="en"><head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BMVLE5WY82"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BMVLE5WY82');
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Learn C Programming Language Tutorial - javatpoint</title><link rel="SHORTCUT ICON" href="https://static.javatpoint.com/images/favicon2.png" />
+<link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async /><link rel="dns-prefetch" href="https://clients1.google.com"><link rel="dns-prefetch" href="https://static.javatpoint.com"><link rel="dns-prefetch" href="https://googleads.g.doubleclick.net"><link rel="dns-prefetch" href="https://www.google.com"><link rel="dns-prefetch" href="https://feedify.net"><meta name="theme-color" content="#4CAF50" /><meta property="og:title" content="Learn C Programming Language Tutorial - javatpoint" /><meta property="og:description" content="Learn C Tutorial or C Programming Language Tutorial or what is c programming, C language with programming examples for beginners and professionals covering concepts, control statements, c array, c pointers, c structures, c union, c strings and more." />
+<meta name="keywords" content="c, language,what is c programming, tutorial, programming, example, beginners, professionals, interview questions" /><meta name="description" content="Learn C Tutorial or C Programming Language Tutorial or what is c programming, C language with programming examples for beginners and professionals covering concepts, control statements, c array, c pointers, c structures, c union, c strings and more." /><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="canonical" href="https://www.javatpoint.com/c-programming-language-tutorial" />
+<meta property="og:locale" content="en_US" /><meta property="og:type" content="article" /><meta name="twitter:title" property="og:title" content="Learn C Programming Language Tutorial - javatpoint" /><meta name="twitter:description" property="og:description" content="Learn C Tutorial or C Programming Language Tutorial or what is c programming, C language with programming examples for beginners and professionals covering concepts, control statements, c array, c pointers, c structures, c union, c strings and more." /><meta property="og:url" content="https://www.javatpoint.com/c-programming-language-tutorial" /><meta property="og:site_name" content="www.javatpoint.com" /><meta name="twitter:card" content="summary" /><meta name="twitter:site" content="@pagejavatpoint" /><meta name="twitter:domain" content="www.javatpoint.com" /><meta name="twitter:creator" content="@pagejavatpoint" />
+<link href="https://www.javatpoint.com/manifest.json" rel="manifest">
+<script data-cfasync="false" type="text/javascript">
+(function(w, d) {
+	var s = d.createElement('script');
+	s.src = '//cdn.adpushup.com/37780/adpushup.js';
+	s.crossOrigin='anonymous'; 
+	s.type = 'text/javascript'; s.async = true;
+	(d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s);
+	w.adpushup = w.adpushup || {que:[]};
+})(window, document);
+
+</script>
+<script data-cfasync="false" type="text/javascript">
+!function(e,t){var siteId = "37784";
+var r,a;let o=function(){var e=t.createElement("script");e.id="lzORaekbHNiuS",e["data-cfasync"]="false",e.src="//html-load.com/loader.min.js",e.charset="UTF-8",e.data="svmmawaaasa0njevas3ascattafa3aga6katacaseva05atkevarkka0asaga05qkacasa0kema0ayfevevasagara6ketacasngauefa03gatnafa3asa7cayattafa3a7as9e2",e.onload=function(){let e=!1,t=Math.random().toString(),r="html-load.com";window.addEventListener("message",r=>{r.data===t+"_as_res"&&(e=!0)}),window.setTimeout(()=>{if(!e){let t="Failed to load website properly since "+r+" is blocked. Please allow "+r;throw alert(t),fetch("https://error-report.com/report?type=loader_light&url="+btoa(location.href)+"&error="+btoa(t),{method:"POST"}).then(e=>e.text()).then(e=>{let r=document.createElement("iframe");r.src="https://info.error-report.com/modal?eventId="+e+"&error="+btoa(t),r.setAttribute("style","width: 100vw; height: 100vh; z-index: 2147483647; position: fixed; left: 0; top: 0;"),document.body.appendChild(r);let a=e=>{"close-error-report"===e.data&&(r.remove(),window.removeEventListener("message",a))};window.addEventListener("message",a)}).catch(e=>{confirm(navigator.language.toLowerCase().startsWith("ko")?"잘못된 애드블록 필터로 웹페이지 로딩에 실패하였습니다. 애드블록을 비활성화한 후 웹사이트를 이용해주세요. (자세한 내용은 '확인' 버튼을 눌러 확인해주세요)":"This page could not be loaded properly due to incorrect / bad filtering rule(s) of adblockers in use. Please disable all adblockers to continue using the website. (click OK if you'd like to learn more)")?location.href="https://info.error-report.com/modal?eventId=&error="+btoa(e.toString()):location.reload()}),Error(t)}},1e3),window.postMessage(t+"_as_req","*")},e.onerror=function(){let e=document.getElementById("lzORaekbHNiuS"),t=document.createElement("script");for(let r=0;r<e.attributes.length;r++)t.setAttribute(e.attributes[r].name,e.attributes[r].value);let a=new window.URL(e.src),o=["html-load.com","fb.html-load.com","content-loader.com","fb.content-loader.com"];if(void 0===window.as_retry&&(window.as_retry=0),window.as_retry>=o.length){let n="Failed to load website properly since "+o[0]+" is blocked. Please allow "+o[0];throw alert(n),fetch("https://error-report.com/report?type=loader_light&url="+btoa(location.href)+"&error="+btoa(n),{method:"POST"}).then(e=>e.text()).then(e=>{let t=document.createElement("iframe");t.src="https://info.error-report.com/modal?eventId="+e+"&error="+btoa(n),t.setAttribute("style","width: 100vw; height: 100vh; z-index: 2147483647; position: fixed; left: 0; top: 0;"),document.body.appendChild(t);let r=e=>{"close-error-report"===e.data&&(t.remove(),window.removeEventListener("message",r))};window.addEventListener("message",r)}).catch(e=>{confirm(navigator.language.toLowerCase().startsWith("ko")?"잘못된 애드블록 필터로 웹페이지 로딩에 실패하였습니다. 애드블록을 비활성화한 후 웹사이트를 이용해주세요. (자세한 내용은 '확인' 버튼을 눌러 확인해주세요)":"This page could not be loaded properly due to incorrect / bad filtering rule(s) of adblockers in use. Please disable all adblockers to continue using the website. (click OK if you'd like to learn more)")?location.href="https://info.error-report.com/modal?eventId=&error="+btoa(e.toString()):location.reload()}),Error(n)}a.host=o[window.as_retry++],t.setAttribute("src",a.href),t.setAttribute("as-async","true"),e.setAttribute("id",e.getAttribute("id")+"_"),e.parentNode.insertBefore(t,e),e.remove()},(t.getElementsByTagName("head")[0]||t.getElementsByTagName("body")[0]).appendChild(e)},n=function(r,a,o){var n=e.Image?new Image:t.createElement("img");n.onload=function(e){a&&"function"==typeof a&&a()},n.onerror=function(e){o&&"function"==typeof o&&o()},n.src=r};(r=t.createElement("script")).src="//delivery.adrecover.com/"+siteId+"/adRecover.js",r.type="text/javascript",r.async=!0,(t.getElementsByTagName("head")[0]||t.getElementsByTagName("body")[0]).appendChild(r),a=function(e){e||o()},n("//delivery.adrecover.com/block.jpg",function(){a(!1)},function(){n("//delivery.adrecover.com/allow.jpg",function(){a(!0)},function(){a(!1)})})}(window,document);
+</script>
+</head>
+<body onload="highlightlink()">
+
+<div id="page" style="margin:-8px;background-color:#f5f5f4;"><div id="container"> <div class="header"><table style="width:100%;margin-bottom:5px"> <tr> <td> <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:10px;margin-right:10px"> <a href="https://www.javatpoint.com"><img src="https://static.javatpoint.com/images/logo/jtp-logo3.png" alt="Javatpoint Logo" /></a> </div> <div style="float:left;width:60%;"><script> (function() { var cx = '005383125436438536544:y1edweedxwi'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script><gcse:search></gcse:search> </div> </td> </tr></table> </div>
+<div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<span style="float:left"><input type="image" src="https://www.javatpoint.com/images/menuhome64.png" alt="Go To Top" onclick="showmenu()" /></span>
+<span style="float:left"><a href="https://www.javatpoint.com"><img src="https://www.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo"></a></span>
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<script>
+  (function() {
+    var cx = '005383125436438536544:y1edweedxwi';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+</div>
+<div id="link" style="clear:both;z-index:999"> <div class="ddsmoothmenu">
+<ul>
+<li><a href="https://www.javatpoint.com">Home</a></li>
+<li><a href="c-programming-language-tutorial" class="selected">C</a></li>
+<li><a href="cpp-tutorial">C++</a></li>
+<li><a href="c-sharp-tutorial">C#</a></li>
+<li><a href="java-tutorial">Java</a></li>
+<li><a href="sql-tutorial">SQL</a></li>
+<li><a href="html-tutorial">HTML</a></li>
+<li><a href="css-tutorial">CSS</a></li>
+<li><a href="javascript-tutorial">JavaScript</a></li>
+<li><a href="xml-tutorial">XML</a></li>
+<li><a href="ajax-tutorial">Ajax</a></li>
+<li><a href="android-tutorial">Android</a></li>
+<li><a href="cloud-computing">Cloud</a></li>
+<li><a href="design-patterns-in-java">Design Pattern</a></li>
+<li><a href="free-java-projects">Projects</a></li>
+<li><a href="corejava-interview-questions">Interview Q</a></li>
+</ul>
+<br style="clear: left" />
+</div></div>
+<div class="mobilemenu" style="clear:both">
+
+</div>
+<div id="menu">
+
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C Tutorial</span></h2>
+</div>
+<div class="leftmenu">
+<a href="c-programming-language-tutorial">What is C Language</a>
+<a href="history-of-c-language">History of C </a>
+<a href="features-of-c-language">Features of C</a>
+<a href="how-to-install-c">How to install C</a>
+<a href="first-c-program">First C Program</a>
+<a href="compilation-process-in-c">Compilation Process in C</a>
+<a href="printf-scanf">printf scanf</a>
+<a href="variables-in-c">Variables in C</a>
+<a href="data-types-in-c">Data Types in c</a>
+<a href="keywords-in-c">Keywords in c</a>
+<a href="c-identifiers">C Identifiers</a>
+<a href="c-operators">C Operators</a>
+<a href="comments-in-c">C Comments</a>
+<a href="c-format-specifier">C Format Specifier</a>
+<a href="escape-sequence-in-c">C Escape Sequence</a>
+<a href="ascii-value-in-c">ASCII value in C</a>
+<a href="constants-in-c">Constants in C</a>
+<a href="literals-in-c">Literals in C</a>
+<a href="tokens-in-c">Tokens in C</a>
+<a href="c-boolean">C Boolean</a>
+<a href="static-in-c">Static in C</a>
+<a href="programming-errors-in-c">Programming Errors in C</a>
+<a href="compile-time-vs-runtime">Compile time vs Runtime</a>
+<a href="conditional-operator-in-c">Conditional Operator in C</a>
+<a href="bitwise-operator-in-c">Bitwise Operator in C</a>
+<a href="2s-complement-in-c">2s complement in C</a>
+<a href="/test/c-fundamental-1"><span>C Fundamental Test</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C Control Statements</span></h2>
+</div>
+<div class="leftmenu">
+<a href="c-if-else">C if-else</a>
+<a href="c-switch">C switch</a>
+<a href="if-else-vs-switch">if-else vs switch</a>
+<a href="c-loop">C Loops</a>
+<a href="do-while-loop-in-c">C do-while loop</a>
+<a href="while-loop-in-c">C while loop</a>
+<a href="for-loop-in-c">C for loop</a>
+<a href="nested-loops-in-c">Nested Loops in C</a>
+<a href="infinite-loop-in-c">Infinite Loop in C</a>
+<a href="c-break">C break</a>
+<a href="c-continue">C continue</a>
+<a href="c-goto">C goto</a>
+<a href="type-casting-in-c">Type Casting</a>
+<a href="/test/c-control-statements-1"><span>C Control Statement Test</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C Functions</span></h2>
+</div>
+<div class="leftmenu">
+<a href="functions-in-c">What is function</a>
+<a href="call-by-value-and-call-by-reference-in-c">Call: Value &amp; Reference</a>
+<a href="recursion-in-c">Recursion in c</a>
+<a href="storage-classes-in-c">Storage Classes</a>
+<a href="/test/c-functions-1"><span>C Functions Test</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C Array</span></h2>
+</div>
+<div class="leftmenu">
+<a href="c-array">1-D Array</a>
+<a href="two-dimensional-array-in-c">2-D Array</a>
+<a href="return-an-array-in-c">Return an Array in C</a>
+<a href="passing-array-to-function-in-c">Array to Function</a>
+<a href="/test/c-array-1"><span>C Array Test</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C Pointers</span></h2>
+</div>
+<div class="leftmenu">
+<a href="c-pointers"><span>C Pointers</span></a>
+<a href="c-pointer-to-pointer"><span>C Pointer to Pointer</span></a>
+<a href="pointer-arithmetic-in-c"><span>C Pointer Arithmetic</span></a>
+<a href="dangling-pointers-in-c">Dangling Pointers in C</a>
+<a href="size-of-operator-in-c">sizeof() operator in C</a>
+<a href="const-pointer-in-c">const Pointer in C</a>
+<a href="void-pointer-in-c">void pointer in C</a>
+<a href="c-dereference-pointer">C Dereference Pointer</a>
+<a href="null-pointer-in-c">Null Pointer in C</a>
+<a href="c-function-pointer">C Function Pointer</a>
+<a href="function-pointer-as-argument-in-c">Function pointer as argument in C</a>
+<a href="/test/c-pointers-1"><span>C Pointers Test</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C Dynamic Memory</span></h2>
+</div>
+<div class="leftmenu">
+<a href="dynamic-memory-allocation-in-c"><span>Dynamic memory</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C Strings</span></h2>
+</div>
+<div class="leftmenu">
+<a href="c-strings"><span>String in C</span></a>
+<a href="c-gets-puts"><span>C gets() &amp; puts()</span></a>
+<a href="c-string-functions"><span>C String Functions</span></a>
+<a href="c-strlen"><span>C strlen()</span></a>
+<a href="c-strcpy"><span>C strcpy()</span></a>
+<a href="c-strcat"><span>C strcat()</span></a>
+<a href="c-strcmp"><span>C strcmp()</span></a>
+<a href="c-strrev"><span>C strrev()</span></a>
+<a href="c-strlwr"><span>C strlwr()</span></a>
+<a href="c-strupr"><span>C strupr()</span></a>
+<a href="c-strstr"><span>C strstr()</span></a>
+<a href="/test/c-string-1"><span>C String Test</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C Math</span></h2>
+</div>
+<div class="leftmenu">
+<a href="c-math"><span>C Math Functions</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C Structure Union</span></h2>
+</div>
+<div class="leftmenu">
+<a href="structure-in-c"><span>C Structure</span></a>
+<a href="typedef-in-c">typedef in C</a>
+<a href="array-of-structures-in-c"><span>C Array of Structures</span></a>
+<a href="nested-structure-in-c"><span>C Nested Structure</span></a>
+<a href="structure-padding-in-c">Structure Padding in C</a>
+<a href="c-union"><span>C Union</span></a>
+<a href="/test/c-structure-union-enums-1"><span>C Structure Test</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C File Handling</span></h2>
+</div>
+<div class="leftmenu">
+<a href="file-handling-in-c"><span>C File Handling</span></a>
+<a href="fprintf-fscanf-in-c"><span>C fprintf() fscanf()</span></a>
+<a href="fputc-fgetc-in-c"><span>C fputc() fgetc()</span></a>
+<a href="fputs-fgets-in-c"><span>C fputs() fgets()</span></a>
+<a href="fseek-in-c"><span>C fseek()</span></a>
+<a href="rewind-in-c"><span>C rewind()</span></a>
+<a href="ftell-in-c"><span>C ftell()</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C Preprocessor</span></h2>
+</div>
+<div class="leftmenu">
+<a href="c-preprocessor"><span>C Preprocessor</span></a>
+<a href="c-macros"><span>C Macros</span></a>
+<a href="c-preprocessor-include"><span>C #include</span></a>
+<a href="c-preprocessor-define"><span>C #define</span></a>
+<a href="c-preprocessor-undef"><span>C #undef</span></a>
+<a href="c-preprocessor-ifdef"><span>C #ifdef</span></a>
+<a href="c-preprocessor-ifndef"><span>C #ifndef</span></a>
+<a href="c-preprocessor-if"><span>C #if</span></a>
+<a href="c-preprocessor-else"><span>C #else</span></a>
+<a href="c-preprocessor-error"><span>C #error</span></a>
+<a href="c-preprocessor-pragma"><span>C #pragma</span></a>
+<a href="/test/c-preprocessor-1"><span>C Preprocessor Test</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C Command Line</span></h2>
+</div>
+<div class="leftmenu">
+<a href="command-line-arguments-in-c"><span>Command Line Arguments</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C Misc</span></h2>
+</div>
+<div class="leftmenu">
+<a href="c-expressions">C Expressions</a>
+<a href="c-data-segments">Data Segments</a>
+<a href="flow-of-c-program">Flow of C Program</a>
+<a href="classification-of-programming-languages">Classification of Programming Languages</a>
+<a href="enum-in-c">Enum in C</a>
+<a href="what-is-getch-in-c">What is getch() in C</a>
+<a href="what-is-the-function-call-in-c">What is the function call in C</a>
+<a href="typedef-vs-define-in-c">typedef vs define in C</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C Programming Test</span></h2>
+</div>
+<div class="leftmenu">
+<a href="test/c-programming"><span>C Programming Test</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C Programs</span></h2>
+</div>
+<div class="leftmenu">
+<a href="c-programs"><span>Top 10+ C Programs</span></a>
+<a href="fibonacci-series-in-c"><span>Fibonacci Series</span></a>
+<a href="prime-number-program-in-c"><span>Prime Number</span></a>
+<a href="palindrome-program-in-c"><span>Palindrome Number</span></a>
+<a href="c-program-to-compare-the-two-strings">C program to compare the two strings</a>
+<a href="strings-concatenation-in-c">Strings Concatenation in C</a>
+<a href="factorial-program-in-c"><span>Factorial</span></a>
+<a href="armstrong-number-in-c"><span>Armstrong Number</span></a>
+<a href="sum-of-digits-program-in-c"><span>Sum of digits</span></a>
+<a href="count-the-number-of-digits-in-c">Count the number of digits in C</a>
+<a href="c-program-to-reverse-number"><span>Reverse Number</span></a>
+<a href="c-program-to-swap-two-numbers-without-using-third-variable"><span>Swap Number</span></a>
+<a href="c-program-to-print-hello-without-semicolon"><span>Print "Hello" without ;</span></a>
+<a href="assembly-program-in-c"><span>Assembly code in C</span></a>
+<a href="c-program-without-main"><span>C program without main</span></a>
+<a href="matrix-multiplication-in-c"><span>Matrix Multiplication</span></a>
+<a href="c-program-to-convert-decimal-to-binary"><span>Decimal to Binary</span></a>
+<a href="c-program-to-convert-number-in-characters"><span>Number in Characters</span></a>
+<a href="c-program-to-print-alphabet-triangle"><span>Alphabet Triangle</span></a>
+<a href="c-program-to-print-number-triangle"><span>Number Triangle</span></a>
+<a href="c-program-to-generate-fibonacci-triangle"><span>Fibonacci Triangle</span></a>
+<a href="hexadecimal-to-binary-in-c">Hexadecimal to Binary</a>
+<a href="hexadecimal-to-decimal-in-c">Hexadecimal to Decimal</a>
+<a href="octal-to-hexadecimal-in-c">Octal to Hexadecimal in C</a>
+<a href="strong-number-in-c">Strong number in C</a>
+<a href="star-program-in-c">Star Program in C</a>
+<a href="itoa-function-in-c">itoa Function in C</a>
+<a href="extra-long-factorials-in-c">Extra Long Factorials in C</a>
+<a href="leap-year-program-in-c">Leap year program in C</a>
+<a href="perfect-number-program-in-c">Perfect Number Program in C</a>
+<a href="variables-vs-constants-in-c">Variables vs Constants</a>
+<a href="round-robin-program-in-c">Round Robin Program in C with Output</a>
+<a href="c-program-to-find-the-roots-of-quadratic-equation">C Program to find the roots of quadratic equation</a>
+<a href="type-casting-vs-type-conversion">Type Casting vs Type Conversion</a>
+<a href="how-to-run-a-c-program-in-visual-studio-code">How to run a C program in Visual Studio Code</a>
+<a href="modulus-operator-in-c-or-cpp">Modulus Operator in C/C++</a>
+<a href="sum-of-first-n-natural-numbers-in-c">Sum of first N natural numbers in C</a>
+<a href="big-o-notation-in-c">Big O Notation in C</a>
+<a href="lcm-of-two-numbers-in-c">LCM of two numbers in C</a>
+<a href="while-loop-vs-do-while-loop-in-c">while loop vs do-while loop in C</a>
+<a href="memory-layout-in-c">Memory Layout in C</a>
+<a href="balanced-parenthesis-in-c">Balanced Parenthesis in C</a>
+<a href="binary-to-decimal-number-in-c">Binary to Decimal Number in C</a>
+<a href="gcd-of-two-numbers-in-c">GCD of two numbers in C</a>
+<a href="getchar-function-in-c">Getchar() function in C</a>
+<a href="flowchart-in-c-programming-language">flowchart in C</a>
+<a href="simpson-method">Simpson Method</a>
+<a href="pyramid-patterns-in-c">Pyramid Patterns in C</a>
+<a href="random-function-in-c">Random Function in C</a>
+<a href="floyds-triangle-in-c">Floyd's Triangle in C</a>
+<a href="c-header-files">C Header Files</a>
+<a href="abs-function-in-c">abs() function in C</a>
+<a href="atoi-function-in-c">Atoi() function in C</a>
+<a href="structure-pointer-in-c">Structure Pointer in C</a>
+<a href="sprintf-in-c">sprintf() in C</a>
+<a href="range-of-int-in-c">Range of Int in C</a>
+<a href="c-program-to-convert-24-hour-time-to-12-hour-time">C Program to convert 24 Hour time to 12 Hour time</a>
+<a href="what-is-double-in-c">What is double in C</a>
+<a href="what-is-the-main-in-c">What is the main in C</a>
+<a href="calculator-program-in-c">Calculator Program in C</a>
+<a href="calloc-in-c">Calloc in C</a>
+<a href="user-defined-vs-library-function-in-c">user-defined vs library function in C</a>
+<a href="memset-c">Memset C</a>
+<a href="ascii-table-in-c">ASCII Table in C</a>
+<a href="static-function-in-c">Static function in C</a>
+<a href="reverse-a-string-in-c">Reverse a String in C</a>
+<a href="twin-prime-numbers-in-c">Twin Prime Numbers in C</a>
+<a href="strchr-function-in-c">strchr() function in C</a>
+<a href="structure-of-a-c-program">Structure of a C program</a>
+<a href="power-function-in-c">Power Function in C</a>
+<a href="malloc-in-c">Malloc in C</a>
+<a href="table-program-in-c">Table Program in C</a>
+<a href="types-of-recursion-in-c">Types of Recursion in C</a>
+<a href="convert-uppercase-to-lowercase-in-c">Convert Uppercase to Lowercase in C</a>
+<a href="unary-operator-in-c">Unary Operator in C</a>
+<a href="arithmetic-operator-in-c">Arithmetic Operator in C</a>
+<a href="ceil-function-in-c">Ceil Function in C</a>
+<a href="relational-operator-in-c">Relational Operator in C</a>
+<a href="assignment-operator-in-c">Assignment Operator in C</a>
+<a href="pre-increment-and-post-increment-operator-in-c">Pre-increment and Post-increment Operator in C</a>
+<a href="pointer-vs-array-in-c">Pointer vs array in C</a>
+<a href="restrict-keyword-in-c">Restrict keyword in C</a>
+<a href="exit-function-in-c">The exit() function in C</a>
+<a href="const-qualifier-in-c">Const Qualifier in C</a>
+<a href="sequence-points-in-c">Sequence Points in C</a>
+<a href="anagram-in-c">Anagram in C</a>
+<a href="increment-and-decrement-operators-in-c">Increment and Decrement Operators in C</a>
+<a href="logical-and-operator-in-c">Logical AND Operator in C</a>
+<a href="shift-operators-in-c">Shift Operators in C</a>
+<a href="near-far-and-huge-pointers-in-c">Near, Far, and Huge pointers in C language</a>
+<a href="magic-number-in-c">Magic Number in C</a>
+<a href="remove-duplicate-elements-from-an-array-in-c">Remove Duplicate Elements from an Array in C</a>
+<a href="generic-linked-list-in-c">Generic Linked list in C</a>
+<a href="isalnum-function-in-c">isalnum() function in C</a>
+<a href="isalpha-function-in-c">isalpha() function in C</a>
+<a href="bisection-method-in-c">Bisection Method in C</a>
+<a href="snprintf-function-in-c">snprintf() function in C</a>
+<a href="remove-an-element-from-an-array-in-c">Remove an element from an array in C</a>
+<a href="square-root-in-c">Square Root in C</a>
+<a href="isprint-function-in-c">isprint() function in C</a>
+<a href="isdigit-function-in-c">isdigit() function in C</a>
+<a href="isgraph-function-in-c">isgraph() function in C</a>
+<a href="logical-not-operator-in-c">Logical NOT (!) Operator in C</a>
+<a href="self-referential-structure">Self-referential structure</a>
+<a href="break-vs-continue-in-c">Break Vs. Continue in C</a>
+<a href="for-vs-while-loop-in-c">For vs. While loop in C</a>
+<a href="abort-function-in-c-programming">Abort() Function in C</a>
+<a href="assert-in-c-programming">Assert in C</a>
+<a href="floor-function-in-c-programming">Floor() Function in C</a>
+<a href="memcmp-in-c">memcmp() in C</a>
+<a href="find-day-from-day-in-c-without-using-function">Find Day from Day in C without Using Function</a>
+<a href="find-median-of-1d-array-using-functions-in-c">Find Median of 1D Array Using Functions in C</a>
+<a href="find-reverse-of-an-array-in-c-using-functions">Find Reverse of an Array in C Using Functions</a>
+<a href="find-occurrence-of-substring-in-c-using-function">Find Occurrence of Substring in C using Function</a>
+<a href="find-out-power-without-using-pow-function-in-c">Find out Power without Using POW Function in C</a>
+<a href="exponential-in-c">Exponential() in C</a>
+<a href="float-in-c">Float in C</a>
+<a href="islower-in-c">islower() in C</a>
+<a href="memcpy-in-c">memcpy() in C</a>
+<a href="memmove-in-c">memmove() in C</a>
+<a href="matrix-calculator-in-c">Matrix Calculator in C</a>
+<a href="bank-account-management-system">Bank Account Management System</a>
+<a href="library-management-system-in-c">Library Management System in C</a>
+<a href="calendar-application-in-c">8th Sep - Calendar Application in C</a>
+<a href="va_start-in-c-programming">8th Sep - va_start() in C programming</a>
+<a href="ascii-vs-unicode">8th Sep - Ascii vs Unicode</a>
+<a href="student-record-system-in-c">Student Record System in C</a>
+<a href="contact-management-system-in-c">Contact Management System in C</a>
+<a href="cricket-score-sheet-in-c">Cricket Score Sheet in C</a>
+<a href="c-or-cpp-tricky-programs">C/C++ Tricky Programs</a>
+<a href="clearing-the-input-buffer-in-c-or-cpp">Clearing the Input Buffer in C/C++</a>
+<a href="in-place-conversion-of-sorted-dll-to-balanced-bst">In-place Conversion of Sorted DLL to Balanced BST</a>
+<a href="merge-two-balanced-binary-search-trees">Merge Two Balanced Binary Search Trees</a>
+<a href="responsive-images-in-bootstrap-with-examples">Responsive Images in Bootstrap with Examples</a>
+<a href="why-cant-a-priority-queue-wrap-around-like-an-ordinary-queue">Why can't a Priority Queue Wrap around like an Ordinary Queue</a>
+<a href="customer-billing-system-in-c">Customer Billing System in C</a>
+<a href="builtin-functions-of-gcc-compiler">Builtin functions of GCC compiler</a>
+<a href="integer-promotions-in-c">Integer Promotions in C</a>
+<a href="bit-fields-in-c">Bit Fields in C</a>
+<a href="department-management-system-in-c">Department Management System in C</a>
+<a href="local-labels-in-c">Local Labels in C</a>
+<a href="school-billing-system-in-c">School Billing System in C</a>
+<a href="banking-account-system-in-c-using-file-handling">Banking Account System in C using File handling</a>
+<a href="data-structures-and-algorithms-in-c-set-1">Data Structures and Algorithms in C - Set 1</a>
+<a href="data-structures-and-algorithms-in-c-set-2">Data Structures and Algorithms in C - Set 2</a>
+<a href="employee-record-system-in-c">Employee Record System in C</a>
+<a href="hangman-game-in-c">Hangman Game in C</a>
+<a href="hospital-management-system-in-c">Hospital Management System in C</a>
+<a href="number-of-even-and-odd-numbers-in-a-given-range">Number of even and odd numbers in a given range</a>
+<a href="qsort-in-c">qsort() in C</a>
+<a href="quiz-game-in-c">Quiz game in C</a>
+<a href="an-array-of-strings-in-c">An Array of Strings in C</a>
+<a href="peak-element-in-the-array-in-c">Peak element in the Array in C</a>
+<a href="move-all-negative-elements-to-one-side-of-an-array-c">Move all negative elements to one side of an Array-C</a>
+<a href="reverse-an-array-in-c">Reverse an Array in C</a>
+<a href="3-way-merge-sort-in-c">3 way merge sort in c</a>
+<a href="segregate-0s-and-1s-in-an-array">Segregate 0s and 1s in an array</a>
+<a href="articulation-points-and-bridges">Articulation Points and Bridges</a>
+<a href="execution-of-printf-with-plus-plus-operators">Execution of printf with ++ Operators</a>
+<a href="understanding-the-extern-keyword-in-c">Understanding the extern Keyword in C</a>
+<a href="bankers-algorithm-in-c">Banker's Algorithm in C</a>
+<a href="fifo-page-replacement-algorithm-in-c">FIFO Page Replacement Algorithm in C</a>
+<a href="kruskals-algorithm-in-c">Kruskal's Algorithm in C</a>
+<a href="fcfs-program-in-c">FCFS Program in C</a>
+<a href="triple-des-algorithm-in-c">Triple DES Algorithm in C</a>
+<a href="window-sliding-technique-in-c">Window Sliding Technique in C</a>
+<a href="sleeping-barber-problem-solution-in-c">Sleeping Barber Problem Solution in C</a>
+<a href="how-to-add-matrix-in-c">How to Add Matrix in C</a>
+<a href="c-program-to-demonstrate-fork-and-pipe">C Program to Demonstrate fork() and pipe()</a>
+<a href="deadlock-prevention-using-bnkers-algorithm-in-c">Deadlock Prevention using Banker's Algorithm in C</a>
+<a href="simple-stopwatch-program-in-c">Simple Stopwatch Program in C</a>
+<a href="add-node-to-linked-list-in-c">Add Node to Linked List in C</a>
+<a href="how-to-add-two-array-in-c">How to Add two Array in C</a>
+<a href="algorithm-in-c-language">Algorithm in C language</a>
+<a href="add-digits-of-number-in-c">Add Digits of Number in C</a>
+<a href="add-element-in-array-in-c">Add Element in Array in C</a>
+<a href="add-string-in-c">Add String in C</a>
+<a href="add-two-matrices-in-c">Add Two Matrices in C</a>
+<a href="add-two-numbers-using-pointer-in-c">Add two numbers using Pointer in C</a>
+<a href="order-of-complexity-in-c">Order of Complexity in C</a>
+<a href="pattern-matching-algorithm-in-c">Pattern Matching Algorithm in C</a>
+<a href="adaline-program-in-c">Adaline Program in C</a>
+<a href="adam-number-in-c-program">Adam Number in C Program</a>
+<a href="adam-number-or-not-in-c-program">Adam Number or not in C Program</a>
+<a href="add-2-matrix-in-c">Add 2 Matrix in C</a>
+<a href="add-2-strings-in-c">Add 2 Strings in C</a>
+<a href="add-a-character-to-a-string-in-c">Add a Character to a String in C</a>
+<a href="best-compiler-for-c-programming">Best Compiler for C Programming</a>
+<a href="c-program-to-convert-infix-to-postfix">C Program to Convert Infix to Postfix</a>
+<a href="c-program-for-printing-inverted-pyramid">C Program For Printing Inverted Pyramid</a>
+<a href="control-string-in-c-language">Control String in C Language</a>
+<a href="how-to-find-time-complexity-of-a-program-in-c">How to Find Time Complexity of a Program in C</a>
+<a href="top-c-projects-in-2023">Top C Projects in 2023</a>
+<a href="convert-a-char-array-into-a-double-in-c">Convert a Char Array into a Double in C</a>
+<a href="conio-h-in-c">Conio.h in C</a>
+<a href="decision-making-statements-in-c">Decision-Making Statements in C</a>
+<a href="what-is-hashing-in-c">What is Hashing in C</a>
+<a href="bubble-sort-program-in-c">Bubble sort program in C</a>
+<a href="comma-operator-in-c">Comma Operator in C</a>
+<a href="control-statements-in-c">Control Statements in C</a>
+<a href="ctype-h-in-c">ctype.h in C</a>
+<a href="first-fit-algorithm-in-c">First Fit Algorithm in C</a>
+<a href="hello-world-program-in-c">Hello World Program in C</a>
+<a href="logical-operator-in-c">Logical operator in c</a>
+<a href="memory-leak-in-c">Memory leak in C</a>
+<a href="null-character-in-c">Null character in C</a>
+<a href="operator-precedence-in-c">Operator precedence in C</a>
+<a href="putchar-function-in-c">Putchar() function in C</a>
+<a href="quick-sort-in-c">Quick Sort in C</a>
+<a href="realloc-in-c">realloc in C</a>
+<a href="special-operator-in-c">Special operator in C</a>
+<a href="volatile-keyword-in-c">Volatile Keyword in C</a>
+<a href="crc-program-in-c">CRC program in C</a>
+<a href="binary-search-algorithm-in-c">Binary search algorithm in C</a>
+<a href="kruskal-algorithm-in-c">Kruskal algorithm in C</a>
+<a href="transpose-of-matrix-in-c">Transpose of Matrix in C</a>
+<a href="actual-and-formal-parameters-in-c">Actual and Formal Parameters in C</a>
+<a href="bit-stuffing-in-c">Bit Stuffing in C</a>
+<a href="difference-between-c-and-embedded-c">Difference between C and Embedded C</a>
+<a href="dynamic-array-in-c">Dynamic Array in C</a>
+<a href="jump-statement-in-c">Jump statement in C</a>
+<a href="multidimensional-array-in-c">Multidimensional array in C</a>
+<a href="priority-scheduling-program-in-c">Priority scheduling program in C</a>
+<a href="pseudo-code-in-c">Pseudo code in C</a>
+<a href="data-structure-in-c">Data Structure in C</a>
+<a href="difference-between-switch-statement-and-if-else-if-ladder-statement-in-c">Difference between switch statement and if-else-if ladder statement in C</a>
+<a href="bfs-program-in-c">BFS Program in C</a>
+<a href="nested-if-else-statement-in-c">Nested if else statement in C</a>
+<a href="pattern-programs-in-c">Pattern Programs in C</a>
+<a href="sjf-scheduling-program-in-c">SJF Scheduling program in C</a>
+<a href="stdlib-h-in-c">Stdlib.h in C</a>
+<a href="user-defined-function-in-c">User defined function in C</a>
+<a href="how-to-use-pointers-in-c-language">How to use Pointers in C language</a>
+<a href="what-is-a-storage-class-in-c">What is a Storage Class in C</a>
+<a href="what-is-short-int-in-c">What is short int in C</a>
+<a href="insertion-sort-in-c">Insertion Sort in C</a>
+<a href="queue-in-c">Queue in C</a>
+<a href="segmentation-fault-in-c">Segmentation Fault in C</a>
+<a href="function-prototype-in-c">FUNCTION PROTOTYPE IN C</a>
+<a href="iteration-in-c">Iteration in C</a>
+<a href="one-dimensional-array-in-c">One dimensional array in C</a>
+<a href="overview-of-structures-and-unions-in-c">Overview of Structures and Unions in C</a>
+<a href="difference-between-1d-and-2d-array-in-c">Difference between 1D and 2D array in C</a>
+<a href="differences-between-float-and-double-in-c">Differences between Float and Double in C</a>
+<a href="fizz-buzz-program-in-c">Fizz Buzz Program in C</a>
+<a href="formatted-and-unformatted-input-output-in-c">Formatted and Unformatted Input Output in C</a>
+<a href="garbage-collection-in-c">Garbage collection in C</a>
+<a href="library-function-in-c">Library function in C</a>
+<a href="strtok-function-in-c">Strtok() function in C</a>
+<a href="symbolic-constants-in-c">Symbolic Constants in C</a>
+<a href="what-is-garbage-value-in-c">What is Garbage Value in C</a>
+<a href="what-is-size_t-in-c">What is size_t in C</a>
+<a href="what-is-the-use-of-r-in-c">What is the use of "\r" in C</a>
+<a href="address-operator-in-c">Address operator in C</a>
+<a href="booths-algorithm-in-c">BOOTHS Algorithm in C</a>
+<a href="character-stuffing-program-in-c">Character stuffing program in C</a>
+<a href="difference-between-printf-and-scanf-in-c">Difference between printf() and scanf() in C</a>
+<a href="global-variable-in-c">Global Variable in C</a>
+<a href="lexical-analyzer-in-c">Lexical Analyzer in C</a>
+<a href="pascal-triangle-in-c">Pascal Triangle in C</a>
+<a href="postfix-evaluation-in-c">Postfix Evaluation in C</a>
+<a href="strncmp-function-in-c">Strncmp() function in C</a>
+<a href="type-qualifiers-in-c">Type Qualifiers in C</a>
+<a href="unsigned-int-in-c">Unsigned int in C</a>
+<a href="what-is-perror-in-c">What is Perror in C</a>
+<a href="difference-between-array-and-string-in-c">Difference Between Array and String in C</a>
+<a href="execvp-function-in-c">Execvp() Function in C</a>
+<a href="explain-recursion-with-example-in-c">Explain Recursion with Example in C</a>
+<a href="contiguous-file-allocation-program-in-c">Contiguous file allocation program in C</a>
+<a href="entry-control-loop-in-c">ENTRY CONTROL LOOP IN C</a>
+<a href="exit-control-loop-in-c">EXIT CONTROL LOOP IN C</a>
+<a href="fopen-function-in-c">Fopen() function in C</a>
+<a href="hollow-diamond-pattern-in-c">Hollow Diamond Pattern in C</a>
+<a href="register-keyword-in-c">Register Keyword in C</a>
+<a href="strcmpi-function-in-c">Strcmpi() function in C</a>
+<a href="strtol-function-in-c">Strtol() function in C</a>
+<a href="system-function-in-c">System function in C</a>
+<a href="difference-between-parameter-and-arguments-in-c">Difference between parameter and arguments in C</a>
+<a href="execlp-function-in-c">Execlp() function in C</a>
+<a href="fabs-function-in-c">Fabs() function in C</a>
+<a href="recursive-descent-parser-program-in-c">Recursive Descent Parser Program in C</a>
+<a href="difference-between-exit-and-return-in-c">Difference Between exit() and return() in C</a>
+<a href="skill-rack-solution-in-c">Skill rack solution in C</a>
+<a href="stack-overflow-in-c">Stack overflow in C</a>
+<a href="static-cast-in-c">Static_cast in C</a>
+<a href="stdin-and-stdout-in-c">Stdin and Stdout in C</a>
+<a href="strrchr-function-in-c">Strrchr() function in C</a>
+<a href="strsep-function-in-c">Strsep() function in C</a>
+<a href="strcspn-function-in-c">Strcspn() function in C</a>
+<a href="strtoul-function-in-c">Strtoul() Function in C</a>
+<a href="area-of-circle-program-in-c">Area of Circle program in C</a>
+<a href="branching-statements-in-c">Branching statements in C</a>
+<a href="bubble-sort-in-c">Bubble Sort in C</a>
+<a href="c-program-to-adding-of-two-binary-numbers">C program to adding of two binary numbers</a>
+<a href="c-program-to-search-an-element-in-an-array">C program to Search an Element in an Array</a>
+<a href="difference-between-object-code-and-source-code">Difference between Object code and Source code</a>
+<a href="electricity-bill-program-in-c">Electricity bill program in C</a>
+<a href="rsa-algorithm-in-c">RSA algorithm in C</a>
+<a href="singly-linked-list-in-c">Singly linked list in C</a>
+<a href="stack-in-c">Stack in C</a>
+<a href="strcspn-function-in-c">Strcspn() function in C</a>
+<a href="strftime-in-c">Strftime() in C</a>
+<a href="strlen-function-in-c">Strlen() function in C</a>
+<a href="swap-first-and-last-digit-of-a-number-in-c">Swap first and last digit of a number in C</a>
+<a href="addition-program-in-c">Addition program in C</a>
+<a href="clrscr-in-c">clrscr in C</a>
+<a href="distance-vector-routing-program-in-c">Distance Vector Routing Program in C</a>
+<a href="even-odd-programs-in-c">Even odd programs in C</a>
+<a href="how-to-access-structure-members-in-c">How to Access Structure Members in C</a>
+<a href="how-to-change-c-users-username-in-windows-10">How to Change C Users Username in Windows 10</a>
+<a href="linear-search-in-c">Linear search in C</a>
+<a href="symmetric-matrix-in-c">Symmetric Matrix in C</a>
+<a href="fgets-function-in-c">fgets() function in C</a>
+<a href="length-of-array-in-c">Length of array in C</a>
+<a href="multithreading-in-c">MULTITHREADING IN C</a>
+<a href="number-pattern-program-in-c">Number pattern program in C</a>
+<a href="strcpy-function-in-c">Strcpy() function in C</a>
+<a href="best-books-for-c-programming">Best Books for C Programming</a>
+<a href="c-program-to-calculate-area-and-circumference-of-circle">C Program to Calculate Area and Circumference of Circle</a>
+<a href="character-set-in-c">Character Set in C</a>
+<a href="array-rotation-in-c">Array Rotation in C</a>
+<a href="random-access-file-in-c">Random Access File in C</a>
+<a href="atan2-function-in-c">atan2() Function in C</a>
+<a href="digital-clock-in-c-programming">Digital Clock in C Programming</a>
+<a href="how-many-ip-addresses-have-a-class-c-network">How Many IP Addresses have a class c Network</a>
+<a href="how-many-tokens-in-c">How Many Tokens in C</a>
+<a href="linked-error-in-c">Linked error in C</a>
+<a href="lvalue-and-rvalue-in-c">Lvalue and Rvalue in C</a>
+<a href="auto-and-static-variable-in-c">Auto and Static Variable in C</a>
+<a href="feof-function-in-c">feof() function in C</a>
+<a href="gauss-jordan-method-in-c">Gauss Jordan Method in C</a>
+<a href="gauss-seidel-method-in-c">Gauss Seidel Method in C</a>
+<a href="getw-and-putw-function-in-c">Getw() and Putw() function in C</a>
+<a href="lseek-in-c">lseek() in C</a>
+<a href="usleep-function-in-c">usleep() function in C</a>
+<a href="first-and-follow-program-in-c">First and Follow Program in C</a>
+<a href="interpolation-search-in-c">Interpolation Search in C</a>
+<a href="strdup-function-in-c">strdup() function in C</a>
+<a href="generic-keyword-in-c">Generic Keyword in C</a>
+<a href="getopt-function-in-c">getopt() function in C</a>
+<a href="getpid-and-getppid-function-in-c">getpid() and getppid() function in C</a>
+<a href="magic-square-function-in-c">Magic Square Function in C</a>
+<a href="reentrant-function-in-c">Reentrant Function in C</a>
+<a href="return-statement-in-c">Return Statement in C</a>
+<a href="travelling-salesman-problem-in-c">Travelling Salesman Problem in C</a>
+<a href="double-float-in-c">Double Float in C</a>
+<a href="fseek-vs-rewind-in-c">fseek() vs rewind() in C</a>
+<a href="how-to-create-your-own-header-files-in-c">How to create your own header files in C</a>
+<a href="implicit-type-conversion-in-c">Implicit type conversion in C</a>
+<a href="inter-function-communication-in-c">Inter Function Communication in C</a>
+<a href="kbhit-in-c">kbhit() in C</a>
+<a href="multiline-macros-in-c">Multiline Macros in C</a>
+<a href="scanset-in-c">Scanset in C</a>
+<a href="tail-recursion-in-c">Tail Recursion in C</a>
+<a href="c-program-for-currency-denomination">C program for currency denomination</a>
+<a href="c-program-for-secant-method">C program for secant method</a>
+<a href="fread-function-in-c">Fread() Function in C</a>
+<a href="hangman-game-program-in-c">Hangman game program in C</a>
+<a href="hilbert-curve-program-in-c">Hilbert curve program in C</a>
+<a href="newton-forward-interpolation-in-c">Newton Forward Interpolation in C</a>
+<a href="tower-of-hanoi-in-c">Tower of Hanoi</a>
+<a href="vigenere-cypher-program-in-c">Vigenere Cypher Program in C</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">MCQ</span></h2>
+</div>
+<div class="leftmenu">
+<a href="c-language-mcq">C language MCQ</a>
+<a href="c-language-mcq-part-2">C language MCQ Part 2</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Math</span></h2>
+</div>
+<div class="leftmenu">
+<a href="prime-numbers-list">Prime Numbers List</a>
+<a href="composite-numbers-list">Composite Numbers List</a>
+<a href="square-numbers-list">Square Numbers List</a>
+<a href="binary-numbers-list">Binary Numbers List</a>
+<a href="fibonacci-numbers-list">Fibonacci Numbers List</a>
+<a href="how-many-ounces-in-a-cup">Ounces in a Cup</a>
+<a href="how-many-ounces-in-a-pound">Ounces in a Pound</a>
+<a href="how-many-ounces-in-a-gallon">Ounces in a Gallon</a>
+<a href="how-many-ounces-in-a-liter">Ounces in a Liter</a>
+<a href="how-many-ounces-in-a-pint">Ounces in a Pint</a>
+<a href="how-many-ounces-in-a-quart">Ounces in a Quart</a>
+<a href="how-many-ounces-in-a-tablespoon">Ounces in a Tablespoon</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="c-interview-questions">C Interview Questions</a>
+</div>
+<img src="https://www.javatpoint.com/wh.JPG" alt="JavaTpoint" />
+<br/>
+</div>
+</div>
+<div class="onlycontent">
+<div class="onlycontentad">
+</div>
+<div class="onlycontentinner">
+<div id="city">
+<table>
+<tr><td>
+<div id="bottomnextup">
+<a class="next" href="history-of-c-language">next &rarr;</a>
+
+</div>
+<h1 class="h1">C Programming Language Tutorial</h1>
+<a href="https://training.javatpoint.com/c-cpp-training" target="_blank"><img src="corebasic/images/c-training.png" class="imageright" alt="C Programming" /></a>
+
+<p><strong>C language</strong> Tutorial with programming approach for beginners and professionals, helps you to understand the C language tutorial easily. Our C tutorial explains each topic with programs.</p>
+<p>The C Language is developed by Dennis Ritchie for creating system applications that directly interact with the hardware devices such as drivers, kernels, etc.</p>
+<p>C programming is considered as the base for other programming languages, that is why it is known as mother language.</p>
+<p>It can be defined by the following ways:</p>
+<ol class="points">
+<li>Mother language</li>
+<li>System programming language</li>
+<li>Procedure-oriented programming language</li>
+<li>Structured programming language</li>
+<li>Mid-level programming language</li>
+</ol>
+<h2 class="h2">1) C as a mother language</h2>
+<p>C language is considered as the mother language of all the modern programming languages because <strong>most of the compilers, JVMs, Kernels, etc. are written in C language</strong>, and most of the programming languages follow C syntax, for example, C++, Java, C#, etc.</p>
+<p>It provides the core concepts like the <a href="c-array">array</a>, <a href="c-strings">strings</a>, <a href="functions-in-c">functions</a>, <a href="file-handling-in-c">file handling</a>, etc. that are being used in many languages like <a href="cpp-tutorial">C++</a>, <a href="java-tutorial">Java</a>, <a href="c-sharp-tutorial">C#</a>, etc.</p>
+<hr/>
+<h2 class="h2">2) C as a system programming language</h2>
+<p>A system programming language is used to create system software. C language is a system programming language because it <strong>can be used to do low-level programming (for example driver and kernel)</strong>. It is generally used to create hardware devices, OS, drivers, kernels, etc. For example, Linux kernel is written in C.</p>
+<p>It can't be used for internet programming like Java, .Net, PHP, etc.</p>
+<hr/>
+<h2 class="h2">3) C as a procedural language</h2>
+<p>A procedure is known as a function, method, routine, subroutine, etc. A procedural language <strong>specifies a series of steps for the program to solve the problem</strong>.</p>
+<p>A procedural language breaks the program into functions, data structures, etc.</p>
+<p>C is a procedural language. In C, variables and function prototypes must be declared before being used.</p>
+<hr/>
+<h2 class="h2">4) C as a structured programming language</h2>
+<p>A structured programming language is a subset of the procedural language. <strong>Structure means to break a program into parts or blocks</strong> so that it may be easy to understand. </p>
+<p>In the C language, we break the program into parts using functions. It makes the program easier to understand and modify.</p>
+<hr/>
+<h2 class="h2">5) C as a mid-level programming language</h2>
+<p>C is considered as a middle-level language because it <strong>supports the feature of both low-level and high-level languages</strong>. C language program is converted into assembly code, it supports pointer arithmetic (low-level), but it is machine independent (a feature of high-level).</p>
+<p>A <strong>Low-level language</strong> is specific to one machine, i.e., machine dependent. It is machine dependent, fast to run. But it is not easy to understand.</p>
+<p>A <strong>High-Level language</strong> is not specific to one machine, i.e., machine independent. It is easy to understand.</p>
+<hr/>
+<h2 class="h2">C Program</h2>
+<p>In this tutorial, all C programs are given with C compiler so that you can quickly change the C program code.</p>
+<p>File: main.c</p>
+<div class="codeblock"><textarea name="code" class="Cpp">
+#include <stdio.h>
+int main() {
+printf("Hello C Programming\n");
+return 0;
+}
+</textarea></div>
+
+<p>A detailed description of above program is given in next chapters.</p>
+<hr/>
+<h2 class="h2 center textshadow">C Programming Index</h2>
+<hr/>
+<div class="responsivediv">
+<div class="col-3">
+<p><strong>C Tutorial</strong></p>
+<ul class="points">
+<li><a href="c-programming-language-tutorial">What is C Language</a></li>
+<li><a href="history-of-c-language">History of C </a></li>
+<li><a href="features-of-c-language">Features of C</a></li>
+<li><a href="how-to-install-c">How to install C</a></li>
+<li><a href="first-c-program">First C Program</a></li>
+<li><a href="flow-of-c-program">Flow of C Program</a></li>
+<li><a href="printf-scanf">printf scanf</a></li>
+<li><a href="variables-in-c">Variables in C</a></li>
+<li><a href="data-types-in-c">Data Types in c</a></li>
+<li><a href="keywords-in-c">Keywords in c</a></li>
+<li><a href="c-operators">C Operators</a></li>
+<li><a href="comments-in-c">C Comments</a></li>
+<li><a href="escape-sequence-in-c">C Escape Sequence</a></li>
+<li><a href="constants-in-c">Constants in C</a></li>
+<li><a href="/test/c-fundamental-1">C Fundamental Test</a></li>
+</ul>
+<p><strong>C Control Statements</strong></p>
+<ul class="points">
+<li><a href="c-if-else">C if-else</a></li>
+<li><a href="c-switch">C switch</a></li>
+<li><a href="c-loop">C Loops</a></li>
+<li><a href="do-while-loop-in-c">C do-while loop</a></li>
+<li><a href="while-loop-in-c">C while loop</a></li>
+<li><a href="for-loop-in-c">C for loop</a></li>
+<li><a href="c-break">C break</a></li>
+<li><a href="c-continue">C continue</a></li>
+<li><a href="c-goto">C goto</a></li>
+<li><a href="type-casting-in-c">Type Casting</a></li>
+<li><a href="/test/c-control-statements-1">C Control Statement Test</a></li>
+</ul>
+<p><strong>C Functions</strong></p>
+<ul class="points">
+<li><a href="functions-in-c">What is function</a></li>
+<li><a href="call-by-value-and-call-by-reference-in-c">Call: Value &amp; Reference</a></li>
+<li><a href="recursion-in-c">Recursion in c</a></li>
+<li><a href="storage-classes-in-c">Storage Classes</a></li>
+<li><a href="/test/c-functions-1">C Functions Test</a></li>
+</ul>
+<p><strong>C Array</strong></p>
+<ul class="points">
+<li><a href="c-array">1-D Array</a></li>
+<li><a href="two-dimensional-array-in-c">2-D Array</a></li>
+<li><a href="passing-array-to-function-in-c">Array to Function</a></li>
+<li><a href="/test/c-array-1">C Array Test</a></li>
+</ul>
+<p><strong>C Pointers</strong></p>
+<ul class="points">
+<li><a href="c-pointers">C Pointers</a></li>
+<li><a href="c-pointer-to-pointer">C Pointer to Pointer</a></li>
+<li><a href="pointer-arithmetic-in-c">C Pointer Arithmetic</a></li>
+<li><a href="/test/c-pointers-1">C Pointers Test</a></li>
+</ul>
+<p><strong>C Dynamic Memory</strong></p>
+<ul class="points">
+<li><a href="dynamic-memory-allocation-in-c">Dynamic memory</a></li>
+</ul>
+<p><strong>C Strings</strong></p>
+<ul class="points">
+<li><a href="c-strings">String in C</a></li>
+<li><a href="c-gets-puts">C gets() &amp; puts()</a></li>
+<li><a href="c-string-functions">C String Functions</a></li>
+<li><a href="c-strlen">C strlen()</a></li>
+<li><a href="c-strcpy">C strcpy()</a></li>
+<li><a href="c-strcat">C strcat()</a></li>
+<li><a href="c-strcmp">C strcmp()</a></li>
+<li><a href="c-strrev">C strrev()</a></li>
+<li><a href="c-strlwr">C strlwr()</a></li>
+<li><a href="c-strupr">C strupr()</a></li>
+<li><a href="c-strstr">C strstr()</a></li>
+<li><a href="/test/c-string-1">C String Test</a></li>
+</ul>
+</div>
+<div class="col-3">
+<p><strong>C Math</strong></p>
+<ul class="points">
+<li><a href="c-math">C Math Functions</a></li>
+</ul>
+<p><strong>C Structure Union</strong></p>
+<ul class="points">
+<li><a href="structure-in-c">C Structure</a></li>
+<li><a href="array-of-structures-in-c">C Array of Structures</a></li>
+<li><a href="nested-structure-in-c">C Nested Structure</a></li>
+<li><a href="c-union">C Union</a></li>
+<li><a href="/test/c-structure-union-enums-1">C Structure Test</a></li>
+</ul>
+<p><strong>C File Handling</strong></p>
+<ul class="points">
+<li><a href="file-handling-in-c">C File Handling</a></li>
+<li><a href="fprintf-fscanf-in-c">C fprintf() fscanf()</a></li>
+<li><a href="fputc-fgetc-in-c">C fputc() fgetc()</a></li>
+<li><a href="fputs-fgets-in-c">C fputs() fgets()</a></li>
+<li><a href="fseek-in-c">C fseek()</a></li>
+<li><a href="rewind-in-c">C rewind()</a></li>
+<li><a href="ftell-in-c">C ftell()</a></li>
+</ul>
+<p><strong>C Preprocessor</strong></p>
+<ul class="points">
+<li><a href="c-preprocessor">C Preprocessor</a></li>
+<li><a href="c-macros">C Macros</a></li>
+<li><a href="c-preprocessor-include">C #include</a></li>
+<li><a href="c-preprocessor-define">C #define</a></li>
+<li><a href="c-preprocessor-undef">C #undef</a></li>
+<li><a href="c-preprocessor-ifdef">C #ifdef</a></li>
+<li><a href="c-preprocessor-ifndef">C #ifndef</a></li>
+<li><a href="c-preprocessor-if">C #if</a></li>
+<li><a href="c-preprocessor-else">C #else</a></li>
+<li><a href="c-preprocessor-error">C #error</a></li>
+<li><a href="c-preprocessor-pragma">C #pragma</a></li>
+<li><a href="/test/c-preprocessor-1">C Preprocessor Test</a></li>
+</ul>
+<p><strong>C Command Line</strong></p>
+<ul class="points">
+<li><a href="command-line-arguments-in-c">Command Line Arguments</a></li>
+</ul>
+<p><strong>C Programming Test</strong></p>
+<ul class="points">
+<li><a href="test/c-programming">C Programming Test</a></li>
+</ul>
+<p><strong>C Programs</strong></p>
+<ul class="points">
+<li><a href="c-programs">Top 10+ C Programs</a></li>
+<li><a href="fibonacci-series-in-c">Fibonacci Series</a></li>
+<li><a href="prime-number-program-in-c">Prime Number</a></li>
+<li><a href="palindrome-program-in-c">Palindrome Number</a></li>
+<li><a href="factorial-program-in-c">Factorial</a></li>
+<li><a href="armstrong-number-in-c">Armstrong Number</a></li>
+<li><a href="sum-of-digits-program-in-c">Sum of digits</a></li>
+<li><a href="c-program-to-reverse-number">Reverse Number</a></li>
+<li><a href="c-program-to-swap-two-numbers-without-using-third-variable">Swap Number</a></li>
+<li><a href="c-program-to-print-hello-without-semicolon">Print "Hello" without ;</a></li>
+<li><a href="assembly-program-in-c">Assembly code in C</a></li>
+<li><a href="c-program-without-main">C program without main</a></li>
+<li><a href="matrix-multiplication-in-c">Matrix Multiplication</a></li>
+<li><a href="c-program-to-convert-decimal-to-binary">Decimal to Binary</a></li>
+<li><a href="c-program-to-convert-number-in-characters">Number in Characters</a></li>
+<li><a href="c-program-to-print-alphabet-triangle">Alphabet Triangle</a></li>
+<li><a href="c-program-to-print-number-triangle">Number Triangle</a></li>
+<li><a href="c-program-to-generate-fibonacci-triangle">Fibonacci Triangle</a></li>
+</ul>
+</div>
+<div class="col-3">
+<p><strong>C Programming Test</strong></p>
+<ul class="points">
+<li><a href="/test/c-programming">C Programming Test</a></li>
+</ul>
+<p><strong>C Fundamental Test</strong></p>
+<ul class="points">
+<li><a href="/test/c-fundamental-1">C Fundamental 1</a></li>
+<li><a href="/test/c-fundamental-2">C Fundamental 2</a></li>
+<li><a href="/test/c-fundamental-3">C Fundamental 3</a></li>
+<li><a href="/test/c-fundamental-4">C Fundamental 4</a></li>
+</ul>
+<p><strong>C Control Test</strong></p>
+<ul class="points">
+<li><a href="/test/c-control-statements-1">C Control Statement 1</a></li>
+<li><a href="/test/c-control-statements-2">C Control Statement 2</a></li>
+<li><a href="/test/c-control-statements-3">C Control Statement 3</a></li>
+<li><a href="/test/c-control-statements-4">C Control Statement 4</a></li>
+</ul>
+<p><strong>C Function Test</strong></p>
+<ul class="points">
+<li><a href="/test/c-functions-1">C Functions 1</a></li>
+<li><a href="/test/c-functions-2">C Functions 2</a></li>
+<li><a href="/test/c-functions-3">C Functions 3</a></li>
+<li><a href="/test/c-functions-4">C Functions 4</a></li>
+</ul>
+<p><strong>C Array Test</strong></p>
+<ul class="points">
+<li><a href="/test/c-array-1">C Array 1</a></li>
+<li><a href="/test/c-array-2">C Array 2</a></li>
+<li><a href="/test/c-array-3">C Array 3</a></li>
+<li><a href="/test/c-array-4">C Array 4</a></li>
+</ul>
+<p><strong>C Pointers Test</strong></p>
+<ul class="points">
+<li><a href="/test/c-pointers-1">C Pointers 1</a></li>
+<li><a href="/test/c-pointers-2">C Pointers 2</a></li>
+<li><a href="/test/c-pointers-3">C Pointers 3</a></li>
+<li><a href="/test/c-pointers-4">C Pointers 4</a></li>
+</ul>
+<p><strong>C String Test</strong></p>
+<ul class="points">
+<li><a href="/test/c-string-1">C String 1</a></li>
+<li><a href="/test/c-string-2">C String 2</a></li>
+<li><a href="/test/c-string-3">C String 3</a></li>
+<li><a href="/test/c-string-4">C String 4</a></li>
+</ul>
+<p><strong>C Structure Test</strong></p>
+<ul class="points">
+<li><a href="/test/c-structure-union-enums-1">C Structure 1</a></li>
+<li><a href="/test/c-structure-union-enums-2">C Structure 2</a></li>
+<li><a href="/test/c-structure-union-enums-3">C Structure 3</a></li>
+<li><a href="/test/c-structure-union-enums-4">C Structure 4</a></li>
+</ul>
+<p><strong>C Preprocessor Test</strong></p>
+<ul class="points">
+<li><a href="/test/c-preprocessor-1">C Preprocessor 1</a></li>
+<li><a href="/test/c-preprocessor-2">C Preprocessor 2</a></li>
+<li><a href="/test/c-preprocessor-3">C Preprocessor 3</a></li>
+<li><a href="/test/c-preprocessor-4">C Preprocessor 4</a></li>
+</ul>
+<p><strong>C Interview</strong></p>
+<ul class="points">
+<li><a href="c-interview-questions">C Interview Questions</a></li>
+</ul>
+</div>
+</div>
+<hr>
+<h2 class="h2">Prerequisite</h2>
+<p>Before learning C Programming, you must have the basic knowledge of Computer Fundamental.</p>
+<h2 class="h2">Audience</h2>
+<p>Our C Programming tutorial is designed to help beginners and professionals.</p>
+<h2 class="h2">Problem</h2>
+<p>We assure that you will not find any mistake in this C Language Tutorial. But if there is any mistake, please post the problem in the contact form.</p>
+<div class="nexttopicdiv">
+<span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="history-of-c-language">History of C</a></span>
+</div>
+
+<br/><br/>
+<div id="bottomnext">
+
+<a style="float:right" class="next" href="history-of-c-language">next &rarr;</a>
+</div>
+<br/><br/>
+</td></tr>
+</table>
+</div>
+<hr class="hrhomebox" />
+<div><img class="lazyload" data-src="https://static.javatpoint.com/images/youtube-32.png" style="vertical-align:middle;" alt="Youtube" />
+<span class="h3" style="vertical-align:middle;font-size:22px"> For Videos Join Our Youtube Channel: <a href="https://bit.ly/2FOeX6S" target="_blank"> Join Now</a></span>
+</div>
+<hr class="hrhomebox" />
+<h3 class="h3">Feedback</h3>
+<ul class="points">
+<li>Send your Feedback to <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bed8dbdbdadcdfddd5fed4dfc8dfcaced1d7d0ca90ddd1d3">[email&#160;protected]</a></li>
+</ul>
+<hr class="hrhomebox" />
+<h2 class="h2">Help Others, Please Share</h2>
+<a rel="nofollow" title="Facebook" target="_blank" href="https://www.facebook.com/sharer.php?u=https://www.javatpoint.com/c-programming-language-tutorial"><img src="https://www.javatpoint.com/images/facebook32.png" alt="facebook" /></a>
+<a rel="nofollow" title="Twitter" target="_blank" href="https://twitter.com/share?url=https://www.javatpoint.com/c-programming-language-tutorial"><img src="https://www.javatpoint.com/images/twitter32.png" alt="twitter" /></a>
+<a rel="nofollow" title="Pinterest" target="_blank" href="https://www.pinterest.com/pin/create/button/?url=https://www.javatpoint.com/c-programming-language-tutorial"><img src="https://www.javatpoint.com/images/pinterest32.png" alt="pinterest" /></a>
+
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Learn Latest Tutorials</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/splunk">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/splunk.png" alt="Splunk tutorial" />
+<p>Splunk</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/spss">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/spss.png" alt="SPSS tutorial" />
+<p>SPSS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/swagger">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/swagger.png" alt="Swagger tutorial" />
+<p>Swagger</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/t-sql">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/transact-sql.png" alt="T-SQL tutorial" />
+<p>Transact-SQL</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/tumblr">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/tumblr.png" alt="Tumblr tutorial" />
+<p>Tumblr</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reactjs-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="React tutorial" />
+<p>ReactJS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/regex">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/regex.png" alt="Regex tutorial" />
+<p>Regex</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reinforcement-learning">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="Reinforcement learning tutorial" />
+<p>Reinforcement Learning</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/r-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/r-programming.png" alt="R Programming tutorial" />
+<p>R Programming</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/rxjs">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/rxjs.png" alt="RxJS tutorial" />
+<p>RxJS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/react-native-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react-native.png" alt="React Native tutorial" />
+<p>React Native</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-design-pattern">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-design-patterns.png" alt="Python Design Patterns" />
+<p>Python Design Patterns</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-pillow">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-pillow.png" alt="Python Pillow tutorial" />
+<p>Python Pillow</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-turtle-programming">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-turtle.png" alt="Python Turtle tutorial" />
+<p>Python Turtle</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/keras">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/keras.png" alt="Keras tutorial" />
+<p>Keras</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Preparation</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/aptitude/quantitative">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/aptitude/images/quantitative-aptitude-home.png" alt="Aptitude" />
+<p>Aptitude</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reasoning">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/reasoning/images/reasoning-home.png" alt="Logical Reasoning" />
+<p>Reasoning</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/verbal-ability">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/verbal-ability/images/verbal-ability-home.png" alt="Verbal Ability" />
+<p>Verbal Ability</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/interview-questions-and-answers">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/interviewhome.png" alt="Interview Questions" />
+<p>Interview Questions</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/company-interview-questions-and-recruitment-process">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/interview/images/company-home.jpeg" alt="Company Interview Questions" />
+<p>Company Questions</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Trending Technologies</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/artificial-intelligence-ai">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/artificial-intelligence.png" alt="Artificial Intelligence" />
+<p>Artificial Intelligence</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/aws-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/amazon-web-services.png" alt="AWS Tutorial" />
+<p>AWS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/selenium-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/selenium.png" alt="Selenium tutorial" />
+<p>Selenium</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/cloud-computing">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cloud-computing.png" alt="Cloud Computing" />
+<p>Cloud Computing</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/hadoop-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/hadoop.png" alt="Hadoop tutorial" />
+<p>Hadoop</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reactjs-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/reactjs.png" alt="ReactJS Tutorial" />
+<p>ReactJS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-science">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-science.png" alt="Data Science Tutorial" />
+<p>Data Science</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/angular-7-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/angular7.png" alt="Angular 7 Tutorial" />
+<p>Angular 7</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/blockchain-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/blockchain.png" alt="Blockchain Tutorial" />
+<p>Blockchain</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/git">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/git.png" alt="Git Tutorial" />
+<p>Git</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/machine-learning">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/machine-learning.png" alt="Machine Learning Tutorial" />
+<p>Machine Learning</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/devops">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/devops.png" alt="DevOps Tutorial" />
+<p>DevOps</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">B.Tech / MCA</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/dbms-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dbms.png" alt="DBMS tutorial" />
+<p>DBMS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-structure-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-structures.png" alt="Data Structures tutorial" />
+<p>Data Structures</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/daa-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/daa.png" alt="DAA tutorial" />
+<p>DAA</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/operating-system">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/operating-system.png" alt="Operating System" />
+<p>Operating System</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/computer-network-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-network.png" alt="Computer Network tutorial" />
+<p>Computer Network</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/compiler-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/compiler-design.png" alt="Compiler Design tutorial" />
+<p>Compiler Design</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/computer-organization-and-architecture-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-organization.png" alt="Computer Organization and Architecture" />
+<p>Computer Organization</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/discrete-mathematics-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/discrete-mathematics.png" alt="Discrete Mathematics Tutorial" />
+<p>Discrete Mathematics</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/ethical-hacking">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/ethical-hacking.png" alt="Ethical Hacking" />
+<p>Ethical Hacking</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/computer-graphics-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-graphics.png" alt="Computer Graphics Tutorial" />
+<p>Computer Graphics</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/software-engineering">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/software-engineering.png" alt="Software Engineering " />
+<p>Software Engineering</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/html-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/web-technology.png" alt="html tutorial" />
+<p>Web Technology</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/cyber-security-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cyber-security.png" alt="Cyber Security tutorial" />
+<p>Cyber Security</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/automata-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/automata.png" alt="Automata Tutorial" />
+<p>Automata</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/c-programming-language-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/c-programming.png" alt="C Language tutorial" />
+<p>C Programming</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/cpp-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cpp.png" alt="C++ tutorial" />
+<p>C++</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/java-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/java.png" alt="Java tutorial" />
+<p>Java</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/net-framework">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dot-net.png" alt=".Net Framework tutorial" />
+<p>.Net</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python.png" alt="Python tutorial" />
+<p>Python</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/programs-list">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/programs.png" alt="List of Programs" />
+<p>Programs</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/control-system-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/control-system.png" alt="Control Systems tutorial" />
+<p>Control System</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-mining">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-mining.png" alt="Data Mining Tutorial" />
+<p>Data Mining</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-warehouse">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-warehouse.png" alt="Data Warehouse Tutorial" />
+<p>Data Warehouse</p>
+</div>
+</a>
+</div>
+</fieldset>
+</div>
+<br><br/><div class="mobilemenu" style="clear:both">
+</div></div>
+<div id="right">
+<br/><br/>
+</div>
+<div class="right1024" style="float:left;margin-left:10px;margin-top:120px;">
+
+</div>
+<br/>
+<div id="footer" style="clear:both;width:100%">
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="https://static.javatpoint.com/images/social/rss1.png" alt="RSS Feed" /></a> <a target="_blank" rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="https://static.javatpoint.com/images/social/mail1.png" alt="Subscribe to Get Email Alerts" /></a> <a rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="https://static.javatpoint.com/images/social/facebook1.jpg" alt="Facebook Page" /></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="https://static.javatpoint.com/images/social/twitter1.png" alt="Twitter Page" /></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="https://static.javatpoint.com/images/youtube32.png" alt="YouTube" /></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com"><img src="https://static.javatpoint.com/images/social/blog.png" alt="Blog Page" /></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="https://www.javatpoint.com/java-tutorial">Learn Java</a><a href="https://www.javatpoint.com/data-structure-tutorial">Learn Data Structures</a><a href="https://www.javatpoint.com/c-programming-language-tutorial">Learn C Programming</a><a href="https://www.javatpoint.com/cpp-tutorial">Learn C++ Tutorial</a><a href="https://www.javatpoint.com/c-sharp-tutorial">Learn C# Tutorial</a><a href="https://www.javatpoint.com/php-tutorial">Learn PHP Tutorial</a><a href="https://www.javatpoint.com/html-tutorial">Learn HTML Tutorial</a><a href="https://www.javatpoint.com/javascript-tutorial">Learn JavaScript Tutorial</a><a href="https://www.javatpoint.com/jquery-tutorial">Learn jQuery Tutorial</a><a href="https://www.javatpoint.com/spring-tutorial">Learn Spring Tutorial</a></div><div class="column4"><h3>Interview Questions</h3><a href="corejava-interview-questions">Java Interview Questions</a><a href="sql-interview-questions">SQL Interview Questions</a><a href="python-interview-questions">Python Interview Questions</a><a href="javascript-interview-questions">JavaScript Interview Questions</a><a href="top-angular-interview-questions">Angular Interview Questions</a><a href="selenium-interview-questions">Selenium Interview Questions</a><a href="spring-boot-interview-questions">Spring Boot Interview Questions</a><a href="job-interview-questions">HR Interview Questions</a><a href="cpp-interview-questions">C++ Interview Questions</a><a href="data-structure-interview-questions">Data Structure Interview Questions</a></div><div class="column4"><h3>About</h3><p>Javatpoint is developed to help students on various technologies such as Artificial Intelligence, Machine Learning, C, C++, Python, Java, PHP, HTML, CSS, JavaScript, jQuery, ReactJS, Node.js, AngularJS, Bootstrap, XML, SQL, PL/SQL, MySQL etc. </p><p>Javatpoint provides tutorials with examples, code snippets, and practical insights, making it suitable for both beginners and experienced developers.</p><p>There are also many interview questions which will help students to get placed in the companies.</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="https://www.javatpoint.com/contact-us">Contact Us</a> <a href="https://www.javatpoint.com/subscribe.jsp">Subscribe Us</a> <a href="https://www.javatpoint.com/privacy-policy">Privacy Policy</a><a href="https://www.javatpoint.com/sitemap.xml">Sitemap</a><br><a href="https://www.javatpoint.com/sonoo-jaiswal">About Me</a></div></footer><footer class="footer2"><p>&copy; Copyright 2011-2021 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer><div id="bot-root"></div><script> (function() { var e = document.createElement('script'); e.src = 'https://app.pushbrothers.com/js/notification-bot.js?cnfg=a3cc04a1-8471-450e-b01e-c9d752b16eb0'; document.getElementById('bot-root').appendChild(e);}());</script>
+</div>
+
+</div></div>
+<script src="https://static.javatpoint.com/js/shcoreandbrush.js"></script><script> dp.SyntaxHighlighter.HighlightAll('code'); </script>
+<script src="https://static.javatpoint.com/lazysizes.min.js?v=5.8" async></script>
+</body> </html> 
