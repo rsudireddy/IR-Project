@@ -11,6 +11,10 @@ Instruction to run project
 5. Open another terminal and run make a request to flask server
                   curl -X POST http://localhost:5000/query -H "Content-Type: application/json" -d '{"query": "javascript"}'         
 
+To view the contents of index.pkl file go to Access folder 
+             cd ..
+             cd Access
+             python3 view_pickle.py
 
 prerequisites:
 pip install Scrapy
